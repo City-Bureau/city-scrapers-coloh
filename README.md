@@ -9,7 +9,7 @@ Part of the [City Scrapers](https://cityscrapers.org) project.
 
 ## Spider prefix
 
-All spiders in this repo use the `cbus` prefix (e.g. `cbus_city_council`).
+All spiders in this repo use the `coloh` prefix (e.g. `coloh_city_council`).
 
 ## Development
 
@@ -24,7 +24,7 @@ pipenv install --dev
 ### Running spiders
 
 ```bash
-pipenv run scrapy crawl cbus_city_council
+pipenv run scrapy crawl coloh_city_council
 ```
 
 ### Running all spiders
