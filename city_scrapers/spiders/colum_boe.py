@@ -5,8 +5,6 @@ import random
 import scrapy
 
 
-# Adding a test commit
-
 class ColumBoeSpider(CityScrapersSpider):
     name = "colum_boe"
     agency = "Columbus Board of Education"
