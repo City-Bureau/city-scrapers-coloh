@@ -1,40 +1,46 @@
-from city_scrapers_core.constants import NOT_CLASSIFIED, CITY_COUNCIL
+from collections import defaultdict
+from city_scrapers_core.constants import BOARD, CITY_COUNCIL, COMMITTEE, NOT_CLASSIFIED
 from city_scrapers_core.items import Meeting
-from city_scrapers_core.spiders import CityScrapersSpider
-
+from city_scrapers_core.spiders import LegistarSpider
 import json
-import scrapy
-from datetime import datetime
 from dateutil.relativedelta import relativedelta
+import scrapy
+
+from datetime import datetime
 
 
-class ColumCityCouncilSpider(CityScrapersSpider):
+class ColumCityCouncilSpider(LegistarSpider):
     name = "colum_city_council"
     agency = "Columbus City Council"
-    timezone = "America/Chicago"
-    start_urls = ["https://www.columbus.gov/Government/City-Council/Meeting-Schedules-Agendas/City-Council-Meeting-Calendar"]
-    calendar_api_url = ("https://www.columbus.gov/ocapi/calendars/getcalendaritems")
-    attachments_calendar_url = "https://columbus.legistar.com/Calendar.aspx"
+    timezone = "America/New_York"
+    start_urls = ["https://columbus.legistar.com/Calendar.aspx"]
+    # Tell base class to also grab these link types
+    link_types = ["Accessible Agenda", "Accessible Minutes", "Meeting Details"]
+
+    calendar_api_url = "https://www.columbus.gov/ocapi/calendars/getcalendaritems"
     source_url = "https://www.columbus.gov/Government/City-Council/Meeting-Schedules-Agendas/City-Council-Meeting-Calendar"
 
-    custom_settings = {"ROBOTSTXT_OBEY": False}
+    custom_settings = {
+        "ROBOTSTXT_OBEY": False
+        }
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.since_year = 2003
 
     def start_requests(self):
-        """POST requests to fetch calendar items, split by year.
+        # 1. Legistar historical data
+        yield scrapy.Request(
+            self.start_urls[0],
+            callback=self.parse,
+        )
 
-        The API does not support cross-year date ranges, so we issue
-        one request per calendar year covering 2 months back through
-        12 months forward.
-        """
+        # 2. Columbus.gov upcoming meetings
         now = datetime.now()
         start = now - relativedelta(months=2)
         end = now + relativedelta(months=12)
 
         for year in range(start.year, end.year + 1):
-            year_start = f"{year}-01-01"
-            year_end = f"{year}-12-31"
-
             yield scrapy.Request(
                 url=self.calendar_api_url,
                 method="POST",
@@ -42,80 +48,146 @@ class ColumCityCouncilSpider(CityScrapersSpider):
                     "Content-Type": "application/json",
                     "Origin": "https://www.columbus.gov",
                 },
-                body=json.dumps(
-                    {
-                        "LanguageCode":"en-US",
-                        "Ids":["b485bcac-3066-4b86-9053-4f35f64a8097"],
-                        "StartDate":"2025-01-01",
-                        "EndDate":"2025-12-28"
-                    }
-                ),
-                callback=self.parse,
+                body=json.dumps({
+                    "LanguageCode": "en-US",
+                    "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
+                    "StartDate": now.strftime("%Y-%m-%d"),  # today
+                    "EndDate": f"{year}-12-31",
+                }),
+                callback=self.parse_upcoming,
                 dont_filter=True,
             )
 
+    def parse_upcoming(self, response):
+        result = response.json()
+        for day in result.get("data", []):
+            for item in day.get("Items", []):
+                if item.get("Name") == "No Meetings":
+                    continue
+                start = self._parse_upcoming_start(item)
+                if not start:
+                    continue
+                meeting = Meeting(
+                    title=item.get("Name", "No Title"),
+                    description="",
+                    classification=self._parse_classification(item),
+                    start=start,
+                    end=None,
+                    all_day=False,
+                    time_notes="",
+                    location={"name": "", "address": ""},
+                    links=[],
+                    source=self.source_url,
+                )
+                meeting["status"] = self._get_status(meeting)
+                meeting["id"] = self._get_id(meeting)
+                yield meeting
 
-    def parse(self, response):
-        """Parse calendar items and yield detail requests for valid meetings."""
+    def _parse_upcoming_start(self, item):
+        try:
+            return datetime.strptime(item.get("DateTime", ""), "%m/%d/%Y %I:%M:%S %p")
+        except (ValueError, TypeError):
+            return None
 
-        for item in response.css(".meetings"):
-        #     meeting = Meeting(
-        #         title=self._parse_title(item),
-        #         description=self._parse_description(item),
-        #         classification=CITY_COUNCIL,
-        #         start=self._parse_start(item),
-        #         end=self._parse_end(item),
-        #         all_day=self._parse_all_day(item),
-        #         time_notes=self._parse_time_notes(item),
-        #         location=self._parse_location(item),
-        #         links=self._parse_links(item),
-        #         source=self._parse_source(response),
-        #     )
+    def parse_legistar(self, events):
+        for event in events:
+            start = self.legistar_start(event)
+            if start:
+                name = event.get("Name", "")
+                title = name if isinstance(name, str) else name.get("label", "No Title")
+                meeting = Meeting(
+                    title=title,
+                    description="",
+                    classification=self._parse_classification(event),
+                    start=start,
+                    end=None,
+                    all_day=False,
+                    time_notes="",
+                    location=self._parse_location(event),
+                    links=self.legistar_links(event),  # base class method
+                    source=self.legistar_source(event),  # base class method
+                )
+                meeting["status"] = self._get_status(meeting)
+                meeting["id"] = self._get_id(meeting)
+                yield meeting
 
-        #     meeting["status"] = self._get_status(meeting)
-        #     meeting["id"] = self._get_id(meeting)
+    def _parse_legistar_events(self, response):
+        events_table = response.css("table.rgMasterTable")[0]
 
-            yield None
+        headers = []
+        for header in events_table.css("th[class^='rgHeader']"):
+            header_text = (
+                " ".join(header.css("*::text").extract()).replace("&nbsp;", " ").strip()
+            )
+            header_inputs = header.css("input")
+            if header_text:
+                headers.append(header_text)
+            elif len(header_inputs) > 0:
+                headers.append(header_inputs[0].attrib["value"])
+            else:
+                headers.append(header.css("img")[0].attrib["alt"])
 
-    def _parse_title(self, item):
-        """Parse or generate meeting title."""
-        return ""
+        events = []
+        for row in events_table.css("tr.rgRow, tr.rgAltRow"):
+            try:
+                data = defaultdict(lambda: None)
+                for header, field in zip(headers, row.css("td")):
+                    field_text = (
+                        " ".join(field.css("*::text").extract())
+                        .replace("&nbsp;", " ")
+                        .strip()
+                    )
+                    url = None
+                    if len(field.css("a")) > 0:
+                        link_el = field.css("a")[0]
+                        if "onclick" in link_el.attrib and link_el.attrib[
+                            "onclick"
+                        ].startswith(("radopen('", "window.open", "OpenTelerikWindow")):
+                            url = response.urljoin(
+                                link_el.attrib["onclick"].split("'")[1]
+                            )
+                        elif "href" in link_el.attrib:
+                            url = response.urljoin(link_el.attrib["href"])
+                    if url:
+                        # check URL content, not header name
+                        if "View.ashx?M=IC" in url:
+                            header = "iCalendar"
+                            value = {"url": url}
+                        else:
+                            value = {"label": field_text, "url": url}
+                    else:
+                        value = field_text
 
-    def _parse_description(self, item):
-        """Parse or generate meeting description."""
-        return ""
+                    data[header] = value
+
+                ical_url = data.get("iCalendar", {}).get("url")
+                if ical_url is None or ical_url in self._scraped_urls:
+                    continue
+                else:
+                    self._scraped_urls.add(ical_url)
+
+                events.append(dict(data))
+            except Exception:
+                pass
+
+        return events
 
     def _parse_classification(self, item):
-        """Parse or generate classification from allowed options."""
+        name = item.get("Name", "")
+        name_label = (name if isinstance(name, str) else name.get("label", "")).lower()
+        if "committee" in name_label:
+            return COMMITTEE
+        if "board" in name_label:
+            return BOARD
+        if "council" in name_label:
+            return CITY_COUNCIL
         return NOT_CLASSIFIED
 
-    def _parse_start(self, item):
-        """Parse start datetime as a naive datetime object."""
-        return None
-
-    def _parse_end(self, item):
-        """Parse end datetime as a naive datetime object. Added by pipeline if None"""
-        return None
-
-    def _parse_time_notes(self, item):
-        """Parse any additional notes on the timing of the meeting"""
-        return ""
-
-    def _parse_all_day(self, item):
-        """Parse or generate all-day status. Defaults to False."""
-        return False
-
     def _parse_location(self, item):
-        """Parse or generate location."""
-        return {
-            "address": "",
-            "name": "",
-        }
-
-    def _parse_links(self, item):
-        """Parse or generate links."""
-        return [{"href": "", "title": ""}]
-
-    def _parse_source(self, response):
-        """Parse or generate source."""
-        return response.url
+        location = {"name": "", "address": ""}
+        meeting_location = item.get("Meeting Location", "")
+        if isinstance(meeting_location, dict):
+            location["address"] = meeting_location.get("label", "")
+        else:
+            location["address"] = meeting_location or ""
+        return location
