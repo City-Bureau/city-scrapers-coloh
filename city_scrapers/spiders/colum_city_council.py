@@ -35,28 +35,26 @@ class ColumCityCouncilSpider(LegistarSpider):
             callback=self.parse,
         )
 
-        # 2. Columbus.gov upcoming meetings
+        # 2. Columbus.gov upcoming meetings - single request
         now = datetime.now()
-        start = now - relativedelta(months=2)
         end = now + relativedelta(months=12)
 
-        for year in range(start.year, end.year + 1):
-            yield scrapy.Request(
-                url=self.calendar_api_url,
-                method="POST",
-                headers={
-                    "Content-Type": "application/json",
-                    "Origin": "https://www.columbus.gov",
-                },
-                body=json.dumps({
-                    "LanguageCode": "en-US",
-                    "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
-                    "StartDate": now.strftime("%Y-%m-%d"),  # today
-                    "EndDate": f"{year}-12-31",
-                }),
-                callback=self.parse_upcoming,
-                dont_filter=True,
-            )
+        yield scrapy.Request(
+            url=self.calendar_api_url,
+            method="POST",
+            headers={
+                "Content-Type": "application/json",
+                "Origin": "https://www.columbus.gov",
+            },
+            body=json.dumps({
+                "LanguageCode": "en-US",
+                "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
+                "StartDate": now.strftime("%Y-%m-%d"),
+                "EndDate": end.strftime("%Y-%m-%d"),
+            }),
+            callback=self.parse_upcoming,
+            dont_filter=True,
+        )
 
     def parse_upcoming(self, response):
         result = response.json()
