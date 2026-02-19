@@ -94,10 +94,9 @@ briefing_item = briefing_items[0]
 # === Calendar filtering tests ===
 
 
-def test_calendar_filters_non_meetings():
-    """Fixture has 7 items total: 5 valid meetings + 2 non-meetings.
-    parse() should yield 5 requests."""
-    assert len(calendar_requests) == 5
+def test_calendar_request_count():
+    """Fixture has 7 items total; all are yielded as detail requests."""
+    assert len(calendar_requests) == 7
 
 
 def test_calendar_request_urls():
@@ -164,11 +163,8 @@ def test_status():
 
 def test_location():
     assert parsed_item["location"] == {
-        "name": "Commissioners' Hearing Room",
-        "address": (
-            "Michael J. Dorrian Building, 1st Floor,"
-            " 369 South High Street, Columbus, OH, 43215"
-        ),
+        "name": "Commissioners' Hearing Room, Michael J. Dorrian Building, 1st Floor",
+        "address": "369 South High Street, Columbus, OH, 43215",
     }
 
 
@@ -205,7 +201,8 @@ def test_briefing_start():
 
 
 def test_briefing_location():
-    """Briefing session has a long instruction as first <p>, not a room name."""
+    """Briefing session: long instruction paragraph is excluded from name;
+    last paragraph starts with street number so name stays empty."""
     assert briefing_item["location"]["name"] == ""
     assert "373 S. High St" in briefing_item["location"]["address"]
     assert "Columbus, OH" in briefing_item["location"]["address"]

@@ -34,10 +34,6 @@ class ColumFranklinBocSpider(CityScrapersSpider):
     )
     custom_settings = {"ROBOTSTXT_OBEY": False}
 
-    # Matches actual meeting names (Session, Hearing, Meeting)
-    # and filters out holidays and community events
-    MEETING_NAME_RE = re.compile(r"(Session|Hearing|Meeting)", re.IGNORECASE)
-
     def start_requests(self):
         """POST requests to fetch calendar items, split by year.
 
@@ -79,10 +75,6 @@ class ColumFranklinBocSpider(CityScrapersSpider):
         for day in data.get("data", []):
             for item in day.get("Items", []):
                 name = item.get("Name", "")
-
-                # Filter out holidays and community events
-                if not self.MEETING_NAME_RE.search(name):
-                    continue
 
                 meeting_id = item.get("Id")
                 if not meeting_id:
@@ -147,7 +139,16 @@ class ColumFranklinBocSpider(CityScrapersSpider):
         return desc.strip() if desc else ""
 
     def _parse_location(self, sel):
-        """Extract location name and address from meeting detail HTML."""
+        """Extract location name and address from meeting detail HTML.
+
+        Room and building info is separated from the street address by finding
+        the first bare street number — a digit sequence NOT followed by an
+        ordinal suffix (st/nd/rd/th). For example "369 South" is treated as a
+        street number while "1st Floor" is not.
+
+        Short paragraphs (< 80 chars) before the last <p> contribute to name.
+        Long paragraphs (e.g. visitor instructions) are excluded.
+        """
         address_div = sel.css("div.meeting-address")
         if not address_div:
             return {"name": "", "address": ""}
@@ -156,29 +157,43 @@ class ColumFranklinBocSpider(CityScrapersSpider):
         if not paragraphs:
             return {"name": "", "address": ""}
 
-        name = ""
-        # The last <p> always contains the street address
-        address_texts = paragraphs[-1].css("::text").getall()
-        address = self._clean_address(address_texts)
+        name_parts = []
 
-        # If multiple <p> elements, the first may be a room/location name
-        # (short text) or an instruction note (long text)
-        if len(paragraphs) >= 2:
-            first_text = paragraphs[0].css("::text").get("").strip()
-            if len(first_text) < 80:
-                name = first_text
+        # Short, non-instruction paragraphs before the last go into name
+        for p in paragraphs[:-1]:
+            text = re.sub(
+                r"\s+",
+                " ",
+                " ".join(
+                    t.replace("\xa0", " ").strip() for t in p.css("::text").getall()
+                ),
+            ).strip()
+            if text and len(text) < 80 and "View Map" not in text:
+                name_parts.append(text)
 
-        return {"name": name, "address": address}
+        # Build a clean single string from the last paragraph
+        raw = " ".join(
+            t.replace("\xa0", " ").strip()
+            for t in paragraphs[-1].css("::text").getall()
+            if t.replace("\xa0", " ").strip() and "View Map" not in t
+        )
+        last_text = re.sub(r"\s+", " ", raw).strip().rstrip(",")
 
-    def _clean_address(self, texts):
-        """Clean address text by removing 'View Map' and normalizing whitespace."""
-        parts = []
-        for t in texts:
-            t = t.replace("\xa0", " ").strip()
-            if t and "View Map" not in t:
-                parts.append(t)
-        raw = " ".join(parts)
-        return re.sub(r"\s+", " ", raw).strip().rstrip(",")
+        # Split at the first street number: a digit sequence NOT followed by
+        # an ordinal suffix (st/nd/rd/th), e.g. "369 South" matches,
+        # "1st Floor" does not.
+        m = re.search(
+            r"(?:^|,\s*)(\d+)\s+(?!(?:st|nd|rd|th)\b)", last_text, re.IGNORECASE
+        )
+        if m:
+            before = last_text[: m.start()].strip().rstrip(",").strip()
+            address = last_text[m.start(1) :].strip()
+            if before and len(before) < 80:
+                name_parts.append(before)
+        else:
+            address = last_text
+
+        return {"name": ", ".join(name_parts), "address": address}
 
     def _parse_links(self, sel):
         """Extract document links (agendas, minutes) from meeting detail HTML."""
