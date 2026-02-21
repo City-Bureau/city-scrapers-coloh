@@ -1,12 +1,12 @@
+import json
 from collections import defaultdict
+from datetime import datetime
+
+import scrapy
 from city_scrapers_core.constants import BOARD, CITY_COUNCIL, COMMITTEE, NOT_CLASSIFIED
 from city_scrapers_core.items import Meeting
 from city_scrapers_core.spiders import LegistarSpider
-import json
 from dateutil.relativedelta import relativedelta
-import scrapy
-
-from datetime import datetime
 
 
 class ColumCityCouncilSpider(LegistarSpider):
@@ -18,24 +18,33 @@ class ColumCityCouncilSpider(LegistarSpider):
     link_types = ["Accessible Agenda", "Accessible Minutes", "Meeting Details"]
 
     calendar_api_url = "https://www.columbus.gov/ocapi/calendars/getcalendaritems"
-    source_url = "https://www.columbus.gov/Government/City-Council/Meeting-Schedules-Agendas/City-Council-Meeting-Calendar"
+    source_url = "https://www.columbus.gov/Government/City-Council/Meeting-Schedules-Agendas/City-Council-Meeting-Calendar"  # noqa
 
-    custom_settings = {
-        "ROBOTSTXT_OBEY": False
-        }
+    location = {
+        "name": "City Council Chambers, Rm 231",
+        "address": "90 West Broad Street, Columbus, OH, 43215",
+    }
+
+    custom_settings = {"ROBOTSTXT_OBEY": False}
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.since_year = 2003
+        self.legistar_dates = set()  # store scraped legistar dates here
 
     def start_requests(self):
-        # 1. Legistar historical data
+        # 1. Legistar historical data first
         yield scrapy.Request(
             self.start_urls[0],
             callback=self.parse,
         )
 
-        # 2. Columbus.gov upcoming meetings - single request
+        # 2. Upcoming meetings, from calendar API
+
+    def parse(self, response):
+        # after legistar finishes, trigger upcoming request
+        yield from super().parse(response)
+
         now = datetime.now()
         end = now + relativedelta(months=12)
 
@@ -46,12 +55,14 @@ class ColumCityCouncilSpider(LegistarSpider):
                 "Content-Type": "application/json",
                 "Origin": "https://www.columbus.gov",
             },
-            body=json.dumps({
-                "LanguageCode": "en-US",
-                "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
-                "StartDate": now.strftime("%Y-%m-%d"),
-                "EndDate": end.strftime("%Y-%m-%d"),
-            }),
+            body=json.dumps(
+                {
+                    "LanguageCode": "en-US",
+                    "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
+                    "StartDate": now.strftime("%Y-%m-%d"),
+                    "EndDate": end.strftime("%Y-%m-%d"),
+                }
+            ),
             callback=self.parse_upcoming,
             dont_filter=True,
         )
@@ -65,6 +76,9 @@ class ColumCityCouncilSpider(LegistarSpider):
                 start = self._parse_upcoming_start(item)
                 if not start:
                     continue
+                # skip if this date already exists in legistar data
+                if start.date() in self.legistar_dates:
+                    continue
                 meeting = Meeting(
                     title=item.get("Name", "No Title"),
                     description="",
@@ -73,7 +87,7 @@ class ColumCityCouncilSpider(LegistarSpider):
                     end=None,
                     all_day=False,
                     time_notes="",
-                    location={"name": "", "address": ""},
+                    location=self.location,
                     links=[],
                     source=self.source_url,
                 )
@@ -91,6 +105,7 @@ class ColumCityCouncilSpider(LegistarSpider):
         for event in events:
             start = self.legistar_start(event)
             if start:
+                self.legistar_dates.add(start.date())
                 name = event.get("Name", "")
                 title = name if isinstance(name, str) else name.get("label", "No Title")
                 meeting = Meeting(
@@ -101,7 +116,7 @@ class ColumCityCouncilSpider(LegistarSpider):
                     end=None,
                     all_day=False,
                     time_notes="",
-                    location=self._parse_location(event),
+                    location=self.location,
                     links=self.legistar_links(event),  # base class method
                     source=self.legistar_source(event),  # base class method
                 )
@@ -180,12 +195,3 @@ class ColumCityCouncilSpider(LegistarSpider):
         if "council" in name_label:
             return CITY_COUNCIL
         return NOT_CLASSIFIED
-
-    def _parse_location(self, item):
-        location = {"name": "", "address": ""}
-        meeting_location = item.get("Meeting Location", "")
-        if isinstance(meeting_location, dict):
-            location["address"] = meeting_location.get("label", "")
-        else:
-            location["address"] = meeting_location or ""
-        return location
