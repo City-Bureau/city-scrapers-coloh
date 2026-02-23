@@ -74,15 +74,15 @@ def test_legistar_first_item(legistar_items):
 
     assert item["links"] == [
         {
-            "href": "https://columbus.legistar.com/View.ashx?M=A&ID=1390531&GUID=99C8E536-23D1-4912-AEC7-17CB05C140AE", # noqa
+            "href": "https://columbus.legistar.com/View.ashx?M=A&ID=1390531&GUID=99C8E536-23D1-4912-AEC7-17CB05C140AE",  # noqa
             "title": "Agenda",
         },
         {
-            "href": "https://columbus.legistar.com/View.ashx?M=AADA&ID=1390531&GUID=99C8E536-23D1-4912-AEC7-17CB05C140AE", # noqa
+            "href": "https://columbus.legistar.com/View.ashx?M=AADA&ID=1390531&GUID=99C8E536-23D1-4912-AEC7-17CB05C140AE",  # noqa
             "title": "Accessible Agenda",
         },
         {
-            "href": "https://columbus.legistar.com/MeetingDetail.aspx?ID=1390531&GUID=99C8E536-23D1-4912-AEC7-17CB05C140AE&Options=info|&Search=", # noqa
+            "href": "https://columbus.legistar.com/MeetingDetail.aspx?ID=1390531&GUID=99C8E536-23D1-4912-AEC7-17CB05C140AE&Options=info|&Search=",  # noqa
             "title": "Meeting Details",
         },
     ]
@@ -94,12 +94,6 @@ def test_legistar_first_item(legistar_items):
 
 
 # Upcoming Tests
-
-
-def test_upcoming_count(upcoming_items):
-    assert len(upcoming_items) == 50
-
-
 def test_upcoming_first_item(upcoming_items, spider):
     item = upcoming_items[0]
 

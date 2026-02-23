@@ -25,26 +25,29 @@ class ColumCityCouncilSpider(LegistarSpider):
         "address": "90 West Broad Street, Columbus, OH, 43215",
     }
 
-    custom_settings = {"ROBOTSTXT_OBEY": False}
+    custom_settings = {
+        "ROBOTSTXT_OBEY": False,
+        "CONCURRENT_REQUESTS": 1,
+    }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.since_year = 2003
-        self.legistar_dates = set()  # store scraped legistar dates here
+        self.legistar_keys = set()  # Store semantic dedupe keys from Legistar
 
     def start_requests(self):
-        # 1. Legistar historical data first
+        # Legistar (priority source)
         yield scrapy.Request(
             self.start_urls[0],
             callback=self.parse,
         )
 
-        # 2. Upcoming meetings, from calendar API
-
+    # Upcoming meetings, from calendar API
     def parse(self, response):
-        # after legistar finishes, trigger upcoming request
+        # Parse Legistar meetings first
         yield from super().parse(response)
 
+        # After Legistar completes → request upcoming meetings from calendar API
         now = datetime.now()
         end = now + relativedelta(months=12)
 
@@ -65,10 +68,41 @@ class ColumCityCouncilSpider(LegistarSpider):
             ),
             callback=self.parse_upcoming,
             dont_filter=True,
+            priority=-10,
         )
+
+    def parse_legistar(self, events):
+        for event in events:
+            start = self.legistar_start(event)
+            if not start:
+                continue
+            name = event.get("Name", "")
+            title = name if isinstance(name, str) else name.get("label", "No Title")
+            classification = self._parse_classification(event)
+            meeting = Meeting(
+                title=title,
+                description="",
+                classification=classification,
+                start=start,
+                end=None,
+                all_day=False,
+                time_notes="",
+                location=self.location,
+                links=self.legistar_links(event),  # base class method
+                source=self.legistar_source(event),  # base class method
+            )
+            meeting["status"] = self._get_status(meeting)
+            meeting["id"] = self._get_id(meeting)
+
+            # Semantic dedupe key
+            key = (meeting["start"], meeting["classification"])
+            self.legistar_keys.add(key)
+
+            yield meeting
 
     def parse_upcoming(self, response):
         result = response.json()
+
         for day in result.get("data", []):
             for item in day.get("Items", []):
                 if item.get("Name") == "No Meetings":
@@ -76,13 +110,16 @@ class ColumCityCouncilSpider(LegistarSpider):
                 start = self._parse_upcoming_start(item)
                 if not start:
                     continue
-                # skip if this date already exists in legistar data
-                if start.date() in self.legistar_dates:
+                classification = self._parse_classification(item)
+                # Duplicate check
+                key = (start, classification)
+                if key in self.legistar_keys:
                     continue
+
                 meeting = Meeting(
                     title=item.get("Name", "No Title"),
                     description="",
-                    classification=self._parse_classification(item),
+                    classification=classification,
                     start=start,
                     end=None,
                     all_day=False,
@@ -97,32 +134,12 @@ class ColumCityCouncilSpider(LegistarSpider):
 
     def _parse_upcoming_start(self, item):
         try:
-            return datetime.strptime(item.get("DateTime", ""), "%m/%d/%Y %I:%M:%S %p")
+            return datetime.strptime(
+                item.get("DateTime", ""),
+                "%m/%d/%Y %I:%M:%S %p",
+            )
         except (ValueError, TypeError):
             return None
-
-    def parse_legistar(self, events):
-        for event in events:
-            start = self.legistar_start(event)
-            if start:
-                self.legistar_dates.add(start.date())
-                name = event.get("Name", "")
-                title = name if isinstance(name, str) else name.get("label", "No Title")
-                meeting = Meeting(
-                    title=title,
-                    description="",
-                    classification=self._parse_classification(event),
-                    start=start,
-                    end=None,
-                    all_day=False,
-                    time_notes="",
-                    location=self.location,
-                    links=self.legistar_links(event),  # base class method
-                    source=self.legistar_source(event),  # base class method
-                )
-                meeting["status"] = self._get_status(meeting)
-                meeting["id"] = self._get_id(meeting)
-                yield meeting
 
     def _parse_legistar_events(self, response):
         events_table = response.css("table.rgMasterTable")[0]
@@ -188,7 +205,7 @@ class ColumCityCouncilSpider(LegistarSpider):
     def _parse_classification(self, item):
         name = item.get("Name", "")
         name_label = (name if isinstance(name, str) else name.get("label", "")).lower()
-        if "committee" in name_label:
+        if "committee" in name_label or "zoning" in name_label:
             return COMMITTEE
         if "board" in name_label:
             return BOARD
