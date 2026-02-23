@@ -48,6 +48,10 @@ class ColumCityCouncilSpider(LegistarSpider):
         yield from super().parse(response)
 
         # After Legistar completes → request upcoming meetings from calendar API
+        if getattr(self, "_api_requested", False):
+            return
+        self._api_requested = True
+
         now = datetime.now()
         end = now + relativedelta(months=12)
 
