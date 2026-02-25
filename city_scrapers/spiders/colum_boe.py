@@ -13,7 +13,7 @@ from dateutil.relativedelta import relativedelta
 class ColumBoeSpider(CityScrapersSpider):
     name = "colum_boe"
     agency = "Columbus Board of Education"
-    timezone = "America/Chicago"
+    timezone = "America/New_York"
     api_url = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeetingsList?open&0.{random_digit}"  # noqa
     detail_url = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeeting?open&0.{random_digit}"  # noqa
     get_agenda_url = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetAgenda?open&0.{random_digit}"  # noqa
