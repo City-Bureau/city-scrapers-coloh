@@ -1,0 +1,6115 @@
+[
+    {
+        "unique": "DQ3VPX80F260",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "1",
+        "preliveoak": "",
+        "numberdate": "20260217",
+        "unid": "0F367E997B65899685258D770080F260"
+    },
+    {
+        "unique": "DR2MCY5A9EBE",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260209",
+        "unid": "2B3472B79A30653185258D96005A9EBE"
+    },
+    {
+        "unique": "DQ3VR580F469",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260203",
+        "unid": "AFDA5D7D24C147AF85258D770080F469"
+    },
+    {
+        "unique": "DPFS2D708D8F",
+        "name": "Postponed to February 3, 2026--REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260127",
+        "unid": "767F5746D5E421E785258D6300708D8F"
+    },
+    {
+        "unique": "DQ6PVX66865B",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260122",
+        "unid": "E5F5D74C2F0BFD4185258D7A0066865B"
+    },
+    {
+        "unique": "DQ6JNJ4E0133",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260110",
+        "unid": "46FC62D170C7DAAB85258D7A004E0133"
+    },
+    {
+        "unique": "DF3K4Y501F1A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260106",
+        "unid": "4E0EBABA883B3C2685258C5700501F1A"
+    },
+    {
+        "unique": "DF3K6E5033B5",
+        "name": "2026 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20260106",
+        "unid": "C05374EB66F10E3985258C57005033B5"
+    },
+    {
+        "unique": "DF3K485002C6",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251216",
+        "unid": "D8FCE68B8A79666B85258C57005002C6"
+    },
+    {
+        "unique": "DNKRQB6F1389",
+        "name": "POLICY AND GOVERNANCE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251208",
+        "unid": "8824A9AB2C32838885258D47006F1389"
+    },
+    {
+        "unique": "DBVMYK5C9975",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251202",
+        "unid": "EED4670789655B1385258BF1005C9975"
+    },
+    {
+        "unique": "DBVMXA5C83BD",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251118",
+        "unid": "FF3BA5C8909B232B85258BF1005C83BD"
+    },
+    {
+        "unique": "DNAKT95360E8",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251113",
+        "unid": "9446C0AFEF33F9EB85258D3E005360E8"
+    },
+    {
+        "unique": "DBVMVU5C614B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251105",
+        "unid": "BC5288A9CC46AFDF85258BF1005C614B"
+    },
+    {
+        "unique": "DBVMS65C4627",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251021",
+        "unid": "E7AB10DB00DA48B585258BF1005C4627"
+    },
+    {
+        "unique": "DMAJR44E611F",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251016",
+        "unid": "FDB9A218A21A91EA85258D1E004E611F"
+    },
+    {
+        "unique": "DBVMTD5C497E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20251007",
+        "unid": "FCA1B3706BEA34A285258BF1005C497E"
+    },
+    {
+        "unique": "DBVMUJ5C4D5D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250916",
+        "unid": "F3C1B8D224E47F2A85258BF1005C4D5D"
+    },
+    {
+        "unique": "DLBJCT4B56F8",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250911",
+        "unid": "38FC63BD4AAC322885258CFF004B56F8"
+    },
+    {
+        "unique": "DL8P4762C1DA",
+        "name": "POLICY AND GOVERNANCE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250908",
+        "unid": "9D4701928BBE47E485258CFC0062C1DA"
+    },
+    {
+        "unique": "DBVMQZ5C43F9",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250902",
+        "unid": "B577D57758651FEA85258BF1005C43F9"
+    },
+    {
+        "unique": "DBVMWU5C0DAD",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250819",
+        "unid": "93590DD1AD6C158185258BF1005C0DAD"
+    },
+    {
+        "unique": "DKFK7A5075A7",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250813",
+        "unid": "BDD1D4DAA2982A4685258CE3005075A7"
+    },
+    {
+        "unique": "DKF4780A2378",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250812",
+        "unid": "7A1EAC3B6981879485258CE3000A2378"
+    },
+    {
+        "unique": "DBVMVM5C0B1B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250805",
+        "unid": "80D0ADF70D01665785258BF1005C0B1B"
+    },
+    {
+        "unique": "DJ5JFT4D0558",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250708",
+        "unid": "8348FEBE3A78CEE385258CB9004D0558"
+    },
+    {
+        "unique": "DBVMUE5C07C7",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250626",
+        "unid": "EB44713371DF207185258BF1005C07C7"
+    },
+    {
+        "unique": "DBVMSM5BEA5E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250617",
+        "unid": "B27D213C40DB2F2285258BF1005BEA5E"
+    },
+    {
+        "unique": "DBVNMN608B14",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250612",
+        "unid": "C505C046B130219C85258BF100608B14"
+    },
+    {
+        "unique": "DBVNEQ5F71E5",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250611",
+        "unid": "554261C90DB6978085258BF1005F71E5"
+    },
+    {
+        "unique": "DGNLQY57BCC9",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250610",
+        "unid": "FC3474B9C4E7741285258C8A0057BCC9"
+    },
+    {
+        "unique": "DHBS6V69D5FA",
+        "name": "POLICY AND GOVERNANCE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250609",
+        "unid": "309959D62CCB988285258C9F0069D5FA"
+    },
+    {
+        "unique": "DBVMR55BDA6D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250603",
+        "unid": "3BC4351E5FB1220785258BF1005BDA6D"
+    },
+    {
+        "unique": "DBVMPK5BCE59",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250520",
+        "unid": "AFE655FF46B24CC885258BF1005BCE59"
+    },
+    {
+        "unique": "DBVNFF5F785D",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250514",
+        "unid": "862061ED3A7688CF85258BF1005F785D"
+    },
+    {
+        "unique": "DBVNRC60D609",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250513",
+        "unid": "87D8139E0FC1FB1285258BF10060D609"
+    },
+    {
+        "unique": "DBVNN5608D80",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250508",
+        "unid": "DD48DB5C84E5EDB585258BF100608D80"
+    },
+    {
+        "unique": "DBVMMR5BB720",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250506",
+        "unid": "BB6EF1F03C143F5985258BF1005BB720"
+    },
+    {
+        "unique": "DFSLUM5845F6",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250417",
+        "unid": "EC9B458A226AE99985258C6E005845F6"
+    },
+    {
+        "unique": "DBVMLK5BB400",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250415",
+        "unid": "DB784604937A291D85258BF1005BB400"
+    },
+    {
+        "unique": "DFCP96637B85",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250409",
+        "unid": "F4FA5D4FA23B25E485258C6000637B85"
+    },
+    {
+        "unique": "DFCP9H637EC8",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20250408",
+        "unid": "A58E9153D5B6F2CB85258C6000637EC8"
+    },
+    {
+        "unique": "DBVMGZ5AFD3C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250401",
+        "unid": "B4C2100EBEF0FCD485258BF1005AFD3C"
+    },
+    {
+        "unique": "DEUHTL49FDE8",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250327",
+        "unid": "04716012151679C785258C500049FDE8"
+    },
+    {
+        "unique": "DBVMFS5AF209",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250318",
+        "unid": "C4D85E3A6EE8FC8B85258BF1005AF209"
+    },
+    {
+        "unique": "DBVNLB606C62",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250313",
+        "unid": "C1705E56798DD07885258BF100606C62"
+    },
+    {
+        "unique": "DBVNE45F6BD7",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250312",
+        "unid": "320B27CDE194D25585258BF1005F6BD7"
+    },
+    {
+        "unique": "DBVNPB60B3D0",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250311",
+        "unid": "E1C96215A077764885258BF10060B3D0"
+    },
+    {
+        "unique": "DBWSWX74BD1E",
+        "name": "POLICY AND GOVERNANCE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250310",
+        "unid": "A50235F3ABF9E25B85258BF20074BD1E"
+    },
+    {
+        "unique": "DE2LC255D7A9",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250306",
+        "unid": "9D09517178291B8985258C360055D7A9"
+    },
+    {
+        "unique": "DBVMEJ5AE542",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250304",
+        "unid": "FCDF39FFE304AFB485258BF1005AE542"
+    },
+    {
+        "unique": "DBVMEV5ACA04",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250218",
+        "unid": "99C2793783A9DA1085258BF1005ACA04"
+    },
+    {
+        "unique": "DBVNDG5F6816",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20250212",
+        "unid": "90B3B734CCFCD18D85258BF1005F6816"
+    },
+    {
+        "unique": "DDRNMS608B7F",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20250211",
+        "unid": "BE2850F468CDF18C85258C2D00608B7F"
+    },
+    {
+        "unique": "DBVMDG5ABBC8",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20250204",
+        "unid": "E7308164BBFB523385258BF1005ABBC8"
+    },
+    {
+        "unique": "DDFL4854B0DB",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20250203",
+        "unid": "363EE143A59ACF5A85258C230054B0DB"
+    },
+    {
+        "unique": "DBVMCE5A93AB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20250121",
+        "unid": "ACA00577BCBA1DC185258BF1005A93AB"
+    },
+    {
+        "unique": "DCRJ544B733D",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250109",
+        "unid": "9570A53CEAC5F10785258C0D004B733D"
+    },
+    {
+        "unique": "D5W7JB177097",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250107",
+        "unid": "022E52FEEDEAFB6A85258B3200177097"
+    },
+    {
+        "unique": "D92Q2G671D4F",
+        "name": "2025 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20250107",
+        "unid": "9F561B8E1750733985258B9600671D4F"
+    },
+    {
+        "unique": "D5W7G717640A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241217",
+        "unid": "D68829A4E35991C785258B320017640A"
+    },
+    {
+        "unique": "DBMRZL6D6DBA",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241211",
+        "unid": "FF1336CF3542740985258BE9006D6DBA"
+    },
+    {
+        "unique": "DBMSA66E5876",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241210",
+        "unid": "F05FBB1516E646DB85258BE9006E5876"
+    },
+    {
+        "unique": "DBPK5L501800",
+        "name": "POLICY AND GOVERNANCE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241209",
+        "unid": "12846F5841FC2FB385258BEB00501800"
+    },
+    {
+        "unique": "D5W7E317501E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241203",
+        "unid": "47F0406731C4C37485258B320017501E"
+    },
+    {
+        "unique": "DB5NTL610B5B",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241202",
+        "unid": "CF56ACD207F35AEA85258BD900610B5B"
+    },
+    {
+        "unique": "DB2KA950E47F",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241121",
+        "unid": "89AA4740DD1089B785258BD60050E47F"
+    },
+    {
+        "unique": "D5W7BX174220",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241119",
+        "unid": "191C25FA5B7B6BFB85258B3200174220"
+    },
+    {
+        "unique": "DASPFD646436",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241114",
+        "unid": "C32256FCB5E115C085258BCE00646436"
+    },
+    {
+        "unique": "D5939U05C69B",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241113",
+        "unid": "F37317332C0AFD8985258B1D0005C69B"
+    },
+    {
+        "unique": "DATSDP723564",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241112",
+        "unid": "29AB9FB4DA0FA6A085258BCF00723564"
+    },
+    {
+        "unique": "D5W79R1730CE",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241106",
+        "unid": "9E544205FE7B9F1185258B32001730CE"
+    },
+    {
+        "unique": "DAJMSU5CB31E",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241104",
+        "unid": "CE839B0CC87091EC85258BC6005CB31E"
+    },
+    {
+        "unique": "D5W77B17159D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20241015",
+        "unid": "8E364EC65E11178085258B320017159D"
+    },
+    {
+        "unique": "D9QMMR5BF43A",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241009",
+        "unid": "B981E0F021857E2A85258BAC005BF43A"
+    },
+    {
+        "unique": "D9QMW35AE776",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241008",
+        "unid": "9B2D4A5C66E05C6985258BAC005AE776"
+    },
+    {
+        "unique": "D5W7551705A3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20241001",
+        "unid": "6A75D21A9024DF5A85258B32001705A3"
+    },
+    {
+        "unique": "D5W72X16D595",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240917",
+        "unid": "E524DAFE2ABDD70F85258B320016D595"
+    },
+    {
+        "unique": "D593S6082DEB",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20240916",
+        "unid": "B6C972A4D1FEAAF185258B1D00082DEB"
+    },
+    {
+        "unique": "D92S3Y70BE7A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240916",
+        "unid": "11D38AD05400E7B285258B960070BE7A"
+    },
+    {
+        "unique": "D5938B0571CF",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240911",
+        "unid": "D8075D0AD8DF688785258B1D000571CF"
+    },
+    {
+        "unique": "D593HN06F7B5",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240910",
+        "unid": "3BF3BD0D461A3CBF85258B1D0006F7B5"
+    },
+    {
+        "unique": "D8ULPG57840C",
+        "name": "POLICY AND GOVERNANCE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240909",
+        "unid": "0216445DE4DE16CB85258B900057840C"
+    },
+    {
+        "unique": "D5W6YT16C3A8",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240903",
+        "unid": "08863AE712EBA6C685258B320016C3A8"
+    },
+    {
+        "unique": "D5W6WP16B36F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240827",
+        "unid": "73650BCB736CBE8F85258B320016B36F"
+    },
+    {
+        "unique": "D8DJRQ4E7632",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240826",
+        "unid": "F22196C28C97547685258B81004E7A93"
+    },
+    {
+        "unique": "D5937P0554D0",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20240814",
+        "unid": "48C5DFE74548771985258B1D000554D0"
+    },
+    {
+        "unique": "D593GY06E038",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20240813",
+        "unid": "E98D3A700688E09985258B1D0006E038"
+    },
+    {
+        "unique": "D5W6UK16A32A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240806",
+        "unid": "4BF0B40E4CCC878C85258B320016A32A"
+    },
+    {
+        "unique": "D593RJ081CFE",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240805",
+        "unid": "FDA50CB7145B90FB85258B1D00081CFE"
+    },
+    {
+        "unique": "D6MKER50EF8F",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240701",
+        "unid": "DE40AA0AD616B95285258B490050EF8F"
+    },
+    {
+        "unique": "D5934Y04FEFD",
+        "name": "POLICY & GOVERNANCE COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240627",
+        "unid": "C288F2A22C80AE6285258B1D0004FEFD"
+    },
+    {
+        "unique": "CXCHSY49F75D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240625",
+        "unid": "9E8EF67967D100FD85258A600049F75D"
+    },
+    {
+        "unique": "CXCHWD4A38ED",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240618",
+        "unid": "F4838512CEFACFED85258A60004A38ED"
+    },
+    {
+        "unique": "D5937305442A",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240612",
+        "unid": "239DE03BCEE00DA985258B1D0005442A"
+    },
+    {
+        "unique": "CXCHYL4A4377",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240604",
+        "unid": "9C28BABAD1CBD5D085258A60004A4377"
+    },
+    {
+        "unique": "D593QW080A51",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240603",
+        "unid": "CDE672FBC16DFBD685258B1D00080A51"
+    },
+    {
+        "unique": "D5Q2ED01CFC1",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240529",
+        "unid": "8EB61AEB45C05C4085258B2C0001CFC1"
+    },
+    {
+        "unique": "D53QWV678896",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240522",
+        "unid": "A12925189805495585258B1700678896"
+    },
+    {
+        "unique": "CXCJ2S4A53AC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240521",
+        "unid": "74F496D7CDCC502A85258A60004A53AC"
+    },
+    {
+        "unique": "D4WM7C56DDCD",
+        "name": "COMMUNITY ENGAGEMENT & ADVOCACY COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240514",
+        "unid": "6F21F400EA2A070C85258B120056DDCD"
+    },
+    {
+        "unique": "D4WMB957400D",
+        "name": "POLICY & GOVERNANCE COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240513",
+        "unid": "99B97DA939F8127B85258B120057400D"
+    },
+    {
+        "unique": "D4WM9557167F",
+        "name": "EQUITABLE & TRANSPARENT RESOURCE MANAGEMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240508",
+        "unid": "890F199A638988A285258B120057167F"
+    },
+    {
+        "unique": "CXCJ5P4A78BC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240507",
+        "unid": "8039FCE2F30BEC8385258A60004A78BC"
+    },
+    {
+        "unique": "D4WLJW54E647",
+        "name": "ACADEMIC & FACILITY ALIGNMENT COMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240506",
+        "unid": "BB21727A50BFB5BE85258B120054E647"
+    },
+    {
+        "unique": "D4SNNT60ACB7",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240502",
+        "unid": "7DF59777E2DB962985258B0E0060ACB7"
+    },
+    {
+        "unique": "CXYHKB48D82D",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240425",
+        "unid": "A1705C8E922B041085258A740048DFB0"
+    },
+    {
+        "unique": "D2GVGQ77C9EF",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240425",
+        "unid": "FB486E113AD5EAF285258AC40077C9EF"
+    },
+    {
+        "unique": "CXCJ854A870B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240423",
+        "unid": "AB64BC7BAB1CDF7985258A60004A870B"
+    },
+    {
+        "unique": "CXCJAP4A907E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240409",
+        "unid": "0F1CE2BB6D4A8CC485258A60004A907E"
+    },
+    {
+        "unique": "D3Y3R50812AE",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20240403",
+        "unid": "90904297A132C67385258AF4000812AE"
+    },
+    {
+        "unique": "CXYHYD4AC204",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240328",
+        "unid": "C80D03EB08AC14DA85258A74004ACBA5"
+    },
+    {
+        "unique": "D2GVDT77A715",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240328",
+        "unid": "1E52C8573D25A95D85258AC40077A715"
+    },
+    {
+        "unique": "CXCJCZ4A9735",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240319",
+        "unid": "6F1DAEE18AD8742585258A60004A9735"
+    },
+    {
+        "unique": "CXCJFE4AAC03",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240305",
+        "unid": "560B1FF2D408A09485258A60004AAC03"
+    },
+    {
+        "unique": "CXYHGW487ED2",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240222",
+        "unid": "D65F189B4DF626EB85258A7400488F83"
+    },
+    {
+        "unique": "D2GVF477BEA2",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240222",
+        "unid": "3FA820C2250E31E585258AC40077BEA2"
+    },
+    {
+        "unique": "CXCJHU4AB306",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240220",
+        "unid": "073454CA9532001685258A60004AB306"
+    },
+    {
+        "unique": "D2DJ9A4C0FE6",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240213",
+        "unid": "CA6665CC9731492785258AC1004C0FE6"
+    },
+    {
+        "unique": "CXCJLC4ABD60",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240206",
+        "unid": "763B4CB83D5F14F085258A60004ABD60"
+    },
+    {
+        "unique": "D22RZJ702B22",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240203",
+        "unid": "CE4DD4FB1E4F49A185258AB600702B22"
+    },
+    {
+        "unique": "CLWMHV5A331F",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240125",
+        "unid": "D87E98FFE778DB6685258912005A3B0D"
+    },
+    {
+        "unique": "CZQPMN611203",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240125",
+        "unid": "88C06698B272727F85258AAC00611203"
+    },
+    {
+        "unique": "CXCJNN4AC2F2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240123",
+        "unid": "BF6E477DA5F9302885258A60004AC2F2"
+    },
+    {
+        "unique": "CZKMVB5C0B9A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240122",
+        "unid": "369D03B1F7FB7D5985258AA7005C0B9A"
+    },
+    {
+        "unique": "CKXNTC5B4EF2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240109",
+        "unid": "F7A65984A7599C0A852588F3005B4EF2"
+    },
+    {
+        "unique": "CKXP5L5B914C",
+        "name": "2024 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20240109",
+        "unid": "5C1A4518261D4DA4852588F3005B914C"
+    },
+    {
+        "unique": "CKXNVM5B5115",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231219",
+        "unid": "0B604203B961AA84852588F3005B5115"
+    },
+    {
+        "unique": "CW2H4R46AF95",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231213",
+        "unid": "8484C58B927709D685258A360046AF95"
+    },
+    {
+        "unique": "CYBP9T62F51E",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231213",
+        "unid": "2C4E504648CA616185258A7F0062F51E"
+    },
+    {
+        "unique": "CYES3870AC65",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231212",
+        "unid": "4D41880973BA796B85258A820070AC65"
+    },
+    {
+        "unique": "CXYP7U5FE135",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231207",
+        "unid": "8F9DBF7A485E390085258A74005FE135"
+    },
+    {
+        "unique": "CKXNXW5B525D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231205",
+        "unid": "4E72D30DA4F9271C852588F3005B525D"
+    },
+    {
+        "unique": "CKXP275B53D5",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231128",
+        "unid": "45250E9224A959DA852588F3005B53D5"
+    },
+    {
+        "unique": "CXMKY6541AB9",
+        "name": "SPECIAL BOARD MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231116",
+        "unid": "2A1D7AA60D2D243985258A6900541AB9"
+    },
+    {
+        "unique": "CXFRWC6FF698",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231115",
+        "unid": "7C99F3D15248E34285258A63006FF698"
+    },
+    {
+        "unique": "CKXNHT5B26CB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231108",
+        "unid": "EAF99A017FEC5875852588F3005B26CB"
+    },
+    {
+        "unique": "CLWLY657EC60",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231026",
+        "unid": "2DBA9B966E4FBB64852589120057F408"
+    },
+    {
+        "unique": "CULL4X54ADB5",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20231026",
+        "unid": "70942FC1C03AA4A385258A080054ADB5"
+    },
+    {
+        "unique": "CKXNL45B2820",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231017",
+        "unid": "B8BCB9B07DD8555F852588F3005B2820"
+    },
+    {
+        "unique": "CW2H2X467253",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231011",
+        "unid": "51D49482DC0D697E85258A3600467253"
+    },
+    {
+        "unique": "CKXNND5B2952",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20231003",
+        "unid": "3942E4EA1F7B4AD2852588F3005B2952"
+    },
+    {
+        "unique": "CVTJ4D4B5816",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230928",
+        "unid": "EFD65BE219230A8185258A2F004B5816"
+    },
+    {
+        "unique": "CVXGX745E596",
+        "name": "SPECIAL BOARD MEETING (BOARD RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230926",
+        "unid": "7CBEB31C5686A24785258A330045E596"
+    },
+    {
+        "unique": "CKXNQN5B2ABB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230919",
+        "unid": "0F1C1A999EF0214A852588F3005B2ABB"
+    },
+    {
+        "unique": "CVGPWW63FBFF",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230913",
+        "unid": "5CA9263FE74065F485258A240063FBFF"
+    },
+    {
+        "unique": "CLWLXZ57DF1B",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230907",
+        "unid": "05932720D609C870852589120057E6FC"
+    },
+    {
+        "unique": "CV7MDV5AC221",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230906",
+        "unid": "577CE9B8785217A485258A1B005AC221"
+    },
+    {
+        "unique": "CKXN7R5ADD89",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230905",
+        "unid": "5E8404C783C3008B852588F3005ADD89"
+    },
+    {
+        "unique": "CULNEA5F887C",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230824",
+        "unid": "1B1215BAEC61B2DA85258A08005F887C"
+    },
+    {
+        "unique": "CKXNA25ADF79",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230815",
+        "unid": "79052741F908C9FE852588F3005ADF79"
+    },
+    {
+        "unique": "CT9G73425D55",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230809",
+        "unid": "1F27A8212EF856A5852589DD00425D55"
+    },
+    {
+        "unique": "CKXNCB5AE0C4",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230801",
+        "unid": "7FA8FF786CEC6AEF852588F3005AE0C4"
+    },
+    {
+        "unique": "CKXNEN5AE1FC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230628",
+        "unid": "7DBFAA5C0428008B852588F3005AE1FC"
+    },
+    {
+        "unique": "CLWLXU57D42F",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230622",
+        "unid": "F041C96E9CFA4EB5852589120057D9CD"
+    },
+    {
+        "unique": "CKXMPJ5A50DB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230620",
+        "unid": "003A4D25F149BB6C852588F3005A50DB"
+    },
+    {
+        "unique": "CMJRGL6DF201",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230614",
+        "unid": "7FDDB4BDC996EB6B85258926006DF201"
+    },
+    {
+        "unique": "CS4LSU5504BD",
+        "name": "SPECIAL BOARD MEETING (BOARD RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230613",
+        "unid": "5E98DF66DD503543852589B8005504BD"
+    },
+    {
+        "unique": "CSEMY55D78E1",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230607",
+        "unid": "C53602344CBECFD9852589C2005D78E1"
+    },
+    {
+        "unique": "CKXN295ABA45",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230606",
+        "unid": "A6D93915731BF873852588F3005ABA45"
+    },
+    {
+        "unique": "CS4HJ748AE7F",
+        "name": "SPECIAL BOARD MEETING (BOARD RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230530",
+        "unid": "67A325DE0A7983D2852589B80048AE7F"
+    },
+    {
+        "unique": "CLWLXG57C66B",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230525",
+        "unid": "B00A9108F5A321B1852589120057CC70"
+    },
+    {
+        "unique": "CP5TUA7908A5",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230525",
+        "unid": "2169C142F432292C85258959007908A5"
+    },
+    {
+        "unique": "CKXN4J5ABC47",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230516",
+        "unid": "CE771877290DA35C852588F3005ABC47"
+    },
+    {
+        "unique": "CRV3CT7EE4F4",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230516",
+        "unid": "E4B92E3BBAB07C20852589B0007EE4F4"
+    },
+    {
+        "unique": "CR8KXX541278",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230515",
+        "unid": "1BE3F59CEFA7DC068525899C00541278"
+    },
+    {
+        "unique": "CMJRQL6E69CF",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230510",
+        "unid": "9F4199D6DB69893D85258926006E69CF"
+    },
+    {
+        "unique": "CR7RGS6D185E",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230504",
+        "unid": "AED5382CEE99B00B8525899B006D185E"
+    },
+    {
+        "unique": "CKXMRT5A528A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230503",
+        "unid": "2497EACF7EBBADFF852588F3005A528A"
+    },
+    {
+        "unique": "CR7RFK6CE840",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230502",
+        "unid": "38445B25F7B64A148525899B006CE840"
+    },
+    {
+        "unique": "CR7MSR57A20A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230501",
+        "unid": "3F6F0AD2842396528525899B0057A20A"
+    },
+    {
+        "unique": "CR4JE74C8D00",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230427",
+        "unid": "A5A80532AF7CB78385258998004C8D00"
+    },
+    {
+        "unique": "CMJRPX6E3E98",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230419",
+        "unid": "3D68D73E219EE65485258926006E3E98"
+    },
+    {
+        "unique": "CKXMU45A53EF",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230418",
+        "unid": "65DFA28A403FCDDF852588F3005A53EF"
+    },
+    {
+        "unique": "CKXMWD5A5576",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230404",
+        "unid": "670141F252DEB084852588F3005A5576"
+    },
+    {
+        "unique": "CLWLX457AB55",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230323",
+        "unid": "3D96B4ED597519F1852589120057B1DB"
+    },
+    {
+        "unique": "CPZKEY511AAA",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230323",
+        "unid": "A0B879E0C281F1108525897500511AAA"
+    },
+    {
+        "unique": "CQ4LF256489C",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230323",
+        "unid": "B09C5D20B943E5B8852589780056489C"
+    },
+    {
+        "unique": "CKXMFE5A13E8",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230321",
+        "unid": "21DE9A584BFB012C852588F3005A13E8"
+    },
+    {
+        "unique": "CMJRHS6E1538",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230315",
+        "unid": "25C7B000A0ACEB9885258926006E1538"
+    },
+    {
+        "unique": "CPKT6A754957",
+        "name": "SPECIAL BOARD MEETING (BOARD RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230309",
+        "unid": "2DF16EFA4C95B0A58525896700754957"
+    },
+    {
+        "unique": "CPKM4B59664F",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230308",
+        "unid": "DF1751C90ADB5705852589670059664F"
+    },
+    {
+        "unique": "CKXMHP5A16CB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230307",
+        "unid": "9CE8CD9159EDE055852588F3005A16CB"
+    },
+    {
+        "unique": "CPHTCY76CB19",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230307",
+        "unid": "FE46CACEDBD57A85852589650076CB19"
+    },
+    {
+        "unique": "CP8KN852A619",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230223",
+        "unid": "591AE1AC55B1D8F98525895C0052A619"
+    },
+    {
+        "unique": "CMJRF96DBE8A",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230222",
+        "unid": "EBFE635A874C9D3D85258926006DBE8A"
+    },
+    {
+        "unique": "CKXMLA5A1800",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230221",
+        "unid": "AA8729CB0642BD1A852588F3005A1800"
+    },
+    {
+        "unique": "CP4R4B697D7D",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230221",
+        "unid": "D976054FE04383F48525895800697D7D"
+    },
+    {
+        "unique": "CNWTSL78C93D",
+        "name": "SPECIAL BOARD MEETING (BOARD RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230218",
+        "unid": "527D5EE32AF274A6852589520078C93D"
+    },
+    {
+        "unique": "CKXMD45A0807",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230207",
+        "unid": "DB853511182F998B852588F3005A0807"
+    },
+    {
+        "unique": "CLWLL3568502",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230126",
+        "unid": "A65110A04A3C20A7852589120056A027"
+    },
+    {
+        "unique": "CN2RAP69210D",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230126",
+        "unid": "C81B8EFA814FBED1852589360069210D"
+    },
+    {
+        "unique": "CKXM65591ECC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230117",
+        "unid": "5DCC4D6AD1D77260852588F300591ECC"
+    },
+    {
+        "unique": "CMJRDE6D78F7",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230111",
+        "unid": "C68CEB95FAEFAD9985258926006D78F7"
+    },
+    {
+        "unique": "CKQJCU4C9596",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230103",
+        "unid": "3B5BC0D434908286852588EC004C9596"
+    },
+    {
+        "unique": "CKXP4S5B83A7",
+        "name": "2023 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20230103",
+        "unid": "5FFD1797A790B732852588F3005B83A7"
+    },
+    {
+        "unique": "CFFJ8T48A1C6",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221220",
+        "unid": "32F0ACB4FE5BFC50852588630048A1C6"
+    },
+    {
+        "unique": "CGGHSE49C980",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221214",
+        "unid": "EB29E95459AA44D4852588840049CD83"
+    },
+    {
+        "unique": "CKARHT6E2059",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221208",
+        "unid": "8137E7B3D0244AC9852588DE006E2059"
+    },
+    {
+        "unique": "CLQQN86A1631",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221208",
+        "unid": "5AB09F226B745CC08525890C006A1631"
+    },
+    {
+        "unique": "CFFJB348A3D5",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221206",
+        "unid": "7A971DB6246E4EDD852588630048A3D5"
+    },
+    {
+        "unique": "CKQF8G3DE1ED",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221201",
+        "unid": "FF8043C9043D52AF852588EC003DFD23"
+    },
+    {
+        "unique": "CLALLJ5715D0",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221121",
+        "unid": "53D31804ED0EECCA852588FE005715D0"
+    },
+    {
+        "unique": "CFFJ6F4896C7",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221115",
+        "unid": "F8DC152D3DA63E0085258863004896C7"
+    },
+    {
+        "unique": "CKUNXU61B4C1",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221110",
+        "unid": "81E8B63CEADEFF59852588F00061B4C1"
+    },
+    {
+        "unique": "CGGHSB49C24C",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221109",
+        "unid": "AECAE7816729D421852588840049C6A9"
+    },
+    {
+        "unique": "CFFJ43488EDD",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221101",
+        "unid": "750DC4FB9E7F57D38525886300488EDD"
+    },
+    {
+        "unique": "C43PE3642690",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221027",
+        "unid": "E6CBC6C88782A730852586F700642690"
+    },
+    {
+        "unique": "C8WJR64BFE4F",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221027",
+        "unid": "423F5AE0951119C485258792004C1812"
+    },
+    {
+        "unique": "CFFHZQ488488",
+        "name": "SPECIAL MEETING (REGULAR BOARD BUSINESS MEETING)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221025",
+        "unid": "7ED84F1DAE1C9B138525886300488488"
+    },
+    {
+        "unique": "CGGHS849BA2C",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221012",
+        "unid": "6D6236DAFAB80170852588840049BF64"
+    },
+    {
+        "unique": "CJAK4Y501E1B",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221010",
+        "unid": "2028A58852FC8E0D852588BE00501E1B"
+    },
+    {
+        "unique": "CFFHXB487496",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20221004",
+        "unid": "13646BA60C69B4FC8525886300487496"
+    },
+    {
+        "unique": "C8WJQF4BD5CE",
+        "name": "AUDIT & ACCOUNTABILTY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220929",
+        "unid": "4C6A8AE4F23C5A3985258792004BF983"
+    },
+    {
+        "unique": "CFFHQW486702",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220920",
+        "unid": "17ED5A0CB9FB67028525886300486702"
+    },
+    {
+        "unique": "CGGHS449B2DD",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220914",
+        "unid": "5296C3D32C15BAFE852588840049B724"
+    },
+    {
+        "unique": "CFFHNH485CDF",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220906",
+        "unid": "D981B948F4AD4E718525886300485CDF"
+    },
+    {
+        "unique": "C8WJKB4BA8E2",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220901",
+        "unid": "4643D96981D9D98485258792004BCD2B"
+    },
+    {
+        "unique": "CHNGNA449765",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220829",
+        "unid": "50CCAE9E746EC2A6852588AA00449765"
+    },
+    {
+        "unique": "CHMP89635A14",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220826",
+        "unid": "B7BB33B628BE20A5852588A900635A14"
+    },
+    {
+        "unique": "CD6R5S6C26D8",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220825",
+        "unid": "E104D217C2085C6C8525881A006C26D8"
+    },
+    {
+        "unique": "CHJGXW4600CA",
+        "name": "EMERGENCY BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220822",
+        "unid": "0F4F40E8A114773A852588A6004600CA"
+    },
+    {
+        "unique": "CFFHL5485267",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220816",
+        "unid": "A7A01A30445307068525886300485267"
+    },
+    {
+        "unique": "CGGHRH49A1DC",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220810",
+        "unid": "3D026731C3D163E9852588840049AB6F"
+    },
+    {
+        "unique": "CGZQRS6A9B4B",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220808",
+        "unid": "999F63B0D5C8D4DF85258895006A9B4B"
+    },
+    {
+        "unique": "CFFHFT480670",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220802",
+        "unid": "187F748D65EC641F8525886300480670"
+    },
+    {
+        "unique": "CGHNJ45FE19A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220726",
+        "unid": "2F176267119BB0CE85258885005FE19A"
+    },
+    {
+        "unique": "CEGJ9L4C1BD9",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220629",
+        "unid": "64CD2BD6430CF1EE85258844004C1BD9"
+    },
+    {
+        "unique": "CFNN9N5566D5",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220627",
+        "unid": "5CBCB330E896BFE28525886A005566D5"
+    },
+    {
+        "unique": "CFML5Q54EA6A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220624",
+        "unid": "215D206CC532BC4A852588690054EA6A"
+    },
+    {
+        "unique": "C8WJJM4B7273",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220623",
+        "unid": "419C4F789160EB7785258792004B9A12"
+    },
+    {
+        "unique": "C9SSZF6FC4CA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220621",
+        "unid": "232150458B38912D852587AE006FC4CA"
+    },
+    {
+        "unique": "C82N585E0481",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING (CANCELLED)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220615",
+        "unid": "31F44B12DCE2F69C85258776005E0481"
+    },
+    {
+        "unique": "CF8SEU701E9D",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220615",
+        "unid": "7CA2D19BCB0C95258525885C00701E9D"
+    },
+    {
+        "unique": "CF2QNX6A305C",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20220609",
+        "unid": "061F022979B4FE0385258856006A305C"
+    },
+    {
+        "unique": "C9SSWX6FBB55",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220607",
+        "unid": "4B4DE307A969DB47852587AE006FBB55"
+    },
+    {
+        "unique": "C8WJJB4B3771",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220526",
+        "unid": "671E2443F8CE04AB85258792004B681D"
+    },
+    {
+        "unique": "CD6R3A6BF747",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220526",
+        "unid": "5B23FA9BDE0A587B8525881A006BF747"
+    },
+    {
+        "unique": "C9SSUH6FB185",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220517",
+        "unid": "DAF017E428EBFBFD852587AE006FB185"
+    },
+    {
+        "unique": "CEDRNP6DDBF2",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220516",
+        "unid": "93F86ED9E520D65285258841006DDBF2"
+    },
+    {
+        "unique": "CE5PQB6409FC",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220512",
+        "unid": "449B78C99A2A1FB885258839006409FC"
+    },
+    {
+        "unique": "C82N4F5DE576",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220511",
+        "unid": "BC48EAD9D8D5450585258776005DE576"
+    },
+    {
+        "unique": "C9SSRZ6FA5F6",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220504",
+        "unid": "4CB2A746D2A391A4852587AE006FA5F6"
+    },
+    {
+        "unique": "CD6QY66B89D3",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220428",
+        "unid": "1FD4ADE9348B64DF8525881A006B89D3"
+    },
+    {
+        "unique": "CDTJ7J4BCF06",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220428",
+        "unid": "2E9A903BE54CE6728525882F004BCF06"
+    },
+    {
+        "unique": "C9SSNA6F9AFF",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220420",
+        "unid": "93C9A2D24992B774852587AE006F9AFF"
+    },
+    {
+        "unique": "C82N3J5DCC4F",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220413",
+        "unid": "C7E4D487579D220D85258776005DCC4F"
+    },
+    {
+        "unique": "C9SSGR6F757F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220405",
+        "unid": "32A05B125D57EA64852587AE006F757F"
+    },
+    {
+        "unique": "CCTJSP4E9CAF",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220331",
+        "unid": "7BB1998DC30BB8D48525880F004E9CAF"
+    },
+    {
+        "unique": "C8WJHX4AF0E5",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220324",
+        "unid": "754D2DDB5571C57B85258792004B28B6"
+    },
+    {
+        "unique": "CB8TS2770F10",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220324",
+        "unid": "1A8BC0516D17E71D852587DC00770F10"
+    },
+    {
+        "unique": "C9SSE46F6B9F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220315",
+        "unid": "6EB68CE29F4D3B99852587AE006F6B9F"
+    },
+    {
+        "unique": "CC3KRQ532817",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20220310",
+        "unid": "9B9F4D5095EF8329852587F700532817"
+    },
+    {
+        "unique": "C82M3B58320D",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220309",
+        "unid": "D5154526EE887140852587760058320D"
+    },
+    {
+        "unique": "CC7STM72E051",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220308",
+        "unid": "4B0E99FB041238BA852587FB0072E051"
+    },
+    {
+        "unique": "C9SSBD6F5580",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220301",
+        "unid": "45217F265BDA4510852587AE006F5580"
+    },
+    {
+        "unique": "C8WJF74AC165",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220224",
+        "unid": "B996E596B89E77D085258792004AE21F"
+    },
+    {
+        "unique": "CB8TMP768C25",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220224",
+        "unid": "D49F1AC74CF3A481852587DC00768C25"
+    },
+    {
+        "unique": "CBWL3N529FA5",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220224",
+        "unid": "AC260301F3E08087852587F200529FA5"
+    },
+    {
+        "unique": "CBMNFW5F9AF7",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220217",
+        "unid": "6B38A15C3CD6DEFC852587E9005F9AF7"
+    },
+    {
+        "unique": "C9SS8V6F4B96",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220215",
+        "unid": "5D988F43AAD4AB30852587AE006F4B96"
+    },
+    {
+        "unique": "CBE2CY019ADB",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20220210",
+        "unid": "43CE2AB3C7B1A4DE852587E200019ADB"
+    },
+    {
+        "unique": "C82M2C581DDA",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220209",
+        "unid": "CD8FA6DAC03DBE7E8525877600581DDA"
+    },
+    {
+        "unique": "CAUNE95F8B33",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220208",
+        "unid": "2D164068B4913C59852587D0005F8B33"
+    },
+    {
+        "unique": "C9SS6E6F405F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220201",
+        "unid": "18D18FC8A6D76A75852587AE006F405F"
+    },
+    {
+        "unique": "C8WJDN4A7BC0",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220127",
+        "unid": "6959F40BC590AB5985258792004AB142"
+    },
+    {
+        "unique": "CAUN3B5DDED9",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220126",
+        "unid": "DE79B474914EB7CF852587D0005DDED9"
+    },
+    {
+        "unique": "C9SS3K6F2B99",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220118",
+        "unid": "81994714B611788A852587AE006F2B99"
+    },
+    {
+        "unique": "CAH6EX1487BD",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20220113",
+        "unid": "1EAB59FE9A78432A852587C5001487BD"
+    },
+    {
+        "unique": "BWZPBZ5DDBFD",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220112",
+        "unid": "51D8FE292FBFA2C785258655005DF56E"
+    },
+    {
+        "unique": "CAJJEE4CAA72",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220112",
+        "unid": "223663DF0012825B852587C6004CAA72"
+    },
+    {
+        "unique": "C8MMP75BA41B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220104",
+        "unid": "AB35373EF5EB4DAF85258789005BA41B"
+    },
+    {
+        "unique": "C8UJXV4F5FF3",
+        "name": "2022 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20220104",
+        "unid": "342D6673CD83E03685258790004F84D4"
+    },
+    {
+        "unique": "BYHLY9535BDA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211221",
+        "unid": "D41624D07AB4B7218525868500535BDA"
+    },
+    {
+        "unique": "BTPLR957A93B",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211216",
+        "unid": "A783E4AF0523753D852585EB0057A93B"
+    },
+    {
+        "unique": "BWZP9M5DB835",
+        "name": "FINANCE & APPRPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211215",
+        "unid": "29D3D9750792A2F085258655005DD4D3"
+    },
+    {
+        "unique": "C9BUEB768203",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20211209",
+        "unid": "361775306EF16CC68525879F00768203"
+    },
+    {
+        "unique": "BYHLVK5359FC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211207",
+        "unid": "67A2BED46DE5F70385258685005359FC"
+    },
+    {
+        "unique": "C8PLVL57C7F8",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211118",
+        "unid": "89331795A753581F8525878B0057C7F8"
+    },
+    {
+        "unique": "BYHLSW53582C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211116",
+        "unid": "2FC751094247F5A0852586850053582C"
+    },
+    {
+        "unique": "C8GP7C610AAD",
+        "name": "GOVERNANCE, POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211111",
+        "unid": "D50A94D7BBEF8430852587840061250D"
+    },
+    {
+        "unique": "BWZP9E5DA4DA",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211110",
+        "unid": "21F25232DB1E17D785258655005DB50B"
+    },
+    {
+        "unique": "C8KMYF5C08F4",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211110",
+        "unid": "B9C6693F4475EA2085258787005C260F"
+    },
+    {
+        "unique": "BYHLQ4533620",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211103",
+        "unid": "947103A7D6E67BB18525868500533620"
+    },
+    {
+        "unique": "BV8SJG65F6B0",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211028",
+        "unid": "C39E1C1068B14ADA8525861C00661266"
+    },
+    {
+        "unique": "C7ZK62504692",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211026",
+        "unid": "14C8329963E8DD9B852587750050CED5"
+    },
+    {
+        "unique": "BYHLMF53323D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211019",
+        "unid": "C23C96569F622ACC852586850053323D"
+    },
+    {
+        "unique": "C7LK6750304B",
+        "name": "GOVERNANCE POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211014",
+        "unid": "0369114171856BA5852587680050490F"
+    },
+    {
+        "unique": "BWZP4Q5D8FA1",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211013",
+        "unid": "19EEFC3E85A64BC885258655005DA0B4"
+    },
+    {
+        "unique": "BYHLJM5325F0",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20211005",
+        "unid": "7439492B133EAAAF85258685005325F0"
+    },
+    {
+        "unique": "BV8SHX65D943",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210923",
+        "unid": "00E931C97A2082038525861C0065F383"
+    },
+    {
+        "unique": "C43PFS644088",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210923",
+        "unid": "7F67AED61CE7A568852586F700644088"
+    },
+    {
+        "unique": "BYHKJC4F8989",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210921",
+        "unid": "CD64E0C525779D8685258685004F8989"
+    },
+    {
+        "unique": "BWZP4F5D703A",
+        "name": "FINANCE & APPROPRIATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210915",
+        "unid": "25F5B9024545E9E085258655005D8692"
+    },
+    {
+        "unique": "BYHKM34F93D5",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210908",
+        "unid": "B92E704CB4B6EDAA85258685004F93D5"
+    },
+    {
+        "unique": "C5EHTJ478BAF",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210902",
+        "unid": "6538CC5C02293AE98525871F00479230"
+    },
+    {
+        "unique": "BV8SGB65BC94",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - RESCHEDULED FOR SEPTEMBER 2, 2021",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210826",
+        "unid": "38100DF909FE185A8525861C0065D59C"
+    },
+    {
+        "unique": "BYHKFD4F753C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210817",
+        "unid": "885BA5978C4E69E085258685004F753C"
+    },
+    {
+        "unique": "BWZNCH5D1001",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210811",
+        "unid": "9ACA7D0AB37A870D85258655005D18F6"
+    },
+    {
+        "unique": "BYHKCP4F67CB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210803",
+        "unid": "7B29B9882DBCE89585258685004F67CB"
+    },
+    {
+        "unique": "C57RMV6EB8FC",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210731",
+        "unid": "3167150CECAB256E8525871B006EB8FC"
+    },
+    {
+        "unique": "C57HXX4AB22B",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210730",
+        "unid": "EDF346F3A3C3D5868525871B004AB22B"
+    },
+    {
+        "unique": "BYHK7Q4F5992",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210629",
+        "unid": "F2F16A9A121AC0EC85258685004F5992"
+    },
+    {
+        "unique": "BV8SEP65A315",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210624",
+        "unid": "C47D9443AFAA24E88525861C0065B6F7"
+    },
+    {
+        "unique": "BVYNYP61E06F",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210624",
+        "unid": "9FFC8B9FB301BAE8852586340061E06F"
+    },
+    {
+        "unique": "BYHK4V4F4A50",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210615",
+        "unid": "D269949C58B9A34085258685004F4A50"
+    },
+    {
+        "unique": "C3CRAZ6B8D95",
+        "name": "GOVERNANCE POLICY & ADVOCACY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210610",
+        "unid": "761507EBDC1B22D1852586E0006B8D95"
+    },
+    {
+        "unique": "BWZMWM5CF8E4",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210609",
+        "unid": "4EE7D34C5522572885258655005D03F0"
+    },
+    {
+        "unique": "BYHJZ34EF7F2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210601",
+        "unid": "22543084A678955985258685004EF7F2"
+    },
+    {
+        "unique": "BVYP3Y620B27",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210527",
+        "unid": "93C450D9B0164A588525863400620B27"
+    },
+    {
+        "unique": "BYHJSA4D061E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210518",
+        "unid": "079509904C012F7D85258685004D061E"
+    },
+    {
+        "unique": "C2QM98561B36",
+        "name": "GOVERNANCE POLICY & ADVOCACY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210513",
+        "unid": "4E3423249364B921852586CC00561B36"
+    },
+    {
+        "unique": "BWZMW45CE196",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210512",
+        "unid": "6F7AD42C6D7936CE85258655005CEB5C"
+    },
+    {
+        "unique": "BYHJPL4CFC0B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210505",
+        "unid": "EFCE6960E471FC8085258685004CFC0B"
+    },
+    {
+        "unique": "C2CLXN564524",
+        "name": "SPECIAL BOARD WORK SESSION MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210427",
+        "unid": "7374A33229175468852586C000564524"
+    },
+    {
+        "unique": "BV8SCL65845A",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210422",
+        "unid": "78BF6FD53ED0C0FD8525861C00659E42"
+    },
+    {
+        "unique": "BYHJLP4CEFBA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210420",
+        "unid": "71EBF8C12B2B754185258685004CEFBA"
+    },
+    {
+        "unique": "BWZMVT5CCE74",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210414",
+        "unid": "FA817334E3CB1A9F85258655005CD8C7"
+    },
+    {
+        "unique": "BZVNZ761360D",
+        "name": "SPECIAL BOARD WORK SESSION MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210412",
+        "unid": "0C6EC349F64BC1F7852586B10061360D"
+    },
+    {
+        "unique": "BZTUSR7D7F3C",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210408",
+        "unid": "5EE55D10FE8FB0D6852586AF007D7F3C"
+    },
+    {
+        "unique": "BYHJGU4CE2CC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210407",
+        "unid": "B95F76F4D8A6FD5785258685004CE2CC"
+    },
+    {
+        "unique": "BV8SCA6560C9",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210325",
+        "unid": "FF4DB02FC33EB8F18525861C00657F6F"
+    },
+    {
+        "unique": "BVYPCZ60C3D4",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210325",
+        "unid": "6FC2294487C15022852586340060C3D4"
+    },
+    {
+        "unique": "BYHJDU4CBB01",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210316",
+        "unid": "A283A67C4200B8EF85258685004CBB01"
+    },
+    {
+        "unique": "BWZMVP5CB55D",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210310",
+        "unid": "31DD88425332DD6885258655005CBE96"
+    },
+    {
+        "unique": "BVWNHU5DE6CD",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210302",
+        "unid": "C78E7407CCF9644785258632005DE6CD"
+    },
+    {
+        "unique": "BYKM4S5977ED",
+        "name": "SPECIAL BOARD WORK SESSION MEETING (CANCELED)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210301",
+        "unid": "EBCF06E20CB019FE85258687005977ED"
+    },
+    {
+        "unique": "BV8SAT65286E",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210225",
+        "unid": "AE0E607CCD02DD258525861C00654E96"
+    },
+    {
+        "unique": "BVYPB860AAE5",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210225",
+        "unid": "D15B04B61F45F362852586340060AAE5"
+    },
+    {
+        "unique": "BYDSLN711019",
+        "name": "SPECIAL BOARD WORK SESSION MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210223",
+        "unid": "762F59138674F7BF8525868100711019"
+    },
+    {
+        "unique": "BVPSZJ74BD89",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210216",
+        "unid": "463DC11D592818D48525862B0074BD89"
+    },
+    {
+        "unique": "BY2LGS568971",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210211",
+        "unid": "1CC3019ED231F8408525867600568971"
+    },
+    {
+        "unique": "BWZMVC5CA204",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210210",
+        "unid": "F9DDE4F36124AA6985258655005CADB2"
+    },
+    {
+        "unique": "BY328J00F4C3",
+        "name": "PUBLIC ENGAGEMENT AND EXTERNAL COMMUNICATIONS COMMITEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210210",
+        "unid": "5D1D0852619F0954852586770000F4C3"
+    },
+    {
+        "unique": "BXVTGF736655",
+        "name": "SPECIAL BOARD WORK SESSION MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210208",
+        "unid": "FA748B6FCE6F89858525867100736655"
+    },
+    {
+        "unique": "BVPSWM74B10D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210202",
+        "unid": "914F85F36AEA73598525862B0074B10D"
+    },
+    {
+        "unique": "BV8S4M64ECA0",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210128",
+        "unid": "C9BA65740E33F8698525861C00651F01"
+    },
+    {
+        "unique": "BVYP8U606DF0",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210128",
+        "unid": "6E445AE7EC9BBF588525863400606DF0"
+    },
+    {
+        "unique": "BXF5ZT12B878",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210122",
+        "unid": "B1265F549FF2C9E9852586630012B878"
+    },
+    {
+        "unique": "BVPSP4739310",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210119",
+        "unid": "C604D341BDAB149B8525862B00739310"
+    },
+    {
+        "unique": "BWZMK65B3F49",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210113",
+        "unid": "628FCE1B95072EA385258655005B50E3"
+    },
+    {
+        "unique": "BX6NX461CAB4",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210112",
+        "unid": "3F6229A5A83890918525865A0061CAB4"
+    },
+    {
+        "unique": "ACQR286B33E8",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210105",
+        "unid": "1550CF3CAA4406298725800C006B33E8"
+    },
+    {
+        "unique": "BVPRZN707270",
+        "name": "2021 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20210105",
+        "unid": "D249D366BAEAF6558525862B00707270"
+    },
+    {
+        "unique": "BWANZE61A81E",
+        "name": "SPECIAL BOARD MEETING (Work Session)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201216",
+        "unid": "09D4EEECF0BB808B8525863E0061A81E"
+    },
+    {
+        "unique": "BQ9Q7Y65871A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201215",
+        "unid": "F1F2BBCD221F0E538525857D0065871A"
+    },
+    {
+        "unique": "BVYP7G6061DA",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201210",
+        "unid": "89DE0345DBF4536F85258634006061DA"
+    },
+    {
+        "unique": "BW3RJB6E328E",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201210",
+        "unid": "27D8EA66D011F5B585258637006E328E"
+    },
+    {
+        "unique": "BLNJN84DC188",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201209",
+        "unid": "7E1EFB8D2B3BD1A88525850A004DCAC6"
+    },
+    {
+        "unique": "BW4MPD5BDEE0",
+        "name": "PUBLIC ENGAGEMENT COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201209",
+        "unid": "B121BE861A6E35BE85258638005BDEE0"
+    },
+    {
+        "unique": "BVPKS34F688D",
+        "name": "SPECIAL BOARD MEETING (Work Session)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201202",
+        "unid": "CF7AC8F54C2CEAA38525862B004F688D"
+    },
+    {
+        "unique": "BQ9Q4W657CF2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201201",
+        "unid": "45A464F8FEFA90A98525857D00657CF2"
+    },
+    {
+        "unique": "BVHRWP6DECD8",
+        "name": "COLUMBUS CITY SCHOOLS RECORDS COMMISSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201124",
+        "unid": "6287EADE3C95D80185258625006DECD8"
+    },
+    {
+        "unique": "BQ9PZU657019",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201117",
+        "unid": "F6453DA4D0AF90098525857D00657019"
+    },
+    {
+        "unique": "BUUPW8668CC5",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201112",
+        "unid": "9877A83CE937E9078525861000668CC5"
+    },
+    {
+        "unique": "BLNJMU4DAA4A",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201111",
+        "unid": "F94DF7E8E14D97B28525850A004DB65E"
+    },
+    {
+        "unique": "BV96GV796661",
+        "name": "PUBLIC ENGAGEMENT COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201111",
+        "unid": "3D56CEF7602BBB2D8525861C00796661"
+    },
+    {
+        "unique": "BQ9PWT656445",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201104",
+        "unid": "D2DD1CCB2745839A8525857D00656445"
+    },
+    {
+        "unique": "BHFJAE4C3B3A",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201029",
+        "unid": "FB29E7B5825C9B81852584A3004C4584"
+    },
+    {
+        "unique": "BTPLP7577A5F",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201029",
+        "unid": "FF322B4E33614FEC852585EB00577A5F"
+    },
+    {
+        "unique": "BUMST87430C2",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201027",
+        "unid": "601DBCE8BEA5180A85258609007430C2"
+    },
+    {
+        "unique": "BQ9PTV655854",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201020",
+        "unid": "D5C6ACB7113518748525857D00655854"
+    },
+    {
+        "unique": "BLNJMP4D991D",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201014",
+        "unid": "F2B014C07426E8238525850A004DA7A1"
+    },
+    {
+        "unique": "BU4GN743FCF4",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20201008",
+        "unid": "5AA7D32F01E1815E852585F80043FCF4"
+    },
+    {
+        "unique": "BQ9PR36549C6",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20201006",
+        "unid": "297201F9D2F3BC638525857D006549C6"
+    },
+    {
+        "unique": "BTRJ4N4B0E80",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200930",
+        "unid": "2150E796647B4AD7852585ED004B0E80"
+    },
+    {
+        "unique": "BTRHV44A4766",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200929",
+        "unid": "8E8ED9E9211858AF852585ED004A4766"
+    },
+    {
+        "unique": "BHFJA54C3015",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200924",
+        "unid": "B9FAAF969B38E90F852584A3004C3726"
+    },
+    {
+        "unique": "BTFMA65A165F",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200924",
+        "unid": "31E6199DF7C13FF7852585E3005A165F"
+    },
+    {
+        "unique": "BQ9M5756F9EF",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200915",
+        "unid": "5613B46E687693938525857D0056F9EF"
+    },
+    {
+        "unique": "BT2UL37C844E",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200910",
+        "unid": "0995E80F861DCB43852585D6007C844E"
+    },
+    {
+        "unique": "BLNJMM4D874C",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200909",
+        "unid": "0C12183B25596F988525850A004D95E6"
+    },
+    {
+        "unique": "BQ9M2856E459",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200901",
+        "unid": "CF27D8B2AC1ECC558525857D0056E459"
+    },
+    {
+        "unique": "BHFJ9V4C2641",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200827",
+        "unid": "01D3CD4AC42015DA852584A3004C2B45"
+    },
+    {
+        "unique": "BQ9M3M55E751",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200818",
+        "unid": "B814A26FCC9A6BE58525857D0055E751"
+    },
+    {
+        "unique": "BS9QA668513F",
+        "name": "SPECIAL BOARD MEETING (Retreat)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200814",
+        "unid": "E8313E18B2FDC9B5852585BD0068513F"
+    },
+    {
+        "unique": "BRYNEH5F9398",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200813",
+        "unid": "53ACE31CC3327295852585B4005F9398"
+    },
+    {
+        "unique": "BLNJME4D6FFD",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200812",
+        "unid": "CCAFEF13D39169C88525850A004D84CD"
+    },
+    {
+        "unique": "BS8NNP60C1A6",
+        "name": "SPECIAL BOARD MEETING (Work Session)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200811",
+        "unid": "7E5A3F5147061DAA852585BC0060C1A6"
+    },
+    {
+        "unique": "BQ9L8D5542C3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200804",
+        "unid": "1D8226B81FC79BDA8525857D005542C3"
+    },
+    {
+        "unique": "BRYLRU56F46D",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200731",
+        "unid": "DFA58F6F2C5EEF98852585B40056F46D"
+    },
+    {
+        "unique": "BRTSN5737223",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200729",
+        "unid": "CAD2A3C36BDB79EE852585AF00737223"
+    },
+    {
+        "unique": "BRJPPM659A08",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200721",
+        "unid": "96C5BE30AD65CC2D852585A600659A08"
+    },
+    {
+        "unique": "BMFUQ578A4BE",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200630",
+        "unid": "796A0CE1AE7F8C35852585230078A4BE"
+    },
+    {
+        "unique": "BHFJ9M4C1D0A",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200625",
+        "unid": "B821F16F5DDE9065852584A3004C2322"
+    },
+    {
+        "unique": "BQQMQD5C567C",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200623",
+        "unid": "E08DC0518A2B98218525858C005C567C"
+    },
+    {
+        "unique": "BMFULN7897A3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200616",
+        "unid": "F004E1400BD03CDC85258523007897A3"
+    },
+    {
+        "unique": "BQEGHW43F413",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200611",
+        "unid": "9FA785D174817978852585820043F413"
+    },
+    {
+        "unique": "BLNJM94D5D86",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200610",
+        "unid": "7DC7F0FB1070AB6E8525850A004D6BF7"
+    },
+    {
+        "unique": "BMFUHU788156",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200602",
+        "unid": "137DF7028BD03E328525852300788156"
+    },
+    {
+        "unique": "BPUKK4522C90",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200529",
+        "unid": "433430F38498029F8525857000522C90"
+    },
+    {
+        "unique": "BPEMC55935FA",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200528",
+        "unid": "8375F83AFFAE54AC85258562005935FA"
+    },
+    {
+        "unique": "BPUTLU77F1D7",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200528",
+        "unid": "FC6EFE3532597177852585700077F1D7"
+    },
+    {
+        "unique": "BMFUEY786D64",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200519",
+        "unid": "B37A1722FEB0AC948525852300786D64"
+    },
+    {
+        "unique": "BNYJ6A4BA06A",
+        "name": "MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200518",
+        "unid": "2389E7359719782685258554004BAC08"
+    },
+    {
+        "unique": "BNPNBK5EECAB",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200514",
+        "unid": "8983988F7D7C40798525854B005EECAB"
+    },
+    {
+        "unique": "BLNJM64D49A1",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200513",
+        "unid": "C1686B0CAF54698F8525850A004D5790"
+    },
+    {
+        "unique": "BPEKWG53DA8C",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200512",
+        "unid": "1C4A8C3E0CFA2D64852585620053DA8C"
+    },
+    {
+        "unique": "BNYJ5V4B9019",
+        "name": "MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200511",
+        "unid": "87E35AFDC152569D85258554004B9A02"
+    },
+    {
+        "unique": "BPCH9S4772B7",
+        "name": "POLICY REVIEW COMMITTEE - SUBCOMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20200508",
+        "unid": "36735569F20E30E785258560004772B7"
+    },
+    {
+        "unique": "BMFUBD785392",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200505",
+        "unid": "67B5790DE7F38EA78525852300785392"
+    },
+    {
+        "unique": "BNXN8A5DF23A",
+        "name": "MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200427",
+        "unid": "FA7E2B82851075C385258553005DF23A"
+    },
+    {
+        "unique": "BHFJ9E4C1437",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200423",
+        "unid": "91C5977D23E49A33852584A3004C1A46"
+    },
+    {
+        "unique": "BNUMCL59B2F6",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200423",
+        "unid": "9E3226A0D29812A6852585500059B2F6"
+    },
+    {
+        "unique": "BMFMHL5A62BA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200421",
+        "unid": "800996662BD899B185258523005A62BA"
+    },
+    {
+        "unique": "BLNJDS4CA81A",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200415",
+        "unid": "8DBD2150CA82334F8525850A004CB7A5"
+    },
+    {
+        "unique": "BN9G7L427140",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200409",
+        "unid": "00DB931E338F21D08525853D00427140"
+    },
+    {
+        "unique": "BJZ2AG00E21A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200407",
+        "unid": "BD4AED9E39FE4D29852584D50000E21A"
+    },
+    {
+        "unique": "BLCK4G4FCB84",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200326",
+        "unid": "B0AAD523760DFC4C85258500004FCB84"
+    },
+    {
+        "unique": "BJZ2D400E41F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200318",
+        "unid": "AFD173FB119F3C39852584D50000E41F"
+    },
+    {
+        "unique": "BKPSXA72DB97",
+        "name": "POLICY REVIEW COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200312",
+        "unid": "828FCE8C660DED08852584EB0072DB97"
+    },
+    {
+        "unique": "BLNJ8T4BD8C7",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200311",
+        "unid": "74F5AB957B76703D8525850A004BF32A"
+    },
+    {
+        "unique": "BJZ2FQ00E73C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200303",
+        "unid": "088094CD7487B279852584D50000E73C"
+    },
+    {
+        "unique": "BHFJ8U4BFAC3",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200227",
+        "unid": "B87945C0F216508C852584A3004C04CE"
+    },
+    {
+        "unique": "BKUMV55820D7",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200227",
+        "unid": "9935124905F2F81B852584F0005820D7"
+    },
+    {
+        "unique": "BJZ2JC00EB2A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200218",
+        "unid": "D119A42228ABF8DB852584D50000EB2A"
+    },
+    {
+        "unique": "BLNHZ24ADB99",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200212",
+        "unid": "A98E34810227EF838525850A004AF580"
+    },
+    {
+        "unique": "BJZ2LY00ECFB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200204",
+        "unid": "DF6890B11CDB26AB852584D50000ECFB"
+    },
+    {
+        "unique": "B5EPNZ5C2467",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200123",
+        "unid": "34807F5EDE2C9D9E87258322005C306E"
+    },
+    {
+        "unique": "BBCRJX67D86C",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200123",
+        "unid": "B0FA5099CD2778A4872583E00067D86C"
+    },
+    {
+        "unique": "BJZ27U00DAED",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200121",
+        "unid": "6EA1D43C00AF57F1852584D50000DAED"
+    },
+    {
+        "unique": "B8W3D3770FA3",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200115",
+        "unid": "E0F9BFCBF461ECEA8725839100771CC3"
+    },
+    {
+        "unique": "BKFSBH71E3EA",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200109",
+        "unid": "929EE9BCE241BE55852584E30071E3EA"
+    },
+    {
+        "unique": "BJ9KED515A7F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200107",
+        "unid": "F76E2CE4193AAA9D852584BD005162D8"
+    },
+    {
+        "unique": "BJZ2RV0372BC",
+        "name": "2020 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20200107",
+        "unid": "E095A3603E2855C0852584D5000372BC"
+    },
+    {
+        "unique": "BEVL9Q53BA8F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191217",
+        "unid": "90DAF5F24A6A5A11852584510053BA8F"
+    },
+    {
+        "unique": "B8W3CR76F68B",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191211",
+        "unid": "FDFCBAF03A42E5C28725839100770952"
+    },
+    {
+        "unique": "BHEQ6C678251",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191205",
+        "unid": "A624768CBDC5AAE4852584A200678251"
+    },
+    {
+        "unique": "BEVLBX53BEEB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191203",
+        "unid": "78D6FD2570E8D7DA852584510053BEEB"
+    },
+    {
+        "unique": "BEVLE553C1EB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191119",
+        "unid": "C22CF937B93071F0852584510053C1EB"
+    },
+    {
+        "unique": "B8W3BD76E5E1",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191113",
+        "unid": "771009A81464A4E3872583910076F346"
+    },
+    {
+        "unique": "BEVLGB53C4F1",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191106",
+        "unid": "44161A8D2DCA80AF852584510053C4F1"
+    },
+    {
+        "unique": "B5EPJ76106F7",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191024",
+        "unid": "512FEF20293382A987258322006113B2"
+    },
+    {
+        "unique": "BH2KTE536789",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191024",
+        "unid": "8C6D42A2ADDBE31D8525849600536789"
+    },
+    {
+        "unique": "BEVLJH53C77F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191015",
+        "unid": "C3C54F36D139E974852584510053C77F"
+    },
+    {
+        "unique": "BGQGDD4349AB",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191010",
+        "unid": "1E0D45C719A920AF8525848C004349AB"
+    },
+    {
+        "unique": "B8W3AZ76D0D7",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191009",
+        "unid": "E09CBCE60686CA56872583910076DE9A"
+    },
+    {
+        "unique": "B8JUFT6D10DA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20191001",
+        "unid": "802920D9C02AD64B87258386006D10DA"
+    },
+    {
+        "unique": "BC7FFB3EE28F",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190926",
+        "unid": "6592B27FA4917BDF872583FB003EF48D"
+    },
+    {
+        "unique": "BGBPBX6301C4",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190926",
+        "unid": "D4CE58831280B5A38525847F006301C4"
+    },
+    {
+        "unique": "BFXRK36DDB80",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190924",
+        "unid": "3C29584D8231019685258473006DDB80"
+    },
+    {
+        "unique": "B8JUDN6D0EE4",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190917",
+        "unid": "A57B779AA92BD4CE87258386006D0EE4"
+    },
+    {
+        "unique": "B8W3AN76BF2A",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190911",
+        "unid": "11462596113D0C16872583910076CC1F"
+    },
+    {
+        "unique": "BFRKLZ527777",
+        "name": "SPECIAL BOARD OF EDUCATION MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190910",
+        "unid": "B042222F49075D938525846D00527777"
+    },
+    {
+        "unique": "B8JUBD6D0CE0",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190903",
+        "unid": "D452B4E8CAF840EE87258386006D0CE0"
+    },
+    {
+        "unique": "B5EPMW5C0D8C",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190829",
+        "unid": "BFE19384C0928F6E87258322005C1723"
+    },
+    {
+        "unique": "B8JU966D0A55",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190820",
+        "unid": "B1DC0904C350737287258386006D0A55"
+    },
+    {
+        "unique": "B8W3AJ76ACE5",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190814",
+        "unid": "3798923A98763974872583910076BB04"
+    },
+    {
+        "unique": "B8JU6X6D0837",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190806",
+        "unid": "3257303E7280529587258386006D0837"
+    },
+    {
+        "unique": "BEJH3M468C26",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190805",
+        "unid": "6DCEA77AAD84E67A8525844600468C26"
+    },
+    {
+        "unique": "BDHM8D59FDE8",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190725",
+        "unid": "D298B1ED145BB886852584250059FDE8"
+    },
+    {
+        "unique": "BDGMDF5ABCBF",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190717",
+        "unid": "7B02F81450B0752285258424005ABCBF"
+    },
+    {
+        "unique": "BDXGHU43F1D2",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190712",
+        "unid": "B89AA35442EE3047852584330043F1D2"
+    },
+    {
+        "unique": "B8JU4P6D0663",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190628",
+        "unid": "40D07E074F45ABB687258386006D0663"
+    },
+    {
+        "unique": "B5EPMJ5C0030",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190627",
+        "unid": "26475AD1165F748787258322005C0A31"
+    },
+    {
+        "unique": "BCWUMB72FE54",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190625",
+        "unid": "1C1D71052BD4AB7C852584120072FE54"
+    },
+    {
+        "unique": "B8JU2J6D0436",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190618",
+        "unid": "0048A9F7E1CCD4DF87258386006D0436"
+    },
+    {
+        "unique": "B8W3A4769BEC",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190612",
+        "unid": "797A8AAD6DC91F7B872583910076AA6C"
+    },
+    {
+        "unique": "B8JTY56D00AB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190604",
+        "unid": "707BEB5630DE456687258386006D00AB"
+    },
+    {
+        "unique": "B8JTVY6CFE85",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190521",
+        "unid": "295389541E86785387258386006CFE85"
+    },
+    {
+        "unique": "B8W39P768927",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190515",
+        "unid": "C2D79160798E345987258391007696D0"
+    },
+    {
+        "unique": "B8JTTP6CFB3A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190508",
+        "unid": "A597EB8B6A733D0B87258386006CFB3A"
+    },
+    {
+        "unique": "BBCTCX6DA46D",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190501",
+        "unid": "8462DAF3C72519FF872583E0006DA46D"
+    },
+    {
+        "unique": "BB4K8L50A6FD",
+        "name": "SPECIAL BOARD MEETING (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190430",
+        "unid": "582D5190248CCE39872583D80050A6FD"
+    },
+    {
+        "unique": "BBJNHB5FFC41",
+        "name": "SPECIAL BOARD MEETING (WORK SESSION)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190425",
+        "unid": "73F8CCA83A207D5D872583E6005FFC41"
+    },
+    {
+        "unique": "B8JTR76CF3A2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190416",
+        "unid": "9DBE4671076CC5B587258386006CF3A2"
+    },
+    {
+        "unique": "B8W39976770A",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190411",
+        "unid": "58CE2EF536D2D99B87258391007684EB"
+    },
+    {
+        "unique": "BAV2NP785782",
+        "name": "POLICY REVIEW COMMITTEE MEETING-CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190404",
+        "unid": "6B778E1F1ED26085872583D000785782"
+    },
+    {
+        "unique": "B7FSXF641CBD",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190402",
+        "unid": "81F9F1BE5A2DDC988725836300641CBD"
+    },
+    {
+        "unique": "BALU9G738473",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)-CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190328",
+        "unid": "D3D07B74FE968734872583C800738473"
+    },
+    {
+        "unique": "B5EPM55BEF77",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190326",
+        "unid": "AEF7BF1A191AE8EA87258322005BFA92"
+    },
+    {
+        "unique": "B7FSVD641A3E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190319",
+        "unid": "20E90CB78EEB4D9A8725836300641A3E"
+    },
+    {
+        "unique": "B8W38K7666F4",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190313",
+        "unid": "802937521EE371BB87258391007672C5"
+    },
+    {
+        "unique": "B7FSZK6420F3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190305",
+        "unid": "FA8824FD43F2D0A987258363006420F3"
+    },
+    {
+        "unique": "B9RRE46825C2",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190301",
+        "unid": "F13ED8DD1F4226B4872583AD006825C2"
+    },
+    {
+        "unique": "B97V59652537",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20190221",
+        "unid": "945478DF8041C48F8725839B00652537"
+    },
+    {
+        "unique": "B7FT3M642C0B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190219",
+        "unid": "26DFB85BCB64CFCC8725836300642C0B"
+    },
+    {
+        "unique": "B8W37676488F",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190213",
+        "unid": "2AF89A3646ECB5278725839100765F1D"
+    },
+    {
+        "unique": "B7FT67644048",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190205",
+        "unid": "5CF06D48E0134D878725836300644048"
+    },
+    {
+        "unique": "B8G4XK09B2D1",
+        "name": "SPECIAL BOARD WORK SESSION (RETREAT) - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190129",
+        "unid": "C5E581D0ECA60D4F872583840009B2D1"
+    },
+    {
+        "unique": "B8MM5M572013",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190123",
+        "unid": "11CEB3C9F86C935E8725838900572013"
+    },
+    {
+        "unique": "B7FSSF64003E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190122",
+        "unid": "C49182DA81DCEC73872583630064003E"
+    },
+    {
+        "unique": "AUXMWB5C940D",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190116",
+        "unid": "D8AB1AC1BE99DB0787258213005C9DAD"
+    },
+    {
+        "unique": "B8BVNR724394",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190115",
+        "unid": "6868F78E25CC17C38725837F00724394"
+    },
+    {
+        "unique": "B6HLR75681C0",
+        "name": "2019 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190108",
+        "unid": "67D451DAD3B4999C87258345005681C0"
+    },
+    {
+        "unique": "B6HLDY55BC8F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20190108",
+        "unid": "9B2ACA61265D6B5A872583450055BC8F"
+    },
+    {
+        "unique": "B7JKLY5260AE",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181219",
+        "unid": "A3D4D96B97D6D63E87258366005260AE"
+    },
+    {
+        "unique": "AUXNS45E13AA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181218",
+        "unid": "C6626287B24361CF87258213005E13AA"
+    },
+    {
+        "unique": "AUXMS75C35A8",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181212",
+        "unid": "AC47242037574A4287258213005C3D78"
+    },
+    {
+        "unique": "B2YTQ9704CD9",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20181206",
+        "unid": "56799762754CCE1C872582D400704CD9"
+    },
+    {
+        "unique": "B5MU6S6DFBB9",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181205",
+        "unid": "BB7F17CE38330B7287258329006DFBB9"
+    },
+    {
+        "unique": "AUXNTY5E1B2B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181204",
+        "unid": "53C0CC9F9B103CA887258213005E1B2B"
+    },
+    {
+        "unique": "AUWPAL606FC3",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181129",
+        "unid": "154DC3155D8BBCED8725821200606FC3"
+    },
+    {
+        "unique": "B6X2HA75972F",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181128",
+        "unid": "A6699DA3AF3F5482872583520075972F"
+    },
+    {
+        "unique": "B5MU5X6DF430",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181128",
+        "unid": "C27F3077FA0AFEC887258329006DF430"
+    },
+    {
+        "unique": "AUXNVV5E1D27",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181120",
+        "unid": "3AF32316DBE77B1387258213005E1D27"
+    },
+    {
+        "unique": "B5MU7K6DFE82",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181114",
+        "unid": "76D220101532B1E087258329006DFE82"
+    },
+    {
+        "unique": "AUXMPF5BD547",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181114",
+        "unid": "67133098391D4CB887258213005BDCA9"
+    },
+    {
+        "unique": "B6CM7858F76D",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181110",
+        "unid": "66C2584DEF3867B6872583400058F76D"
+    },
+    {
+        "unique": "AUXNYZ5E1F01",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181107",
+        "unid": "DB655105A41CEF2987258213005E1F01"
+    },
+    {
+        "unique": "B5FRQV66EA45",
+        "name": "SPECIAL BOARD WORK SESSION (RETREAT)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181030",
+        "unid": "8B136AF5FFD7FDD7872583230066EA45"
+    },
+    {
+        "unique": "B2YTMP7041C7",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20181025",
+        "unid": "3F90684694AED5E2872582D4007041C7"
+    },
+    {
+        "unique": "AUXP2V5E20BC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181016",
+        "unid": "BD4DD50B9E62489787258213005E20BC"
+    },
+    {
+        "unique": "AUXMMN5B61EF",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181010",
+        "unid": "51362B6769F0990687258213005B6935"
+    },
+    {
+        "unique": "AUXMX45CC90B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20181002",
+        "unid": "BDCCE00018C152FA87258213005CC90B"
+    },
+    {
+        "unique": "B4XK3U4FC110",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180930",
+        "unid": "8DE3999480D8769E87258313004FC110"
+    },
+    {
+        "unique": "AUWP6D5FD20B",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180927",
+        "unid": "1B210E67C6FC0B5987258212005FD20B"
+    },
+    {
+        "unique": "B2YTLH703ED3",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180927",
+        "unid": "6F5563E934F45BCF872582D400703ED3"
+    },
+    {
+        "unique": "B4LT3C63F646",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180920",
+        "unid": "AD37DDB1908D601A872583080063F646"
+    },
+    {
+        "unique": "B4LT2H63E6F6",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180919",
+        "unid": "542B933416CF0DBE872583080063E6F6"
+    },
+    {
+        "unique": "AUXN2Z5CD426",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180918",
+        "unid": "8E51362932F394E487258213005CD426"
+    },
+    {
+        "unique": "B4LSY5638402",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180917",
+        "unid": "4F6C3A4DB6B093F78725830800638402"
+    },
+    {
+        "unique": "B4BSMW5F97A5",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180913",
+        "unid": "47BA1757C40E4601872582FF005F97A5"
+    },
+    {
+        "unique": "B4BSNK5F9A9D",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180912",
+        "unid": "4B18F50AE58FB9D9872582FF005F9A9D"
+    },
+    {
+        "unique": "AUXMH25A94E6",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180912",
+        "unid": "4D1ABFEED4AC587787258213005A9AD7"
+    },
+    {
+        "unique": "B4BSLM5F6D7F",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180911",
+        "unid": "E1B58D0CD8F15540872582FF005F6D7F"
+    },
+    {
+        "unique": "B3XHQ3498A93",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180905",
+        "unid": "D23EACE9B89B54B5872582F300498A93"
+    },
+    {
+        "unique": "AUXMZ55CCFA1",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180904",
+        "unid": "77F9E867730797E087258213005CCFA1"
+    },
+    {
+        "unique": "B43KBA4E05BE",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180830",
+        "unid": "C264E48BD609A4B0872582F7004E05BE"
+    },
+    {
+        "unique": "B3Y2RC77CDAE",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180827",
+        "unid": "C39A018E55601F88872582F30077CDAE"
+    },
+    {
+        "unique": "AUWP5E5FCF90",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180823",
+        "unid": "F60410548709D67287258212005FCF90"
+    },
+    {
+        "unique": "AUXN4V5CD72F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180821",
+        "unid": "BD6E8FA463AABD2387258213005CD72F"
+    },
+    {
+        "unique": "B3FJRN4E4680",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180815",
+        "unid": "1A4A2DDB50ABA7B8872582E3004E4680"
+    },
+    {
+        "unique": "AUXMBH5A1887",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180815",
+        "unid": "D637BC649945003D87258213005A1FB8"
+    },
+    {
+        "unique": "AUXN6R5CD99F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180807",
+        "unid": "BCA12CD209AD812687258213005CD99F"
+    },
+    {
+        "unique": "B33S98718801",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180801",
+        "unid": "125A6415BD6C772E872582D700718801"
+    },
+    {
+        "unique": "B33L3E4C96B2",
+        "name": "POLICY REVIEW COMMITTEE MEETING-NO QUORUM",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180801",
+        "unid": "47810E95A7C76495872582D7004C96B2"
+    },
+    {
+        "unique": "AZHCYK72EB68",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180731",
+        "unid": "1BF89CCF8080EAEE872582A40072EB68"
+    },
+    {
+        "unique": "B2MPJN5B826F",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180719",
+        "unid": "04CF1F3C9D5E8CDD872582C9005B826F"
+    },
+    {
+        "unique": "B2AT6M5EBB37",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180712",
+        "unid": "D0732787DB496DC6872582BE005EBB37"
+    },
+    {
+        "unique": "AUXN8M5CDCCB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180629",
+        "unid": "E74D28180E338B9587258213005CDCCB"
+    },
+    {
+        "unique": "AY6K7Y508ECA",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180628",
+        "unid": "A1AC801F458A48728725827A00508ECA"
+    },
+    {
+        "unique": "AUWP4D5FCD08",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180627",
+        "unid": "11342D9545E991EC87258212005FCD08"
+    },
+    {
+        "unique": "AUXNBH5CDF7D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180619",
+        "unid": "3793D91D36077C0887258213005CDF7D"
+    },
+    {
+        "unique": "AZHD3T72F41E",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180618",
+        "unid": "8CCA78316ED85377872582A40072F41E"
+    },
+    {
+        "unique": "AUXM8V59B4FB",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180614",
+        "unid": "80593A29B2DE2750872582130059C354"
+    },
+    {
+        "unique": "AZHC5M6F8AC6",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180611",
+        "unid": "5F38C3B65C5528D2872582A4006F8AC6"
+    },
+    {
+        "unique": "AZHDPT762539",
+        "name": "AD HOC SEARCH FIRM SUBCOMMITTEE",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180608",
+        "unid": "6EBDF72CF6BE272D872582A400762539"
+    },
+    {
+        "unique": "AUXNDD5CE17E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180605",
+        "unid": "91CCE6E81083135387258213005CE17E"
+    },
+    {
+        "unique": "AZBCSF327425",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180605",
+        "unid": "B726AA8380D806058725829F00327425"
+    },
+    {
+        "unique": "AY5USR6AEF94",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180529",
+        "unid": "317511E0900607C387258279006AEF94"
+    },
+    {
+        "unique": "AY5UDE6A2083",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180522",
+        "unid": "34ADB603BB7B8D4687258279006A2083"
+    },
+    {
+        "unique": "AY5UEH6A2267",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180515",
+        "unid": "216631EC887968FD87258279006A2267"
+    },
+    {
+        "unique": "AUXNFC5CE53B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180515",
+        "unid": "2DBAFDF24D08F63787258213005CE53B"
+    },
+    {
+        "unique": "AYMVCS665562",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180511",
+        "unid": "3D91F1BF8AF102B48725828900665562"
+    },
+    {
+        "unique": "AUXM4X5931ED",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180510",
+        "unid": "404DFA5257F1ED528725821300593878"
+    },
+    {
+        "unique": "AX3J294817EF",
+        "name": "INNOVATION AND REFORM COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20180508",
+        "unid": "05F56501896CAF6987258257004817EF"
+    },
+    {
+        "unique": "AYCW296DA3F3",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180503",
+        "unid": "A56369C6C9364E7587258280006DA3F3"
+    },
+    {
+        "unique": "AU8TMH76908D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180501",
+        "unid": "A182C3F876B0DFEA872581FC0076908D"
+    },
+    {
+        "unique": "AY5UFP6A263F",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180501",
+        "unid": "ED8667B39445402A87258279006A263F"
+    },
+    {
+        "unique": "AY5UC46A14CF",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180430",
+        "unid": "17520D28AC34436187258279006A14CF"
+    },
+    {
+        "unique": "AXZMF950C9D0",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180427",
+        "unid": "F00E9431C15179FC872582750050C9D0"
+    },
+    {
+        "unique": "AY6JJE4D66B3",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180426",
+        "unid": "359AB41A3A1DA2C08725827A004D66B3"
+    },
+    {
+        "unique": "AUWNYL5FC9BB",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180426",
+        "unid": "B220048525C17E1687258212005FC9BB"
+    },
+    {
+        "unique": "AUXNHB5CE95A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180417",
+        "unid": "3251F11842D4AF5A87258213005CE95A"
+    },
+    {
+        "unique": "AXKKNH4B28DE",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180416",
+        "unid": "096D82ADAFF010BC87258267004B28DE"
+    },
+    {
+        "unique": "AUXLZF58C3C2",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180412",
+        "unid": "5B069296211611FA872582130058C9DC"
+    },
+    {
+        "unique": "AX3HVS4814A5",
+        "name": "INNOVATION AND REFORM COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20180410",
+        "unid": "FD8F7E7FBFD6C56487258257004814A5"
+    },
+    {
+        "unique": "AU8TKP768E5F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180404",
+        "unid": "3DA179BD82AFA3B0872581FC00768E5F"
+    },
+    {
+        "unique": "AX5NKN5D659B",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180327",
+        "unid": "E51F72DDDB0EA77587258259005D659B"
+    },
+    {
+        "unique": "AU8THV768C40",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180320",
+        "unid": "8F82A178C32017D5872581FC00768C40"
+    },
+    {
+        "unique": "AWUN945EC820",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180316",
+        "unid": "D78785F80D05EAB387258250005EC820"
+    },
+    {
+        "unique": "AUXLWL586148",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180315",
+        "unid": "B6CB3D2F19C1BAF28725821300586990"
+    },
+    {
+        "unique": "AX3J8448243D",
+        "name": "INNOVATION AND REFORM COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20180313",
+        "unid": "8524C2D1482AFFE9872582570048243D"
+    },
+    {
+        "unique": "AWKVBF73B33A",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180309",
+        "unid": "51F08873E963FF72872582470073B33A"
+    },
+    {
+        "unique": "AU8TG37689F7",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180306",
+        "unid": "8DFC4B51C3ADB2CD872581FC007689F7"
+    },
+    {
+        "unique": "AW7TWV6FFE8E",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180302",
+        "unid": "2851A7F04D62E0B48725823B006FFE8E"
+    },
+    {
+        "unique": "AW8NYE5AE9B1",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180228",
+        "unid": "D105027FF8D9771D8725823C005AE9B1"
+    },
+    {
+        "unique": "AUWNXL5FC4D9",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING -CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180222",
+        "unid": "8502EA38BAD24B8987258212005FC4D9"
+    },
+    {
+        "unique": "AW6NSR602881",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20180222",
+        "unid": "E2454359CA778A2F8725823A00603EAB"
+    },
+    {
+        "unique": "AU8TE9768783",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180220",
+        "unid": "6E3BBC284FA57A02872581FC00768783"
+    },
+    {
+        "unique": "AVYUK26DBAD4",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180219",
+        "unid": "5E59935D80B6250E87258234006DBAD4"
+    },
+    {
+        "unique": "AUXLU557A844",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180215",
+        "unid": "7B6A0F664E34EBEF872582130057B1DA"
+    },
+    {
+        "unique": "AVYUNM6E5F47",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180215",
+        "unid": "F6B7AD80896B0BC987258234006E5F47"
+    },
+    {
+        "unique": "AV5QLH66C493",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180212",
+        "unid": "919D09EA6F583E29872582190066C493"
+    },
+    {
+        "unique": "AU8TCD767D23",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180206",
+        "unid": "DBF3CACE89B06050872581FC00767D23"
+    },
+    {
+        "unique": "AV5QQU677771",
+        "name": "SPECIAL BOARD WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180130",
+        "unid": "3F0120CAA19EBFFB8725821900677771"
+    },
+    {
+        "unique": "ARUU6K75060B",
+        "name": "AUDIT & ACCOUNTABILITY COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20180125",
+        "unid": "BFEF76225415641E872581B00075060B"
+    },
+    {
+        "unique": "AVVV4H7EECC6",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180124",
+        "unid": "C2A848A1293278EA87258231007EECC6"
+    },
+    {
+        "unique": "AU8TA5765F97",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180123",
+        "unid": "F84258363EC19373872581FC00765F97"
+    },
+    {
+        "unique": "AUXLLA56479C",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180118",
+        "unid": "B0788B146BC975498725821300568401"
+    },
+    {
+        "unique": "AV3K7B4E9D26",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180116",
+        "unid": "639D3D127302EA7487258217004E9D26"
+    },
+    {
+        "unique": "AUPNR45FC8BA",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180110",
+        "unid": "550C4C381A967EEA8725820B005FC8BA"
+    },
+    {
+        "unique": "ATKRSB675599",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180109",
+        "unid": "7BF2CDF7A61C77C3872581E700675599"
+    },
+    {
+        "unique": "ATKRNN673C38",
+        "name": "2018 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180109",
+        "unid": "97E50AC42EC9F34E872581E700673C38"
+    },
+    {
+        "unique": "AUPNQK5FC406",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20180108",
+        "unid": "384221F7CBF97CE88725820B005FC406"
+    },
+    {
+        "unique": "ATBJRJ4E213B",
+        "name": "POLICY REVIEW COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171229",
+        "unid": "44BF7D218106BB93872581DF004E213B"
+    },
+    {
+        "unique": "AKRRED6B8FB2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171219",
+        "unid": "3EF735D321437FB1872580ED006B8FB2"
+    },
+    {
+        "unique": "AHCUGV7953BB",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171214",
+        "unid": "7D937836EC897B70872580A000795B10"
+    },
+    {
+        "unique": "ATBJNR4E09EA",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171208",
+        "unid": "A4BEA0DFE0059BFB872581DF004E09EA"
+    },
+    {
+        "unique": "AKRRCY6B8D1C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171205",
+        "unid": "2B14A3858256EADA872580ED006B8D1C"
+    },
+    {
+        "unique": "AKRRBR6B8A63",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171121",
+        "unid": "E374D88C4AC31092872580ED006B8A63"
+    },
+    {
+        "unique": "AHCUGU79303D",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171116",
+        "unid": "01B8FB02BEBBBBFB872580A000793C71"
+    },
+    {
+        "unique": "AKRR4C6A6192",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171108",
+        "unid": "49912AA6075D3F56872580ED006A6192"
+    },
+    {
+        "unique": "ASAR876CA51E",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171024",
+        "unid": "AF0E38B321DF9FFE872581BE006CA51E"
+    },
+    {
+        "unique": "AHCTL9745690",
+        "name": "POLICY REVIEW COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171018",
+        "unid": "8AF6D505C2F6432B872580A000745C50"
+    },
+    {
+        "unique": "AKRR2T6A5B84",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171017",
+        "unid": "25CE0EDA38298C8A872580ED006A5B84"
+    },
+    {
+        "unique": "AHCUEH786ED0",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171012",
+        "unid": "82D643C1C390E4A0872580A000787737"
+    },
+    {
+        "unique": "AKRQZE6A523B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20171003",
+        "unid": "F04383F3DF18A005872580ED006A523B"
+    },
+    {
+        "unique": "AKRQXX6A4A55",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170919",
+        "unid": "26DC9EC3FD65A03C872580ED006A4A55"
+    },
+    {
+        "unique": "AQYP5W5DA4CE",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170914",
+        "unid": "9A6ECB846E12175587258194005DA4CE"
+    },
+    {
+        "unique": "AHCU7M772C4B",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170914",
+        "unid": "CC84336380277273872580A0007732E7"
+    },
+    {
+        "unique": "AKRQWJ6A40B4",
+        "name": "REGULAR BOARD BUSINESS MEETING (Meeting 2)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170905",
+        "unid": "6CDB7482D9C329F0872580ED006A40B4"
+    },
+    {
+        "unique": "AQRNMW5F0400",
+        "name": "EXECUTIVE SEARCH FIRM PRESENTATIONS AND SELECTION (Meeting 1)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170905",
+        "unid": "CD05C5400CE3019F8725818D005F0400"
+    },
+    {
+        "unique": "AKRQRS6A29AA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170815",
+        "unid": "182F9D771F07FF64872580ED006A29AA"
+    },
+    {
+        "unique": "AHCU3K767F5E",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170810",
+        "unid": "4E135A5935D643D7872580A000768BEA"
+    },
+    {
+        "unique": "APVUV26F47C6",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170805",
+        "unid": "EAAD19E1BBD9621F87258171006F47C6"
+    },
+    {
+        "unique": "AKRQUR6A3830",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170801",
+        "unid": "75E85E4E43797484872580ED006A3830"
+    },
+    {
+        "unique": "AKRQT76A2E05",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170630",
+        "unid": "6DA30283D319BD6E872580ED006A2E05"
+    },
+    {
+        "unique": "AKRRH36BE1E2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170620",
+        "unid": "9F613AE55DB14D8C872580ED006BE1E2"
+    },
+    {
+        "unique": "AHCTXF761036",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170615",
+        "unid": "291359E014113A2F872580A0007616CA"
+    },
+    {
+        "unique": "AKRQNP6A1CC7",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170606",
+        "unid": "041E455FFAAA1A0C872580ED006A1CC7"
+    },
+    {
+        "unique": "ALTSZ864578B",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170530",
+        "unid": "ABC406BE1994FAF08725810F0064578B"
+    },
+    {
+        "unique": "ALMKLS527007",
+        "name": "SPECIAL BOARD MEETING - EXECUTIVE SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170522",
+        "unid": "EEE5C08DB290B4D28725810900527007"
+    },
+    {
+        "unique": "AGVTAR75C388",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170516",
+        "unid": "16432F8031FF58AE872580910075C388"
+    },
+    {
+        "unique": "AHCTRA7567AA",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170511",
+        "unid": "5067AC323A099091872580A000756F0B"
+    },
+    {
+        "unique": "AGVT9M75BF5F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170502",
+        "unid": "0ECD35BCD298D72E872580910075BF5F"
+    },
+    {
+        "unique": "AKMQEC679153",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170425",
+        "unid": "E546E41D5909A5B6872580E900679153"
+    },
+    {
+        "unique": "ALMKNK52B1F1",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170424",
+        "unid": "1DF43FF2C40CAFF4872581090052B1F1"
+    },
+    {
+        "unique": "ALKJN74CCB03",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING (RESCHEDULED FROM APRIL 13, 2017)",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170419",
+        "unid": "BAD95CEECA7F1DB887258107004CCB03"
+    },
+    {
+        "unique": "AHCTCX737C45",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING - RESCHEDULED TO APRIL 19TH DUE TO LACK OF QUORUM",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170413",
+        "unid": "6B0306B1A966C432872580A0007389B7"
+    },
+    {
+        "unique": "AGVT8H75BB1B",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170404",
+        "unid": "91DAE26A4E7110BC872580910075BB1B"
+    },
+    {
+        "unique": "AKJALJ78E42A",
+        "name": "SPECIAL BOARD MEETING - WORK SESSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170404",
+        "unid": "9F0178E23CE4D5F8872580E50078E42A"
+    },
+    {
+        "unique": "AGVT7D75B696",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170321",
+        "unid": "BD35F782F283AC39872580910075B696"
+    },
+    {
+        "unique": "AHCSHQ6FCB76",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170316",
+        "unid": "7607EEDA06020D5B872580A0006FD24D"
+    },
+    {
+        "unique": "AK9LN2557447",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20170313",
+        "unid": "E17F6B1DFA4FEAD6872580DD00557447"
+    },
+    {
+        "unique": "AGVT657599F0",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170307",
+        "unid": "84DE00AE5E2B42B787258091007599F0"
+    },
+    {
+        "unique": "AJMQNQ58C31A",
+        "name": "SPECIAL BOARD MEETING - RETREAT",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170228",
+        "unid": "44CB7A6124999141872580C90058C31A"
+    },
+    {
+        "unique": "AGVT4Z757BA5",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170221",
+        "unid": "104C58C77F0B00A28725809100757BA5"
+    },
+    {
+        "unique": "AHCQAL65E5B4",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170216",
+        "unid": "AFC4D3476ACA0346872580A00065ECF8"
+    },
+    {
+        "unique": "AGVT3V7575D9",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170207",
+        "unid": "1D3B3DCE94A5FBE087258091007575D9"
+    },
+    {
+        "unique": "AG5U8E7ACF40",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170124",
+        "unid": "CA664DBBAEC0374587258079007ACF40"
+    },
+    {
+        "unique": "AHCPYS6428AC",
+        "name": "FINANCE & APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170119",
+        "unid": "076701A8C3BCBE81872580A000643A33"
+    },
+    {
+        "unique": "AG5TQD787704",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170110",
+        "unid": "0B20A72931696B5B8725807900787704"
+    },
+    {
+        "unique": "A48L7D527055",
+        "name": "2017 ORGANIZATIONAL MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20170110",
+        "unid": "641E99CB01BD10FA87257EFC00527055"
+    },
+    {
+        "unique": "AGMNVU5FC87A",
+        "name": "COLUMBUS CITY SCHOOLS RECORDS COMMISSION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161222",
+        "unid": "B79EF1290C8A531687258089005FE53D"
+    },
+    {
+        "unique": "ACML5T540BF7",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161220",
+        "unid": "1D0C30C22F8D49948725800900540BF7"
+    },
+    {
+        "unique": "A7V7TK795335",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161219",
+        "unid": "78D366D581E79A9687257F7000795D4E"
+    },
+    {
+        "unique": "AFSNUW61B0DF",
+        "name": "SPECIAL MEETING - BOARD WORK SESSION #2 ON SCHOOL AND COMMUNITY SAFETY",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161213",
+        "unid": "72A05F827C133F818725806E0061B0DF"
+    },
+    {
+        "unique": "ACML4G54055D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161206",
+        "unid": "90248DEFD34445F7872580090054055D"
+    },
+    {
+        "unique": "AFBRXE5C4BA7",
+        "name": "SCHOOL BOARD WORK SESSION ON STUDENT AND COMMUNITY SAFETY",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161115",
+        "unid": "09F8085F925E03FA8725805F005C4BA7"
+    },
+    {
+        "unique": "ACML3653FFAB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161115",
+        "unid": "1E35726AEE2CFA0B872580090053FFAB"
+    },
+    {
+        "unique": "A7V7TA79484B",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161110",
+        "unid": "324BDA330BF1071887257F70007951C4"
+    },
+    {
+        "unique": "ACMKYP53EDA3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161101",
+        "unid": "64B5F44C6F4ACEFE872580090053EDA3"
+    },
+    {
+        "unique": "ACMKXB53E88C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161018",
+        "unid": "F473D7FE1E53FC5F872580090053E88C"
+    },
+    {
+        "unique": "A7V7T8793987",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161013",
+        "unid": "883B1E5F9DF799DC87257F70007946B2"
+    },
+    {
+        "unique": "ACMKVM53BA95",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20161004",
+        "unid": "7F1DF41170A169F6872580090053BA95"
+    },
+    {
+        "unique": "A6TPQQ58C4B4",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160920",
+        "unid": "84757DAA782A1B8887257F4F0058C4B4"
+    },
+    {
+        "unique": "AD4K8L50A642",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160914",
+        "unid": "18FE3588E040C4C6872580180050ADF0"
+    },
+    {
+        "unique": "A6TPNU58B6C5",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160906",
+        "unid": "66542D4A71EE596487257F4F0058B6C5"
+    },
+    {
+        "unique": "ACNMV65D0801",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20160825",
+        "unid": "53D34B2A4F5AA9DF8725800A005D3080"
+    },
+    {
+        "unique": "A6TPHX58A74F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160816",
+        "unid": "8D83685C0A0FB41A87257F4F0058A74F"
+    },
+    {
+        "unique": "A7V7SG78EA1A",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160811",
+        "unid": "690ABD4485ECB26687257F700078F64F"
+    },
+    {
+        "unique": "A6D5ZM7C999C",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160802",
+        "unid": "90C5527B14FAC44287257F40007C999C"
+    },
+    {
+        "unique": "AAVU5L6DBAC9",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160721",
+        "unid": "DA34AD426280E35187257FD1006DBAC9"
+    },
+    {
+        "unique": "A6D62U7C9EED",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160630",
+        "unid": "C3137CD24C6CE00287257F40007C9EED"
+    },
+    {
+        "unique": "AAKP445F7D05",
+        "name": "LEVY MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160627",
+        "unid": "0E2090F385BA580987257FC7005F843D"
+    },
+    {
+        "unique": "A6D63Z7CA118",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160621",
+        "unid": "5610F8E3C0CC452E87257FD50064E8D0"
+    },
+    {
+        "unique": "AAKP3Q5F7309",
+        "name": "LEVY MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160620",
+        "unid": "75B1347B63A0ED7087257FC7005F7B68"
+    },
+    {
+        "unique": "A7V7QV788FA1",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING - CANCELLED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160616",
+        "unid": "A3DBC6FF8346C5B887257F7000789B87"
+    },
+    {
+        "unique": "AAYNGE5FDAD1",
+        "name": "NEIGHBORHOOD SCHOOL DEVELOPMENT PARTNERSHIP (NSDP)",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20160616",
+        "unid": "D9099674BB1E439787257FD4005FDAD1"
+    },
+    {
+        "unique": "AAKP255F4E2B",
+        "name": "LEVY MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160613",
+        "unid": "A9E7E7802116D48687257FC7005F6442"
+    },
+    {
+        "unique": "A6D6567CA30E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160607",
+        "unid": "9F4E9566B7386E3E87257F40007CA30E"
+    },
+    {
+        "unique": "AAKNMQ5D3FE4",
+        "name": "LEVY MILLAGE COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160606",
+        "unid": "10320165AC0BEC3887257FC7005D4EAD"
+    },
+    {
+        "unique": "A9ZMFX58C1E1",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160523",
+        "unid": "55FA9D80368AF11187257FB50058C1E1"
+    },
+    {
+        "unique": "A6D66D7CA514",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160517",
+        "unid": "588542493058F3A987257F40007CA514"
+    },
+    {
+        "unique": "A7V7QH787B31",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160512",
+        "unid": "CB1C729864AAF86A87257F7000788ACB"
+    },
+    {
+        "unique": "A6D67J7CA8E8",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160503",
+        "unid": "7D88ACD1D515DD2787257F40007CA8E8"
+    },
+    {
+        "unique": "A7V7PP78657A",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160426",
+        "unid": "6E13EBD353926DB787257F7000787879"
+    },
+    {
+        "unique": "A6D68S7CAD57",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160419",
+        "unid": "182B86C0E035DC5487257F40007CAD57"
+    },
+    {
+        "unique": "A7V3QH6F7353",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160414",
+        "unid": "2E153F8CA338F53587257F70007214E2"
+    },
+    {
+        "unique": "A6D69Z7CAF07",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160405",
+        "unid": "C7B40A80442BF85287257F40007CAF07"
+    },
+    {
+        "unique": "A6D6B67CB0BC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160315",
+        "unid": "D58AAD1EC02F188187257F40007CB0BC"
+    },
+    {
+        "unique": "A7QLRW51E3B2",
+        "name": "FINANCE AND APPROPRIATIONS COMMITTEE MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20160310",
+        "unid": "EF61FF8978DA6A0887257F6C0051E3B2"
+    },
+    {
+        "unique": "A7QN2H54D89E",
+        "name": "SPECIAL BOARD MEETING- BUDGET PRESENTATIONS",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160307",
+        "unid": "BFB1FB4CA2B164B787257F6C0054D89E"
+    },
+    {
+        "unique": "A6D6CB7CB697",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160301",
+        "unid": "C26387A1D94EEE2487257F40007CB697"
+    },
+    {
+        "unique": "A48LXA53C35A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160216",
+        "unid": "4E54BC7F9F34E23A87257EFC0053C35A"
+    },
+    {
+        "unique": "A6T5VD73EC7A",
+        "name": "SPECIAL BOARD MEETING - RETREAT",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160216",
+        "unid": "CF11E7592A6AE48587257F4E0073EC7A"
+    },
+    {
+        "unique": "A48M2Q53D8B1",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160202",
+        "unid": "8CD4D8F07162DFA687257EFC0053D8B1"
+    },
+    {
+        "unique": "A65UJ765A75C",
+        "name": "SPECIAL BOARD MEETING - RETREAT",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160130",
+        "unid": "0089D3B06978F37B87257F390065A75C"
+    },
+    {
+        "unique": "A65UDR65410B",
+        "name": "SPECIAL BOARD MEETING - RETREAT",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160119",
+        "unid": "0F99F9AAEE12F58587257F390065410B"
+    },
+    {
+        "unique": "A48M4453DFEF",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160119",
+        "unid": "55921A69ED10E3B687257EFC0053DFEF"
+    },
+    {
+        "unique": "AG5TJ5778BB1",
+        "name": "2016 ORGANIZATIONAL MEETING",
+        "current": "",
+        "preliveoak": "",
+        "numberdate": "20160105",
+        "unid": "C09C34CD64BC7DA08725807900778BB1"
+    },
+    {
+        "unique": "A48LZB53D19D",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20160105",
+        "unid": "F1AD7B1BAD768C5287257EFC0053D19D"
+    },
+    {
+        "unique": "9ZSMGE56293A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151215",
+        "unid": "20BB243FEAE1A35487257EAE0056293A"
+    },
+    {
+        "unique": "A4U9CD726056",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151207",
+        "unid": "A04D10A2CCAC48C487257F0F00726056"
+    },
+    {
+        "unique": "9ZSMHU562B8A",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151201",
+        "unid": "2A87AB2F7ECCB1DA87257EAE00562B8A"
+    },
+    {
+        "unique": "9ZSMKJ563077",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151117",
+        "unid": "C8FFF800529A90CB87257EAE00563077"
+    },
+    {
+        "unique": "A44SFJ659162",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151111",
+        "unid": "5912EA06C54719C287257EF800659162"
+    },
+    {
+        "unique": "A3YJDM4B2D71",
+        "name": "EMERGENCY BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151105",
+        "unid": "B41F4929A28884F487257EF4004B2D71"
+    },
+    {
+        "unique": "9ZSMES562430",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151103",
+        "unid": "F7010676D314F85D87257EAE00562430"
+    },
+    {
+        "unique": "9XL375660BF0",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151020",
+        "unid": "7A5F940537132B0487257E6700660BF0"
+    },
+    {
+        "unique": "9XL38Z661279",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20151006",
+        "unid": "998BC750D5ABC9BD87257E6700661279"
+    },
+    {
+        "unique": "9XL3AQ66156C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150915",
+        "unid": "5BA41F593C041E8187257E670066156C"
+    },
+    {
+        "unique": "9XL3CE6617FF",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150901",
+        "unid": "833F902BF10FF92287257E67006617FF"
+    },
+    {
+        "unique": "9XL34S65DE43",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150818",
+        "unid": "E3312484C0DCF13687257E670065DE43"
+    },
+    {
+        "unique": "9Z9R5Y52E127",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150813",
+        "unid": "55A9B4DB679F1F3B87257E9D0052FC9E"
+    },
+    {
+        "unique": "9XL2QS6517BB",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150804",
+        "unid": "94835834A11DB2F187257E67006517BB"
+    },
+    {
+        "unique": "9XKR8B581B24",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150630",
+        "unid": "305D5BAF458C12A687257E6700581B24"
+    },
+    {
+        "unique": "9XMRXQ643CAC",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150623",
+        "unid": "2B8C53C07A35149E87257E6900643CAC"
+    },
+    {
+        "unique": "9XF98J74DCC0",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150616",
+        "unid": "28F0AF80509F36D987257E620074DCC0"
+    },
+    {
+        "unique": "9UXTZ35A48C5",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150616",
+        "unid": "358A1E3E6FE88FE085257E13005A48C5"
+    },
+    {
+        "unique": "9X3H9P474DD4",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150604",
+        "unid": "F4480960D064331685257E5700474DD4"
+    },
+    {
+        "unique": "9UXU2V5A4FF3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150602",
+        "unid": "C16B9511FA149BC585257E13005A4FF3"
+    },
+    {
+        "unique": "9WVJY848DA76",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150526",
+        "unid": "53E55BBD70E91A4187257E510048DA76"
+    },
+    {
+        "unique": "9SH4FA62ECA0",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150519",
+        "unid": "3A37A530C82C16FA85257DC40062ECA0"
+    },
+    {
+        "unique": "9WF365700F7C",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150512",
+        "unid": "D560799141B5883585257E4200700F7C"
+    },
+    {
+        "unique": "9SH4K862F741",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150505",
+        "unid": "729B61F0FF4A799485257DC40062F741"
+    },
+    {
+        "unique": "9VZVSU71F531",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150430",
+        "unid": "0E0F48DB6E72603F85257E350071F531"
+    },
+    {
+        "unique": "9SH4H562F44E",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150421",
+        "unid": "ABA00B48C287BA3F85257DC40062F44E"
+    },
+    {
+        "unique": "9VLQA965A333",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150418",
+        "unid": "A893DE2203C17A0B87257E280065A333"
+    },
+    {
+        "unique": "9VG5ZX745D19",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150411",
+        "unid": "3709B3A3B672784985257E2200745D19"
+    },
+    {
+        "unique": "9SH4M462FB62",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150331",
+        "unid": "F60C68597B2FC04A85257DC40062FB62"
+    },
+    {
+        "unique": "9UU6VM720CF7",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150328",
+        "unid": "F156139133BF185885257E0E00720CF7"
+    },
+    {
+        "unique": "9SH4NV62FDF2",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150317",
+        "unid": "5EFBA0B48EA8C71885257DC40062FDF2"
+    },
+    {
+        "unique": "9UJN9L69AE8A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150314",
+        "unid": "BE054777D15A243885257E050069AE8A"
+    },
+    {
+        "unique": "9UD47G57F45A",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150307",
+        "unid": "5CCA3918834A787885257E000057F45A"
+    },
+    {
+        "unique": "9SH4QN630071",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150303",
+        "unid": "2E55956255AB801785257DC400630071"
+    },
+    {
+        "unique": "9SH58M63C6E4",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150303",
+        "unid": "7835D0991EEB749485257DC40063C6E4"
+    },
+    {
+        "unique": "9SH4SL630441",
+        "name": "REGULAR BOARD BUSINESS MEETING-AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150217",
+        "unid": "CEF10D94E358C44E85257DC400630441"
+    },
+    {
+        "unique": "9SH59P63CB80",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150203",
+        "unid": "1D2D40C9C31ACD8185257DC40063CB80"
+    },
+    {
+        "unique": "9SH5F86452C6",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150203",
+        "unid": "7CA76A1BDB861C6885257DC4006452C6"
+    },
+    {
+        "unique": "9T7JEZ4992CE",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150128",
+        "unid": "89BB4DFA0E54BAD485257DDB004992CE"
+    },
+    {
+        "unique": "9SH45X624464",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150120",
+        "unid": "03DD68135D3AC7ED85257DC400624464"
+    },
+    {
+        "unique": "9RP4YQ7103D8",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150106",
+        "unid": "98FE382468468AD787257DAA007103D8"
+    },
+    {
+        "unique": "9RP55C714678",
+        "name": "ORGANIZATIONAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150106",
+        "unid": "A64E5F0A976EC01987257DAA00714678"
+    },
+    {
+        "unique": "9RP533711760",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20150106",
+        "unid": "F13C21A2D57524FD87257DAA00711760"
+    },
+    {
+        "unique": "9QKSNP56F80F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141216",
+        "unid": "ADE58A3E959AF94F87257D870056F80F"
+    },
+    {
+        "unique": "9QKSSV57408E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141202",
+        "unid": "257396AE9D14BC9587257D870057408E"
+    },
+    {
+        "unique": "9QKU2H58FCB6",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141202",
+        "unid": "ECA9542D1DE745D087257D870058FCB6"
+    },
+    {
+        "unique": "7ZF3V9088C73",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141118",
+        "unid": "C795B58A53B7CA3D862576A300088C73"
+    },
+    {
+        "unique": "9PQSHC72BD92",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141104",
+        "unid": "A947AECC47B5726487257D6C0073038E"
+    },
+    {
+        "unique": "9NCGGP43C5BA",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141104",
+        "unid": "F9716500925BDAD287257D400043CBEE"
+    },
+    {
+        "unique": "9QDCPC155BAE",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141030",
+        "unid": "3691AA4915603CEA87257D8100155BAE"
+    },
+    {
+        "unique": "9NRU5S6D5904",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141021",
+        "unid": "507CA6CA64D7B23487257D4D006D7721"
+    },
+    {
+        "unique": "9Q45YY6B75B7",
+        "name": "SPECIAL BOARD MEETING - PUBLIC HEARING CANCELLATION",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141021",
+        "unid": "55CBA44EE34F12FF87257D77006B75B7"
+    },
+    {
+        "unique": "9PVG9642AC15",
+        "name": "SPECIAL BOARD MEETING - RETREAT",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141014",
+        "unid": "A63497CECC84C51A87257D710042AC15"
+    },
+    {
+        "unique": "9NRU3X6D32F6",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141007",
+        "unid": "001E50303C1B41D187257D4D006D5154"
+    },
+    {
+        "unique": "9NRU276D08A1",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20141007",
+        "unid": "8F2AAEE401FF39CD87257D4D006D2DB0"
+    },
+    {
+        "unique": "9NZQPM6A4733",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140916",
+        "unid": "9B2CD9DCB96263F787257D55006A4733"
+    },
+    {
+        "unique": "9NCLRL57BD04",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140916",
+        "unid": "B45AC12BD4274D8C87257D400057F97A"
+    },
+    {
+        "unique": "9DPTP5750561",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140902",
+        "unid": "D3B9561A54DBEFDE87257C2B00750561"
+    },
+    {
+        "unique": "9MXPBW6341E0",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140902",
+        "unid": "D3AB1B489C85286487257D3300635B60"
+    },
+    {
+        "unique": "9N7RHK64AA67",
+        "name": "SPECIAL BOARD MEETING - RETREAT",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140823",
+        "unid": "32BA512E520B0FDD87257D3B0064AA67"
+    },
+    {
+        "unique": "9DNJGX4D2520",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140819",
+        "unid": "29523B61F2EC8BE687257C2A004D2520"
+    },
+    {
+        "unique": "9KSPWM595151",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140805",
+        "unid": "5C0D24EEA1872D3087257CEE005AD319"
+    },
+    {
+        "unique": "9KSNEL55ED1F",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140805",
+        "unid": "FA7947A35A4C65CF87257CEE00560562"
+    },
+    {
+        "unique": "9LVJNG4BCAC5",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140714",
+        "unid": "7AEDB07151FB7DED87257D11004BCAC5"
+    },
+    {
+        "unique": "9LNQYK6B7978",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140707",
+        "unid": "92D5CDE812A33A4687257D0A006B7978"
+    },
+    {
+        "unique": "9KHMS859B6AC",
+        "name": "SPECIAL BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140624",
+        "unid": "752E6C8C10298A1087257CE50059DCB5"
+    },
+    {
+        "unique": "9HUS87680CBE",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140617",
+        "unid": "5F2264F848FD210687257CB000680CBE"
+    },
+    {
+        "unique": "9HUS5Z67E875",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140603",
+        "unid": "33B67C29AE00A38787257CB00067E875"
+    },
+    {
+        "unique": "9GXRZX59BA7E",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140603",
+        "unid": "536159C9FFFC85D887257C930059CB59"
+    },
+    {
+        "unique": "9HUS3C67AFBA",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140520",
+        "unid": "34A67989A6D4600887257CB00067AFBA"
+    },
+    {
+        "unique": "9KAGTN45123E",
+        "name": "SPECIAL BOARD MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140520",
+        "unid": "F427A9CDD890585087257CDE0045123E"
+    },
+    {
+        "unique": "9JGK7E4FE118",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140506",
+        "unid": "9FD37662B54D630C87257CC4004FE118"
+    },
+    {
+        "unique": "9HURX867707C",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140506",
+        "unid": "AFD738787789D3AC87257CB00067707C"
+    },
+    {
+        "unique": "9GXRNF58EFBC",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140422",
+        "unid": "47DE01C2DB2F779487257C9300590B08"
+    },
+    {
+        "unique": "9GXRXJ598670",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140401",
+        "unid": "341946033DDB513887257C9300599B67"
+    },
+    {
+        "unique": "9GHNBZ5364E3",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140401",
+        "unid": "F0960F7C1A279E4787257C85005364E3"
+    },
+    {
+        "unique": "9HKNYP60DB8D",
+        "name": "SPECIAL BOARD OF EDUCATION MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140328",
+        "unid": "69C879EB7C6B74C187257CA7006101F0"
+    },
+    {
+        "unique": "9GHN4X52FCF6",
+        "name": "REGULAR BOARD BUSINESS MEETING - AMENDED",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140318",
+        "unid": "9C98E8D7E624DABA87257C850052FCF6"
+    },
+    {
+        "unique": "9G9RLP5CA13E",
+        "name": "REGULAR BOARD BUSINESS MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140304",
+        "unid": "2B692DDD070C2F0887257C7D005CA13E"
+    },
+    {
+        "unique": "9G9NHW560012",
+        "name": "COMMUNITY LINKAGE MEETING",
+        "current": "0",
+        "preliveoak": "",
+        "numberdate": "20140304",
+        "unid": "9DC5FA29A2BF3B7987257C7D00560012"
+    },
+    {}
+]
