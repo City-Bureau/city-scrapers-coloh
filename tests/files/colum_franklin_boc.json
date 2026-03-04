@@ -16,6 +16,11 @@
           "Name": "Independence Day",
           "Id": "aaa11111-1111-1111-1111-111111111111",
           "DateTime": "7/4/2025 12:00:00 AM"
+        },
+        {
+          "Name": "Planning Commission Meeting",
+          "Id": "3fac85ae-e3f2-4899-a351-0b936b567b6c",
+          "DateTime": "5/14/2025 1:30:00 PM"
         }
       ]
     },
