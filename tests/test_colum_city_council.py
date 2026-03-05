@@ -43,7 +43,7 @@ def legistar_items(spider, legistar_response):
 @pytest.fixture(scope="module")
 def upcoming_items(spider, upcoming_response):
     with freeze_time("2026-02-21"):
-        return list(spider.parse_upcoming(upcoming_response))
+        return list(spider.parse_calendar(upcoming_response))
 
 
 EXPECTED_LOCATION = {
