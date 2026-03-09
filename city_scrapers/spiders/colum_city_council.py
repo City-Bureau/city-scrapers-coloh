@@ -6,7 +6,6 @@ import scrapy
 from city_scrapers_core.constants import BOARD, CITY_COUNCIL, COMMITTEE, NOT_CLASSIFIED
 from city_scrapers_core.items import Meeting
 from city_scrapers_core.spiders import LegistarSpider
-from dateutil.relativedelta import relativedelta
 
 
 class ColumCityCouncilSpider(LegistarSpider):
@@ -32,8 +31,18 @@ class ColumCityCouncilSpider(LegistarSpider):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.since_year = 2003
+        self.since_year = 2024
         self.legistar_keys = set()  # Store semantic dedupe keys from Legistar
+
+    SKIP_TITLES = {
+        "no meetings",
+        "no council meetings",
+        "no council meeting",
+        "no zoning meeting",
+        "no zoning meetings",
+        "no zoning meetings",
+        "no council zoning meeting",
+    }
 
     def start_requests(self):
         # Legistar (priority source)
@@ -42,38 +51,41 @@ class ColumCityCouncilSpider(LegistarSpider):
             callback=self.parse,
         )
 
-    # Upcoming meetings, from calendar API
+    # Upcoming and passed meetings, from calendar API
     def parse(self, response):
         # Parse Legistar meetings first
         yield from super().parse(response)
 
-        # After Legistar completes → request upcoming meetings from calendar API
+        # After Legistar completes → request meetings from calendar API
         if getattr(self, "_api_requested", False):
             return
         self._api_requested = True
 
         now = datetime.now()
-        end = now + relativedelta(months=12)
+        start_year = 2024
+        end_year = now.year
 
-        yield scrapy.Request(
-            url=self.calendar_api_url,
-            method="POST",
-            headers={
-                "Content-Type": "application/json",
-                "Origin": "https://www.columbus.gov",
-            },
-            body=json.dumps(
-                {
-                    "LanguageCode": "en-US",
-                    "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
-                    "StartDate": now.strftime("%Y-%m-%d"),
-                    "EndDate": end.strftime("%Y-%m-%d"),
-                }
-            ),
-            callback=self.parse_upcoming,
-            dont_filter=True,
-            priority=-10,
-        )
+        for year in range(start_year, end_year + 1):
+
+            yield scrapy.Request(
+                url=self.calendar_api_url,
+                method="POST",
+                headers={
+                    "Content-Type": "application/json",
+                    "Origin": "https://www.columbus.gov",
+                },
+                body=json.dumps(
+                    {
+                        "LanguageCode": "en-US",
+                        "Ids": ["b485bcac-3066-4b86-9053-4f35f64a8097"],
+                        "StartDate": f"{year}-01-01",
+                        "EndDate": f"{year}-12-31",
+                    }
+                ),
+                callback=self.parse_calendar,
+                dont_filter=True,
+                priority=-10,
+            )
 
     def parse_legistar(self, events):
         for event in events:
@@ -104,14 +116,15 @@ class ColumCityCouncilSpider(LegistarSpider):
 
             yield meeting
 
-    def parse_upcoming(self, response):
+    def parse_calendar(self, response):
         result = response.json()
 
         for day in result.get("data", []):
             for item in day.get("Items", []):
-                if item.get("Name") == "No Meetings":
+                name = item.get("Name", "").strip().lower()
+                if name in self.SKIP_TITLES:
                     continue
-                start = self._parse_upcoming_start(item)
+                start = self._parse_calendar_start(item)
                 if not start:
                     continue
                 classification = self._parse_classification(item)
@@ -136,7 +149,7 @@ class ColumCityCouncilSpider(LegistarSpider):
                 meeting["id"] = self._get_id(meeting)
                 yield meeting
 
-    def _parse_upcoming_start(self, item):
+    def _parse_calendar_start(self, item):
         try:
             return datetime.strptime(
                 item.get("DateTime", ""),
