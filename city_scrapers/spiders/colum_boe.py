@@ -67,7 +67,6 @@ class ColumBoeSpider(CityScrapersSpider):
                 continue
             item_date = datetime.strptime(item["numberdate"], "%Y%m%d").date()
             if item_date > past_range.date():
-                item["start_date"] = item_date
                 filtered_data.append(item)
         return filtered_data
 
