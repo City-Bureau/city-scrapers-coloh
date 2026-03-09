@@ -23,15 +23,15 @@ class ColumBoeSpider(CityScrapersSpider):
 
     boarddocs_committee_id = "A9HCVU32F33A"
 
-    random_digit = random.randint(10**14, 10**15 - 1)
 
     custom_settings = {
         "ROBOTSTXT_OBEY": False,
     }
 
     def start_requests(self):
+        random_digit = random.randint(10**14, 10**15 - 1)
         yield scrapy.Request(
-            url=self.api_url.format(random_digit=self.random_digit),
+            url=self.api_url.format(random_digit=random_digit),
             method="POST",
             body=f"current_committee_id={self.boarddocs_committee_id}",
             callback=self._get_meeting_detail,
@@ -43,8 +43,9 @@ class ColumBoeSpider(CityScrapersSpider):
 
         for meeting in filtered_meetings:
             meeting_id = meeting.get("unique")
+            random_digit = random.randint(10**14, 10**15 - 1)
             yield scrapy.Request(
-                url=self.detail_url.format(random_digit=self.random_digit),
+                url=self.detail_url.format(random_digit=random_digit),
                 method="POST",
                 body=f"current_committee_id={self.boarddocs_committee_id}&id={meeting_id}",  # noqa
                 meta={"meeting_id": meeting_id},
@@ -71,10 +72,11 @@ class ColumBoeSpider(CityScrapersSpider):
         return filtered_data
 
     def _get_agenda(self, response):
-        raw_description = response.css(".meeting-description::text").getall()
+        raw_description = " ".join(response.css(".meeting-description::text").getall())
         meeting_id = response.meta["meeting_id"]
+        random_digit = random.randint(10**14, 10**15 - 1)
         yield scrapy.Request(
-            url=self.get_agenda_url.format(random_digit=self.random_digit),
+            url=self.get_agenda_url.format(random_digit=random_digit),
             method="POST",
             body=f"current_committee_id={self.boarddocs_committee_id}&id={meeting_id}",
             meta={"detail_response": response, "raw_description": raw_description},
@@ -84,11 +86,12 @@ class ColumBoeSpider(CityScrapersSpider):
     def parse(self, response):
         detail_response = response.meta["detail_response"]
         raw_description = response.meta["raw_description"]
-        location, has_location = self._parse_location(detail_response)
+        title = self._parse_title(detail_response)
+        location, has_location = self._parse_location(raw_description)
         start_time, estimated_time = self._parse_start(raw_description, detail_response)
         meeting = Meeting(
-            title=self._parse_title(detail_response),
-            description=" ".join(raw_description).strip(),
+            title=title,
+            description=raw_description.strip(),
             classification=BOARD,
             start=start_time,
             end=None,
@@ -110,7 +113,7 @@ class ColumBoeSpider(CityScrapersSpider):
 
     def _parse_start(self, raw_description, detail_response):
         date = detail_response.css(".meeting-date::text").get()
-        description = " ".join(raw_description).lower()
+        description = raw_description.lower()
         time_match = re.search(r"(\d{1,2}:\d{2})\s*([AaPp]\.?[Mm]\.?)", description)
 
         if time_match:
@@ -129,13 +132,37 @@ class ColumBoeSpider(CityScrapersSpider):
             return f"Please refer to the meeting description or agenda for {' and '.join(missing)} details."  # noqa
         return ""
 
-    def _parse_location(self, detail_response):
-        title_location = self._parse_title(detail_response).lower()
-        if "board" in title_location and "special" not in title_location:
+    def _parse_location(self, raw_description):
+        description = raw_description.lower()
+        
+        if "3700 s. high st" in description or "3700 south high street" in description:
             return {
                 "name": "COLUMBUS CITY SCHOOLS",
                 "address": "3700 S. HIGH ST. COLUMBUS, OH 43207",
             }, True
+        
+        if "270 e. state street" in description or "270 east state street" in description:
+            room = ""
+            if "assembly room" in description:
+                room = " ASSEMBLY ROOM"
+            elif "cabinet room" in description:
+                room = " CABINET ROOM"
+                
+            return {
+                "name": "COLUMBUS EDUCATION CENTER",
+                "address": f"270 EAST STATE STREET{room} COLUMBUS, OHIO",
+            }, True
+        
+        address_pattern = r'(\d+\s+[A-Z]+\s+(?:ST|STREET|AVE|AVENUE|DR|DRIVE|BLVD|BOULEVARD)[^,]*,\s*[A-Z\s]+\s*[A-Z]{2}\s*\d{5})'
+        address_match = re.search(address_pattern, description, re.IGNORECASE)
+        
+        if address_match:
+            address = address_match.group(1).strip()
+            return {
+                "name": "COLUMBUS BOARD OF EDUCATION",
+                "address": address,
+            }, True
+        
         return {
             "name": "TBD",
             "address": "",
