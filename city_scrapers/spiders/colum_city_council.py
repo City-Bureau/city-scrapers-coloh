@@ -40,7 +40,6 @@ class ColumCityCouncilSpider(LegistarSpider):
         "no council meeting",
         "no zoning meeting",
         "no zoning meetings",
-        "no zoning meetings",
         "no council zoning meeting",
     }
 
