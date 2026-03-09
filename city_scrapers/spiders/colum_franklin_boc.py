@@ -27,7 +27,10 @@ class ColumFranklinBocSpider(CityScrapersSpider):
         "https://www.franklincountyohio.gov/OCServiceHandler.axd"
         "?url=ocsvc/Public/meetings/documentrenderer&cvid={}"
     )
-    calendar_id = "90a168fd-1df9-44fa-8a0e-84d86cb1b0e4"
+    calendar_ids = [
+        "90a168fd-1df9-44fa-8a0e-84d86cb1b0e4",  # Board of Commissioners
+        "bbd976dc-6671-4867-af48-17a598c8b9d4",  # Economic Development & Planning
+    ]
     source_url = (
         "https://www.franklincountyohio.gov/County-Government/"
         "About-Our-Community/Public-Meetings-and-Agendas"
@@ -59,7 +62,7 @@ class ColumFranklinBocSpider(CityScrapersSpider):
                 body=json.dumps(
                     {
                         "LanguageCode": "en-US",
-                        "Ids": [self.calendar_id],
+                        "Ids": self.calendar_ids,
                         "StartDate": year_start,
                         "EndDate": year_end,
                     }

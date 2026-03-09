@@ -64,6 +64,20 @@ briefing_session_response = _make_detail_response(
     },
 )
 
+# Planning Commission detail (second calendar)
+planning_commission_response = _make_detail_response(
+    "colum_franklin_boc_detail_planning.json",
+    url=(
+        "https://www.franklincountyohio.gov/OCServiceHandler.axd"
+        "?url=ocsvc/Public/meetings/documentrenderer"
+        "&cvid=3fac85ae-e3f2-4899-a351-0b936b567b6c"
+    ),
+    meta={
+        "title": "Planning Commission Meeting",
+        "datetime_str": "5/14/2025 1:30:00 PM",
+    },
+)
+
 # Invalid detail (non-meeting content type)
 invalid_response = _make_detail_response(
     "colum_franklin_boc_detail_invalid.json",
@@ -83,20 +97,22 @@ freezer.start()
 
 general_items = list(spider.parse_detail(general_session_response))
 briefing_items = list(spider.parse_detail(briefing_session_response))
+planning_items = list(spider.parse_detail(planning_commission_response))
 invalid_items = list(spider.parse_detail(invalid_response))
 
 freezer.stop()
 
 parsed_item = general_items[0]
 briefing_item = briefing_items[0]
+planning_item = planning_items[0]
 
 
 # === Calendar filtering tests ===
 
 
 def test_calendar_request_count():
-    """Fixture has 7 items total; all are yielded as detail requests."""
-    assert len(calendar_requests) == 7
+    """Fixture has 8 items total; all are yielded as detail requests."""
+    assert len(calendar_requests) == 8
 
 
 def test_calendar_request_urls():
@@ -218,10 +234,42 @@ def test_briefing_classification():
     assert briefing_item["classification"] == COMMISSION
 
 
+# === Planning Commission detail tests (second calendar) ===
+
+
+def test_planning_title():
+    assert planning_item["title"] == "Planning Commission Meeting"
+
+
+def test_planning_start():
+    assert planning_item["start"] == datetime(2025, 5, 14, 13, 30)
+
+
+def test_planning_classification():
+    assert planning_item["classification"] == COMMISSION
+
+
+def test_planning_location():
+    assert "369 S High St" in planning_item["location"]["address"]
+    assert "Columbus, OH" in planning_item["location"]["address"]
+
+
+def test_planning_links():
+    assert len(planning_item["links"]) == 1
+    assert "Planning Commission" in planning_item["links"][0]["title"]
+    assert planning_item["links"][0]["href"].endswith(".pdf")
+
+
+def test_planning_id():
+    assert planning_item["id"] == (
+        "colum_franklin_boc/202505141330/x/planning_commission_meeting"
+    )
+
+
 # === Parametrized tests across all parsed items ===
 
 
-all_items = general_items + briefing_items
+all_items = general_items + briefing_items + planning_items
 
 
 @pytest.mark.parametrize("item", all_items)
