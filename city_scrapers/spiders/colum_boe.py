@@ -23,7 +23,6 @@ class ColumBoeSpider(CityScrapersSpider):
 
     boarddocs_committee_id = "A9HCVU32F33A"
 
-
     custom_settings = {
         "ROBOTSTXT_OBEY": False,
     }
@@ -133,35 +132,38 @@ class ColumBoeSpider(CityScrapersSpider):
 
     def _parse_location(self, raw_description):
         description = raw_description.lower()
-        
+
         if "3700 s. high st" in description or "3700 south high street" in description:
             return {
                 "name": "COLUMBUS CITY SCHOOLS",
                 "address": "3700 S. HIGH ST. COLUMBUS, OH 43207",
             }, True
-        
-        if "270 e. state street" in description or "270 east state street" in description:
+
+        if (
+            "270 e. state street" in description
+            or "270 east state street" in description
+        ):
             room = ""
             if "assembly room" in description:
                 room = " ASSEMBLY ROOM"
             elif "cabinet room" in description:
                 room = " CABINET ROOM"
-                
+
             return {
                 "name": "COLUMBUS EDUCATION CENTER",
                 "address": f"270 EAST STATE STREET{room} COLUMBUS, OHIO",
             }, True
-        
-        address_pattern = r'(\d+\s+[A-Z]+\s+(?:ST|STREET|AVE|AVENUE|DR|DRIVE|BLVD|BOULEVARD)[^,]*,\s*[A-Z\s]+\s*[A-Z]{2}\s*\d{5})'
+
+        address_pattern = r"(\d+\s+[A-Z]+\s+(?:ST|STREET|AVE|AVENUE|DR|DRIVE|BLVD|BOULEVARD)[^,]*,\s*[A-Z\s]+\s*[A-Z]{2}\s*\d{5})"  # noqa
         address_match = re.search(address_pattern, description, re.IGNORECASE)
-        
+
         if address_match:
             address = address_match.group(1).strip()
             return {
                 "name": "COLUMBUS BOARD OF EDUCATION",
                 "address": address,
             }, True
-        
+
         return {
             "name": "TBD",
             "address": "",

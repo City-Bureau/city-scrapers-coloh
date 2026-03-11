@@ -35,9 +35,9 @@ def parsed_items(spider):
         url="https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetAgenda?open&0.123456789012345",  # noqa
     )
     agenda_response.meta["detail_response"] = detail_response
-    agenda_response.meta["raw_description"] = detail_response.css(
-        ".meeting-description::text"
-    ).getall()
+    agenda_response.meta["raw_description"] = " ".join(
+        detail_response.css(".meeting-description::text").getall()
+    )
 
     with freeze_time("2026-02-24"):
         return [item for item in spider.parse(agenda_response)]
