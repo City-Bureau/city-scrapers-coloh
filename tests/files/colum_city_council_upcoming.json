@@ -1,0 +1,952 @@
+{
+  "success": true,
+  "data": [
+    {
+      "Date": "02/03/2026",
+      "DD": 2,
+      "MM": 3,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "de8af8f6-5e5d-40e2-b2af-b28d35d49d85",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "3/2/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "316e1561-09b0-4c2b-9937-b7eb1bebf075",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "3/2/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "March"
+    },
+    {
+      "Date": "06/04/2026",
+      "DD": 6,
+      "MM": 4,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "ae0bcbfd-970e-4c67-8171-804ffab36815",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "4/6/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "April"
+    },
+    {
+      "Date": "04/05/2026",
+      "DD": 4,
+      "MM": 5,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "634044b5-5700-4f5f-b8cd-05635f87099b",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "5/4/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "May"
+    },
+    {
+      "Date": "01/06/2026",
+      "DD": 1,
+      "MM": 6,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "cae9e7bd-386a-41ef-9e67-64b0e55100a8",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "6/1/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "068482d3-8994-4c85-8ae8-dadc2731b0f2",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "6/1/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "June"
+    },
+    {
+      "Date": "08/06/2026",
+      "DD": 8,
+      "MM": 6,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "c021ed7e-def4-430a-baaa-5ce3463b8705",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "6/8/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "56bd01c5-95ed-4b1a-87c1-09348391d968",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "6/8/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "June"
+    },
+    {
+      "Date": "09/03/2026",
+      "DD": 9,
+      "MM": 3,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "a90fd75e-8ff2-42f4-9622-760fd18faf2a",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "3/9/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "2c2e5e9c-0853-4f0d-8cca-06476fa7492b",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "3/9/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "March"
+    },
+    {
+      "Date": "13/04/2026",
+      "DD": 13,
+      "MM": 4,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "5a7d7972-5272-4e99-8682-3b386afe74d0",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "4/13/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "9d18c3ff-0c5e-4c72-b3d7-ab78a713cec5",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "4/13/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "April"
+    },
+    {
+      "Date": "11/05/2026",
+      "DD": 11,
+      "MM": 5,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "1955bf83-091f-4950-bd2b-8c28b7bacd25",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "5/11/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "af7f95ef-c2b3-4c9d-9821-a2e4dd5b2687",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "5/11/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "May"
+    },
+    {
+      "Date": "15/06/2026",
+      "DD": 15,
+      "MM": 6,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "7bc28b54-6622-4a0b-a137-33f580ec744b",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "6/15/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "June"
+    },
+    {
+      "Date": "16/03/2026",
+      "DD": 16,
+      "MM": 3,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "27b4f112-54bb-4fbb-87d0-a2408d0793e0",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "3/16/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "March"
+    },
+    {
+      "Date": "20/04/2026",
+      "DD": 20,
+      "MM": 4,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "cf51d0cc-7e7e-46c5-87a7-767529f675da",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "4/20/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "95d0d261-bd57-40dc-9583-ecea481402da",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "4/20/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "April"
+    },
+    {
+      "Date": "18/05/2026",
+      "DD": 18,
+      "MM": 5,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "aba78992-0e73-4249-bbf6-5dfebd457fdf",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "5/18/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "c145d9d7-bcd0-415f-9f2c-cb993e808b3a",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "5/18/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "May"
+    },
+    {
+      "Date": "22/06/2026",
+      "DD": 22,
+      "MM": 6,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "e325faa3-4367-478a-983e-6f9dd4652ec9",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "6/22/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "f55dd772-e2ce-40e5-a7c7-8b541c792985",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "6/22/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "June"
+    },
+    {
+      "Date": "23/02/2026",
+      "DD": 23,
+      "MM": 2,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "d7a1de28-48b1-47cc-8f0b-d7fff3ba9bc6",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "2/23/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "f10f5043-cdfe-4e56-8daf-33353b5ae027",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "2/23/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "February"
+    },
+    {
+      "Date": "23/03/2026",
+      "DD": 23,
+      "MM": 3,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "97f64e7c-113d-4e53-95d6-29e9cdbcbd71",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "3/23/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "769a3f63-f47c-46a0-ba00-478a9e4dfb6d",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "3/23/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "March"
+    },
+    {
+      "Date": "25/05/2026",
+      "DD": 25,
+      "MM": 5,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "a24c4b87-fc6b-4258-97a1-bc77f36a76b6",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "5/25/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "May"
+    },
+    {
+      "Date": "27/04/2026",
+      "DD": 27,
+      "MM": 4,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "b12407b1-70fb-4049-9601-665ada81a8dd",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "4/27/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "d404c6f2-2ad1-469f-a004-40d2c6bf776c",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "4/27/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "April"
+    },
+    {
+      "Date": "29/06/2026",
+      "DD": 29,
+      "MM": 6,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "21db5422-24ca-4941-b0db-470c3b31c208",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "6/29/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "52fa9087-6477-48de-8173-35c8e487c6af",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "6/29/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "June"
+    },
+    {
+      "Date": "03/08/2026",
+      "DD": 3,
+      "MM": 8,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "21678dbe-aaca-4c62-9ade-b69b0edb8bef",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "8/3/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "August"
+    },
+    {
+      "Date": "06/07/2026",
+      "DD": 6,
+      "MM": 7,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "63a0cf6a-33e9-4b67-ad9f-a15c71943fdc",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "7/6/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "July"
+    },
+    {
+      "Date": "10/08/2026",
+      "DD": 10,
+      "MM": 8,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "c92076e5-b784-4084-b6cc-db9a5790e2de",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "8/10/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "August"
+    },
+    {
+      "Date": "13/07/2026",
+      "DD": 13,
+      "MM": 7,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "78f11633-d0dd-4f46-9ee3-b69919ee2f1f",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "7/13/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "July"
+    },
+    {
+      "Date": "20/07/2026",
+      "DD": 20,
+      "MM": 7,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "f4e8b22c-e6cb-4bd3-ac3d-d9f1d49c0120",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "7/20/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "July"
+    },
+    {
+      "Date": "27/07/2026",
+      "DD": 27,
+      "MM": 7,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "6ae1a7e8-def6-46ce-ac1f-2beeb86d921b",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "7/27/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "July"
+    },
+    {
+      "Date": "07/09/2026",
+      "DD": 7,
+      "MM": 9,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "66de340f-9235-4755-8aef-7d2211a4e365",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "9/7/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "September"
+    },
+    {
+      "Date": "14/09/2026",
+      "DD": 14,
+      "MM": 9,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "8e3b6d4d-39f2-4362-8f7c-cabf1d271afd",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "9/14/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "721fb847-7d78-446f-a019-343bebacdc84",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "9/14/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "September"
+    },
+    {
+      "Date": "17/08/2026",
+      "DD": 17,
+      "MM": 8,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "f9534b3e-5277-4b92-8719-3efe78ecff91",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "8/17/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "August"
+    },
+    {
+      "Date": "21/09/2026",
+      "DD": 21,
+      "MM": 9,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "79d85bb6-abbb-48be-b3be-787ecb2db24d",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "9/21/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "b700e2e5-9cc5-484e-85d1-91fc956e5f2f",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "9/21/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "September"
+    },
+    {
+      "Date": "24/08/2026",
+      "DD": 24,
+      "MM": 8,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "4d26087b-cc74-4d0a-b8b0-c1e3a9f3b5d7",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "8/24/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "089b9da2-85ee-4770-9592-7c7393eb9a8d",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "8/24/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "August"
+    },
+    {
+      "Date": "30/03/2026",
+      "DD": 30,
+      "MM": 3,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "e50bd06a-8cc4-404e-b202-951989b230ab",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "3/30/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "b949a84c-7baa-4337-a7f3-8ef75b0089da",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "3/30/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "March"
+    },
+    {
+      "Date": "31/08/2026",
+      "DD": 31,
+      "MM": 8,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "ca8a5dcf-3364-4b5b-bf58-7c8cf391adbd",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "8/31/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "0ffcd804-560b-41dc-b529-92fa8d482134",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "8/31/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "August"
+    },
+    {
+      "Date": "02/11/2026",
+      "DD": 2,
+      "MM": 11,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "f64bc5b0-37f1-49af-be34-00113e2cfa10",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "11/2/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "db525d99-b4b0-4b54-832d-9ba3197e2d9d",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "11/2/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "November"
+    },
+    {
+      "Date": "05/10/2026",
+      "DD": 5,
+      "MM": 10,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "0eae0404-51b7-4620-89c1-f7b798da6e7d",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "10/5/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "58c86d3d-7fed-4c08-8060-1dc04fb8bd31",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "10/5/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "October"
+    },
+    {
+      "Date": "09/11/2026",
+      "DD": 9,
+      "MM": 11,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "62a3197b-d31f-4efa-9373-02c343b9871f",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "11/9/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "November"
+    },
+    {
+      "Date": "12/10/2026",
+      "DD": 12,
+      "MM": 10,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "276ddb95-8702-4472-ae07-ed31d4411973",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "10/12/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "October"
+    },
+    {
+      "Date": "16/11/2026",
+      "DD": 16,
+      "MM": 11,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "de6f4ef0-0eaa-4be1-b00a-6f5c8f1aa531",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "11/16/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "4bf3e982-1b41-493a-8d15-a4f1ed1156f2",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "11/16/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "November"
+    },
+    {
+      "Date": "19/10/2026",
+      "DD": 19,
+      "MM": 10,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "152ca310-33f9-4649-b17a-133e6dac8a55",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "10/19/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "815e6998-8157-41b8-bf20-502a3129c6af",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "10/19/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "October"
+    },
+    {
+      "Date": "26/10/2026",
+      "DD": 26,
+      "MM": 10,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "9ae13b73-eb2e-43ab-ba7d-aa0b2d97e2d2",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "10/26/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "76145e47-01d9-4f6e-86fc-4e94796017b8",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "10/26/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "October"
+    },
+    {
+      "Date": "28/09/2026",
+      "DD": 28,
+      "MM": 9,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "17839ea5-6625-4306-a206-2dc534aa5848",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "9/28/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "September"
+    },
+    {
+      "Date": "23/11/2026",
+      "DD": 23,
+      "MM": 11,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "af19c067-4c6a-4442-a166-fe051ef52098",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "11/23/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "b67deba7-cada-4bd3-99a8-5378bc4d1f5a",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "11/23/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "November"
+    },
+    {
+      "Date": "07/12/2026",
+      "DD": 7,
+      "MM": 12,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "00bd0c7a-35e3-4143-8c07-5f14adff0da4",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "12/7/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "e765ee41-952c-4a4b-bbe8-9ae4c5f004a2",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "12/7/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "December"
+    },
+    {
+      "Date": "30/11/2026",
+      "DD": 30,
+      "MM": 11,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "93e5399d-0fd4-4358-b468-385ef28fba63",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "11/30/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "November"
+    },
+    {
+      "Date": "14/12/2026",
+      "DD": 14,
+      "MM": 12,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "c7de6a4e-a8cb-40f1-8276-08cdf458ba5e",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Meeting",
+          "DateTime": "12/14/2026 5:00:00 PM"
+        },
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "aa0a3fa0-63b7-4815-9152-33808818f0dd",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "Council Zoning Meeting",
+          "DateTime": "12/14/2026 6:30:00 PM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "December"
+    },
+    {
+      "Date": "21/12/2026",
+      "DD": 21,
+      "MM": 12,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "5f52c135-3160-454e-a5cc-90246348611d",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "12/21/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "December"
+    },
+    {
+      "Date": "28/12/2026",
+      "DD": 28,
+      "MM": 12,
+      "YYYY": 2026,
+      "Items": [
+        {
+          "CalendarId": "b485bcac-3066-4b86-9053-4f35f64a8097",
+          "Id": "4a576247-b80e-46db-812a-72202ed6052c",
+          "MainContentId": "00000000-0000-0000-0000-000000000000",
+          "Name": "No Meetings",
+          "DateTime": "12/28/2026 12:00:00 AM"
+        }
+      ],
+      "Day": "Monday",
+      "Month": "December"
+    }
+  ]
+}
