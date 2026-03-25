@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "Items": [
+        {
+          "Name": "General Session",
+          "Id": "ef1d11f9-3abd-4782-ae11-a366eb220212",
+          "DateTime": "5/6/2025 9:00:00 AM"
+        },
+        {
+          "Name": "Commissioners' Briefing Session",
+          "Id": "e132bd53-68c8-467e-a5db-9869a5715d1d",
+          "DateTime": "5/15/2025 9:00:00 AM"
+        },
+        {
+          "Name": "Independence Day",
+          "Id": "aaa11111-1111-1111-1111-111111111111",
+          "DateTime": "7/4/2025 12:00:00 AM"
+        },
+        {
+          "Name": "Planning Commission Meeting",
+          "Id": "3fac85ae-e3f2-4899-a351-0b936b567b6c",
+          "DateTime": "5/14/2025 1:30:00 PM"
+        }
+      ]
+    },
+    {
+      "Items": [
+        {
+          "Name": "General Session",
+          "Id": "bbb22222-2222-2222-2222-222222222222",
+          "DateTime": "6/3/2025 9:00:00 AM"
+        },
+        {
+          "Name": "Public Hearing",
+          "Id": "ccc33333-3333-3333-3333-333333333333",
+          "DateTime": "6/10/2025 6:00:00 PM"
+        },
+        {
+          "Name": "Uplift Her Wellness Day 2025",
+          "Id": "d01b5701-0475-4b56-ac3b-f98f5d2b7ffa",
+          "DateTime": "6/18/2025 2:00:00 PM"
+        },
+        {
+          "Name": "Special Meeting",
+          "Id": "ddd44444-4444-4444-4444-444444444444",
+          "DateTime": "7/1/2025 10:00:00 AM"
+        }
+      ]
+    }
+  ]
+}
