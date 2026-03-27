@@ -5,7 +5,7 @@
 
 Web scrapers for public meetings in the Columbus, OH area.
 
-Part of the [City Scrapers](https://cityscrapers.org) project.
+Part of the [City Scrapers](https://city-scrapers.org) project.
 
 ## Spider prefix
 
@@ -13,7 +13,7 @@ All spiders in this repo use the `coloh` prefix (e.g. `coloh_city_council`).
 
 ## Development
 
-See the [development documentation](https://cityscrapers.org/docs/development/) for more info on how to get started.
+See the [development documentation](https://city-scrapers.org/docs/development/) for more info on how to get started.
 
 ### Setup
 
