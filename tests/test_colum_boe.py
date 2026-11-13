@@ -1,15 +1,17 @@
 import logging
 from datetime import datetime
 from os.path import dirname, join
+from unittest.mock import MagicMock
 
 import pytest
 from city_scrapers_core.constants import BOARD, CANCELLED, COMMITTEE, PASSED, TENTATIVE
 from city_scrapers_core.utils import file_response
 from freezegun import freeze_time
+from scrapy import signals
 from scrapy.http import HtmlResponse
 from twisted.python.failure import Failure
 
-from city_scrapers.spiders.colum_boe import ColumBoeSpider
+from city_scrapers.spiders.colum_boe import ColumBoeSourceError, ColumBoeSpider
 
 MEETING_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/goto?open&id={}"
 DETAIL_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeeting?open&0.123456789012345"  # noqa
@@ -144,6 +146,15 @@ VARIANTS = {
         "THE BOARD OF EDUCATION<br>THE DENNISION EDGE<br>300 MARCONI BLVD SUITE 200"
         "<br>COLUMBUS, OH 43215<br>9:00 AM<br>CHRISTINA A. VERA - PRESIDENT",
     ),
+    # The Feb 17, 2026 description with inline formatting added, which must
+    # not split "6:00 PM" or the street across lines
+    "inline": (
+        "REGULAR BOARD BUSINESS MEETING",
+        "Tuesday, February 17, 2026",
+        "<p>COLUMBUS CITY SCHOOLS<br>BOARD OF EDUCATION MEETING</p>"
+        "<p><span>3700 S. HIGH</span> ST. COLUMBUS, OH 43207</p>"
+        "<p><strong>6:00</strong> <em>PM</em> &amp; online</p>",
+    ),
     "no_address": (
         "SPECIAL BOARD MEETING",
         "Tuesday, March 9, 2027",
@@ -225,13 +236,65 @@ def test_list_detail_requests(spider, list_requests):
     assert request.cb_kwargs == {"meeting_id": "DQ3VPX80F260"}
 
 
-def test_failed_request_is_logged_as_error(spider, caplog):
+def reported_errors(spider):
+    """The exceptions the spider sent through Scrapy's spider_error signal,
+    which scrapy_sentry_errors forwards to Sentry in production."""
+    return [
+        c.kwargs["failure"].value
+        for c in spider.crawler.signals.send_catch_log.call_args_list
+        if c.kwargs.get("signal") is signals.spider_error
+    ]
+
+
+def closed_spider(failed_requests=0, meetings_parsed=0, reason="finished"):
+    """A spider with a mock crawler, closed after a run with these counts."""
+    spider = ColumBoeSpider()
+    spider.crawler = MagicMock()
+    spider._failed_requests = failed_requests
+    spider._meetings_parsed = meetings_parsed
+    spider._on_spider_closed(spider, reason)
+    return spider
+
+
+def test_failed_request_is_counted_and_logged(caplog):
     """caplog captures log records, so this checks that a failed BoardDocs
-    request (for example a 403 from CloudFront) is reported as an error
-    instead of ending the run with zero meetings and no message."""
-    with caplog.at_level(logging.ERROR):
+    request (for example a 403 from CloudFront) is logged and counted for
+    the error reported when the spider closes."""
+    spider = ColumBoeSpider()
+    with caplog.at_level(logging.WARNING):
         spider._handle_error(Failure(Exception("403 Forbidden")))
+    assert spider._failed_requests == 1
     assert "BoardDocs request failed" in caplog.text
+
+
+def test_blocked_run_reports_one_error():
+    spider = closed_spider(failed_requests=2)
+    errors = reported_errors(spider)
+    assert len(errors) == 1
+    assert isinstance(errors[0], ColumBoeSourceError)
+    assert str(errors[0]) == (
+        "colum_boe: 2 failed request(s); 0 meetings parsed "
+        "(finish_reason=finished, meetings=0)"
+    )
+
+
+def test_some_failed_meetings_are_reported():
+    errors = reported_errors(closed_spider(failed_requests=1, meetings_parsed=171))
+    assert [str(e) for e in errors] == [
+        "colum_boe: 1 failed request(s) (finish_reason=finished, meetings=171)"
+    ]
+
+
+def test_good_run_reports_nothing():
+    assert reported_errors(closed_spider(meetings_parsed=172)) == []
+
+
+def test_parsed_meetings_are_counted():
+    spider = ColumBoeSpider()
+    with freeze_time("2026-11-12"):
+        list(spider.parse(detail_response("jun_25")))
+        list(spider.parse(detail_response("no_address")))
+    assert spider._meetings_parsed == 2
 
 
 def test_public_page_failure_still_requests_list(spider):
@@ -400,6 +463,19 @@ def test_suite_goes_in_name(variants):
         "name": "The Dennision Edge, Suite 200",
         "address": "300 Marconi Blvd, Columbus, OH 43215",
     }
+
+
+def test_inline_formatting_keeps_lines_whole(variants):
+    meeting = variants["inline"]
+    assert meeting["start"] == datetime(2026, 2, 17, 18, 0)
+    assert meeting["location"] == {
+        "name": "Southland Center",
+        "address": "3700 S. High Street, Columbus, OH 43207",
+    }
+    assert meeting["description"] == (
+        "COLUMBUS CITY SCHOOLS BOARD OF EDUCATION MEETING "
+        "3700 S. HIGH ST. COLUMBUS, OH 43207 6:00 PM & online"
+    )
 
 
 def test_no_address(variants):

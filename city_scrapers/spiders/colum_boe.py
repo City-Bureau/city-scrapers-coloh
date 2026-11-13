@@ -8,6 +8,13 @@ from city_scrapers_core.constants import BOARD, CANCELLED, COMMITTEE, PASSED, TE
 from city_scrapers_core.items import Meeting
 from city_scrapers_core.spiders import CityScrapersSpider
 from dateutil.relativedelta import relativedelta
+from scrapy import signals
+from twisted.python.failure import Failure
+from w3lib.html import remove_tags, replace_entities
+
+
+class ColumBoeSourceError(Exception):
+    """BoardDocs could not be read, so meetings would be missed."""
 
 
 class ColumBoeSpider(CityScrapersSpider):
@@ -69,6 +76,10 @@ class ColumBoeSpider(CityScrapersSpider):
     # A room or suite written on the street line: "3700 S. HIGH STREET/ROOM
     # 825", "3700 S. HIGH ST. RM 825", "300 MARCONI BLVD SUITE 200"
     street_room_re = re.compile(r"\s*/?\s*\b(?:ROOM|RM|SUITE|STE)\b\.?\s*\S+", re.I)
+    # Tags that start a new description line
+    line_break_re = re.compile(
+        r"<br\s*/?>|</?(?:p|div|li|ul|ol|h[1-6]|tr|table)\b[^>]*>", re.I
+    )
     # "COMMITTEE" and the source's misspelling "COMMITEE"
     committee_re = re.compile(r"\bcommit+ee\b", re.I)
     # Lines that name the body or the district rather than a place
@@ -117,18 +128,64 @@ class ColumBoeSpider(CityScrapersSpider):
             dont_filter=True,
         )
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._failed_requests = 0
+        self._meetings_parsed = 0
+
+    @classmethod
+    def from_crawler(cls, crawler, *args, **kwargs):
+        spider = super().from_crawler(crawler, *args, **kwargs)
+        crawler.signals.connect(spider._on_spider_closed, signal=signals.spider_closed)
+        return spider
+
     def _handle_public_page_error(self, failure):
         """The public page only provides the session cookie, so a failure
-        there is logged and the meetings list is still requested."""
+        there is logged and the meetings list is still requested. If the
+        block also stops the list, that failure is the one reported."""
         self.logger.warning(
             "BoardDocs public page request failed, continuing: %r", failure
         )
         yield from self._request_meetings_list(None)
 
     def _handle_error(self, failure):
-        """A failed list or detail request means missing meetings, which a
-        scheduled run would otherwise report as a quiet success."""
-        self.logger.error("BoardDocs request failed: %r", failure)
+        """A failed list or meeting request means missing meetings. It is
+        counted and reported once when the spider closes."""
+        self._failed_requests += 1
+        self.logger.warning("BoardDocs request failed: %r", failure.value)
+
+    def _on_spider_closed(self, spider, reason):
+        """Report one error per run if requests failed or no meetings were
+        found, so a blocked run doesn't finish as a quiet success with 0
+        meetings. Follows City-Bureau/city-scrapers-colgo#39."""
+        problems = []
+        if self._failed_requests:
+            problems.append(f"{self._failed_requests} failed request(s)")
+        if reason == "finished" and self._meetings_parsed == 0:
+            problems.append("0 meetings parsed")
+        if not problems:
+            return
+        self._report_error(
+            ColumBoeSourceError(
+                f"{self.name}: {'; '.join(problems)} "
+                f"(finish_reason={reason}, meetings={self._meetings_parsed})"
+            )
+        )
+
+    def _report_error(self, exc):
+        """Report an error outside a callback the way Scrapy reports callback
+        errors: ERROR log, spider_exceptions stat, and the spider_error signal
+        that scrapy_sentry_errors forwards to Sentry."""
+        self.logger.error(str(exc))
+        self.crawler.stats.inc_value(
+            f"spider_exceptions/{exc.__class__.__name__}", spider=self
+        )
+        self.crawler.signals.send_catch_log(
+            signal=signals.spider_error,
+            failure=Failure(exc),
+            response=None,
+            spider=self,
+        )
 
     def _request_meetings_list(self, response):
         yield self._boarddocs_post(
@@ -141,7 +198,8 @@ class ColumBoeSpider(CityScrapersSpider):
         try:
             meetings = response.json()
         except ValueError as e:
-            self.logger.error("BoardDocs meetings list is not JSON: %s", e)
+            # Reported at close as "0 meetings parsed"
+            self.logger.warning("BoardDocs meetings list is not JSON: %s", e)
             return
         for item in self._get_clean_meetings(meetings):
             meeting_id = item["unique"]
@@ -204,6 +262,7 @@ class ColumBoeSpider(CityScrapersSpider):
         )
         meeting["status"] = self._get_status(meeting, text=raw_title)
         meeting["id"] = self._get_id(meeting)
+        self._meetings_parsed += 1
         yield meeting
 
     def _parse_date(self, response):
@@ -218,9 +277,12 @@ class ColumBoeSpider(CityScrapersSpider):
         return self.title_status_re.sub("", raw_title).strip()
 
     def _parse_description_lines(self, response):
-        """Each line of the description (separated by <br> or block tags)."""
+        """Each line of the description. Lines break only at <br> and block
+        tags, so inline formatting such as "<b>6:00</b> PM" stays one line."""
+        html = response.css(".meeting-description").get() or ""
+        html = self.line_break_re.sub("\n", html)
         lines = []
-        for text in response.css(".meeting-description ::text").getall():
+        for text in replace_entities(remove_tags(html)).split("\n"):
             line = re.sub(r"\s+", " ", text).strip()
             if line:
                 lines.append(line)
