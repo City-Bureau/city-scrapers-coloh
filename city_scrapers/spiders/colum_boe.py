@@ -278,9 +278,10 @@ class ColumBoeSpider(CityScrapersSpider):
 
     def _parse_description_lines(self, response):
         """Each line of the description. Lines break only at <br> and block
-        tags, so inline formatting such as "<b>6:00</b> PM" stays one line."""
+        tags, so inline formatting such as "<b>6:00</b> PM" stays one line.
+        Newlines in the HTML source are only spaces, as in a browser."""
         html = response.css(".meeting-description").get() or ""
-        html = self.line_break_re.sub("\n", html)
+        html = self.line_break_re.sub("\n", re.sub(r"\s+", " ", html))
         lines = []
         for text in replace_entities(remove_tags(html)).split("\n"):
             line = re.sub(r"\s+", " ", text).strip()

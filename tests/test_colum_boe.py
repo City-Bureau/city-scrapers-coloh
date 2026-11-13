@@ -155,6 +155,13 @@ VARIANTS = {
         "<p><span>3700 S. HIGH</span> ST. COLUMBUS, OH 43207</p>"
         "<p><strong>6:00</strong> <em>PM</em> &amp; online</p>",
     ),
+    # A newline inside the HTML source is a space, not a new line
+    "source_newline": (
+        "REGULAR BOARD BUSINESS MEETING",
+        "Tuesday, February 17, 2026",
+        "COLUMBUS CITY SCHOOLS<br>3700 S. HIGH ST.\nCOLUMBUS, OH 43207"
+        "<p>6:00\nPM</p>",
+    ),
     "no_address": (
         "SPECIAL BOARD MEETING",
         "Tuesday, March 9, 2027",
@@ -475,6 +482,15 @@ def test_inline_formatting_keeps_lines_whole(variants):
     assert meeting["description"] == (
         "COLUMBUS CITY SCHOOLS BOARD OF EDUCATION MEETING "
         "3700 S. HIGH ST. COLUMBUS, OH 43207 6:00 PM & online"
+    )
+
+
+def test_source_newline_is_a_space(variants):
+    meeting = variants["source_newline"]
+    assert meeting["start"] == datetime(2026, 2, 17, 18, 0)
+    assert meeting["time_notes"] == ""
+    assert meeting["description"] == (
+        "COLUMBUS CITY SCHOOLS 3700 S. HIGH ST. COLUMBUS, OH 43207 6:00 PM"
     )
 
 
