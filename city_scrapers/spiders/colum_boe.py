@@ -57,7 +57,7 @@ class ColumBoeSpider(CityScrapersSpider):
             "address": "270 E. State Street, Columbus, OH 43215",
         },
         "3700 S HIGH": {
-            "name": "Southland Center",
+            "name": "Columbus City Schools",
             "address": "3700 S. High Street, Columbus, OH 43207",
         },
     }
