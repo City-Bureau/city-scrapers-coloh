@@ -15,6 +15,7 @@ from city_scrapers.spiders.colum_boe import ColumBoeSourceError, ColumBoeSpider
 
 MEETING_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/goto?open&id={}"
 DETAIL_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeeting?open&0.123456789012345"  # noqa
+AGENDA_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetAgenda?open&0.123456789012345"  # noqa
 
 # Same markup as the BD-GetMeeting page (tests/files/colum_boe.html), with
 # description text copied from the live meetings named in each test
@@ -194,12 +195,22 @@ def list_requests(spider):
 
 
 @pytest.fixture(scope="module")
-def item(spider):
+def detail_request(spider):
+    """The meeting request built from the meeting's agenda page
+    (tests/files/colum_boe_agenda.html, BD-GetAgenda for DQ3VPX80F260)."""
+    response = file_response(
+        join(dirname(__file__), "files", "colum_boe_agenda.html"), url=AGENDA_URL
+    )
+    return next(spider._parse_agenda(response, meeting_id="DQ3VPX80F260"))
+
+
+@pytest.fixture(scope="module")
+def item(spider, detail_request):
     response = file_response(
         join(dirname(__file__), "files", "colum_boe.html"), url=DETAIL_URL
     )
     with freeze_time("2026-02-24"):
-        return next(spider.parse(response, meeting_id="DQ3VPX80F260"))
+        return next(spider.parse(response, **detail_request.cb_kwargs))
 
 
 @pytest.fixture(scope="module")
@@ -235,12 +246,43 @@ def test_list_keeps_three_years(list_requests):
     assert len(list_requests) == 185
 
 
-def test_list_detail_requests(spider, list_requests):
+def test_list_requests_agendas(spider, list_requests):
     request = list_requests[0]
     assert request.method == "POST"
+    assert "/BD-GetAgenda?open&0." in request.url
     assert request.body == b"current_committee_id=A9HCVU32F33A&id=DQ3VPX80F260"
-    assert request.callback == spider.parse
+    assert request.callback == spider._parse_agenda
+    assert request.errback == spider._handle_agenda_error
     assert request.cb_kwargs == {"meeting_id": "DQ3VPX80F260"}
+
+
+def test_agenda_leads_to_meeting_request(spider, detail_request):
+    assert "/BD-GetMeeting?open&0." in detail_request.url
+    assert detail_request.body == b"current_committee_id=A9HCVU32F33A&id=DQ3VPX80F260"
+    assert detail_request.callback == spider.parse
+    assert detail_request.errback == spider._handle_error
+    # The first agenda item, as the original spider linked it
+    assert detail_request.cb_kwargs == {
+        "meeting_id": "DQ3VPX80F260",
+        "agenda_id": "DQ3VPZ80F262",
+    }
+
+
+def test_meeting_without_agenda_items(spider):
+    response = HtmlResponse(url=AGENDA_URL, body=b"<div></div>", encoding="utf-8")
+    request = next(spider._parse_agenda(response, meeting_id="ABC"))
+    assert request.cb_kwargs == {"meeting_id": "ABC", "agenda_id": None}
+
+
+def test_failed_agenda_still_requests_meeting():
+    spider = ColumBoeSpider()
+    failure = Failure(Exception("403 Forbidden"))
+    failure.request = MagicMock(cb_kwargs={"meeting_id": "ABC"})
+    requests = list(spider._handle_agenda_error(failure))
+    assert spider._failed_requests == 1
+    assert len(requests) == 1
+    assert requests[0].callback == spider.parse
+    assert requests[0].cb_kwargs == {"meeting_id": "ABC", "agenda_id": None}
 
 
 def reported_errors(spider):
@@ -346,8 +388,9 @@ def test_status(item):
 
 
 def test_location(item):
+    # The description gives only "COLUMBUS CITY SCHOOLS" and the address
     assert item["location"] == {
-        "name": "Southland Center",
+        "name": "Columbus City Schools",
         "address": "3700 S. High Street, Columbus, OH 43207",
     }
 
@@ -358,7 +401,7 @@ def test_source(item):
 
 def test_links(item):
     assert item["links"] == [
-        {"title": "Agenda", "href": MEETING_URL.format("DQ3VPX80F260")}
+        {"title": "Agenda", "href": MEETING_URL.format("DQ3VPZ80F262")}
     ]
 
 
@@ -476,7 +519,7 @@ def test_inline_formatting_keeps_lines_whole(variants):
     meeting = variants["inline"]
     assert meeting["start"] == datetime(2026, 2, 17, 18, 0)
     assert meeting["location"] == {
-        "name": "Southland Center",
+        "name": "Columbus City Schools",
         "address": "3700 S. High Street, Columbus, OH 43207",
     }
     assert meeting["description"] == (
@@ -506,8 +549,9 @@ def test_page_url_falls_back_to_meeting_id(spider):
     )
     with freeze_time("2026-11-12"):
         meeting = next(spider.parse(response, meeting_id="ABC"))
-    assert meeting["links"] == [{"title": "Agenda", "href": MEETING_URL.format("ABC")}]
     assert meeting["source"] == MEETING_URL.format("ABC")
+    # No agenda id was passed, so there is no agenda link
+    assert meeting["links"] == []
 
 
 def test_no_access_page_is_skipped(spider):

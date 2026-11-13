@@ -25,7 +25,10 @@ class ColumBoeSpider(CityScrapersSpider):
 
     base_url = "https://go.boarddocs.com/oh/columbus/Board.nsf/{endpoint}?open&0.{cache_buster}"  # noqa
     source_url = "https://go.boarddocs.com/oh/columbus/Board.nsf/Public"
-    meeting_url = "https://go.boarddocs.com/oh/columbus/Board.nsf/goto?open&id={meeting_id}"  # noqa
+    # Links a meeting or an agenda item by its BoardDocs unique id
+    goto_url = (
+        "https://go.boarddocs.com/oh/columbus/Board.nsf/goto?open&id={unique}"  # noqa
+    )
     boarddocs_committee_id = "A9HCVU32F33A"
     lookback = relativedelta(years=3)
 
@@ -48,9 +51,10 @@ class ColumBoeSpider(CityScrapersSpider):
     # The board meets in two district buildings. The source writes their
     # addresses several ways ("270 E. STATE ST.", "270 E. STATE STREET",
     # "COLUMBUS, OHIO" with no ZIP), so they are matched on number and street
-    # and given one complete address. The names come from the descriptions
-    # ("SOUTHLAND CENTER", "COLUMBUS EDUCATION CENTER") and are only used when
-    # a description names no building itself.
+    # and given one complete address. A building the description names (such
+    # as "SOUTHLAND CENTER") is kept; these names are only used when it names
+    # none. Address-only descriptions at 3700 S. High say "COLUMBUS CITY
+    # SCHOOLS", so that is the name used there.
     known_locations = {
         "270 E STATE": {
             "name": "Columbus Education Center",
@@ -107,7 +111,7 @@ class ColumBoeSpider(CityScrapersSpider):
             dont_filter=True,
         )
 
-    def _boarddocs_post(self, endpoint, body, callback, cb_kwargs=None):
+    def _boarddocs_post(self, endpoint, body, callback, cb_kwargs=None, errback=None):
         """POST to a BoardDocs endpoint the way the public page's scripts do.
         The random number in the URL is the page's own cache-buster."""
         return scrapy.Request(
@@ -124,7 +128,7 @@ class ColumBoeSpider(CityScrapersSpider):
             },
             callback=callback,
             cb_kwargs=cb_kwargs or {},
-            errback=self._handle_error,
+            errback=errback or self._handle_error,
             dont_filter=True,
         )
 
@@ -204,11 +208,38 @@ class ColumBoeSpider(CityScrapersSpider):
         for item in self._get_clean_meetings(meetings):
             meeting_id = item["unique"]
             yield self._boarddocs_post(
-                "BD-GetMeeting",
-                body=f"current_committee_id={self.boarddocs_committee_id}&id={meeting_id}",  # noqa
-                callback=self.parse,
+                "BD-GetAgenda",
+                body=self._meeting_body(meeting_id),
+                callback=self._parse_agenda,
                 cb_kwargs={"meeting_id": meeting_id},
+                errback=self._handle_agenda_error,
             )
+
+    def _meeting_body(self, meeting_id):
+        return f"current_committee_id={self.boarddocs_committee_id}&id={meeting_id}"
+
+    def _parse_agenda(self, response, meeting_id):
+        """The agenda link points to the meeting's first agenda item, as in the
+        original spider. A meeting with no agenda items yet gets no link."""
+        agenda_id = response.css("li.XXXXXXui-corner-all::attr(unique)").get()
+        if not agenda_id:
+            self.logger.info("No agenda items yet for meeting %s", meeting_id)
+        yield self._request_meeting(meeting_id, agenda_id)
+
+    def _handle_agenda_error(self, failure):
+        """A failed agenda request is counted, but the meeting is still
+        requested, without an agenda link, so it is not lost."""
+        self._handle_error(failure)
+        meeting_id = failure.request.cb_kwargs["meeting_id"]
+        yield self._request_meeting(meeting_id, None)
+
+    def _request_meeting(self, meeting_id, agenda_id):
+        return self._boarddocs_post(
+            "BD-GetMeeting",
+            body=self._meeting_body(meeting_id),
+            callback=self.parse,
+            cb_kwargs={"meeting_id": meeting_id, "agenda_id": agenda_id},
+        )
 
     def _get_clean_meetings(self, data):
         """Keep list entries from the last 3 years and all future ones."""
@@ -231,7 +262,7 @@ class ColumBoeSpider(CityScrapersSpider):
                 clean.append(item)
         return clean
 
-    def parse(self, response, meeting_id=None):
+    def parse(self, response, meeting_id=None, agenda_id=None):
         """Parse one meeting's BD-GetMeeting HTML into a Meeting."""
         if re.search(r"no access", response.text, re.I):
             # BoardDocs returns a "No access" page for meetings that are not
@@ -257,7 +288,7 @@ class ColumBoeSpider(CityScrapersSpider):
             all_day=False,
             time_notes=self._parse_time_notes(start),
             location=self._parse_location(lines),
-            links=[{"title": "Agenda", "href": meeting_page}] if meeting_page else [],
+            links=self._parse_links(agenda_id),
             source=meeting_page or self.source_url,
         )
         meeting["status"] = self._get_status(meeting, text=raw_title)
@@ -426,14 +457,18 @@ class ColumBoeSpider(CityScrapersSpider):
                 return location
         return None
 
+    def _parse_links(self, agenda_id):
+        if not agenda_id:
+            return []
+        return [{"title": "Agenda", "href": self.goto_url.format(unique=agenda_id)}]
+
     def _parse_meeting_page(self, response, meeting_id):
-        """The meeting's own BoardDocs page, which holds the agenda. It is
-        both the meeting's source and its agenda link. The page's "Copy URL"
-        button carries this goto URL; without it the URL is built from the
-        meeting id."""
+        """The meeting's own BoardDocs page, used as its source. The page's
+        "Copy URL" button carries this goto URL; without it the URL is built
+        from the meeting id."""
         href = response.css("button.url::attr(data-clipboard-text)").get()
         if not href and meeting_id:
-            href = self.meeting_url.format(meeting_id=meeting_id)
+            href = self.goto_url.format(unique=meeting_id)
         if not href:
             self.logger.warning("No BoardDocs page URL for meeting %s", meeting_id)
         return href
