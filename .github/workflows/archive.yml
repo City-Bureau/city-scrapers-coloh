@@ -58,6 +58,10 @@ jobs:
         env:
           PIPENV_DEFAULT_PYTHON_VERSION: ${{ env.PYTHON_VERSION }}
 
+      # colum_boe loads BoardDocs in Firefox through scrapy-playwright
+      - name: Install Playwright Firefox
+        run: pipenv run playwright install --with-deps firefox
+
       - name: Run scrapers
         run: |
           export PYTHONPATH=$(pwd):$PYTHONPATH
