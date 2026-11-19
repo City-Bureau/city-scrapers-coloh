@@ -5,10 +5,10 @@ from unittest.mock import MagicMock
 
 import pytest
 from city_scrapers_core.constants import BOARD, CANCELLED, COMMITTEE, PASSED, TENTATIVE
-from city_scrapers_core.utils import file_response
 from freezegun import freeze_time
-from scrapy import signals
+from scrapy import Request, signals
 from scrapy.http import HtmlResponse
+from scrapy_playwright.page import PageMethod
 from twisted.python.failure import Failure
 
 from city_scrapers.spiders.colum_boe import ColumBoeSourceError, ColumBoeSpider
@@ -16,6 +16,7 @@ from city_scrapers.spiders.colum_boe import ColumBoeSourceError, ColumBoeSpider
 MEETING_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/goto?open&id={}"
 DETAIL_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeeting?open&0.123456789012345"  # noqa
 AGENDA_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetAgenda?open&0.123456789012345"  # noqa
+LIST_URL = "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeetingsList?open&0.123456789012345"  # noqa
 
 # Same markup as the BD-GetMeeting page (tests/files/colum_boe.html), with
 # description text copied from the live meetings named in each test
@@ -184,33 +185,50 @@ def spider():
     return ColumBoeSpider()
 
 
-@pytest.fixture(scope="module")
-def list_requests(spider):
-    response = file_response(
-        join(dirname(__file__), "files", "colum_boe_meetings.json"),
-        url="https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeetingsList?open&0.123456789012345",  # noqa
+def read_file(name):
+    with open(join(dirname(__file__), "files", name), encoding="utf-8") as f:
+        return f.read()
+
+
+def fetched(text, url=DETAIL_URL, status=200):
+    """One call's result as fetch_all_js returns it."""
+    return {"url": url, "status": status, "text": text}
+
+
+def results_response(results):
+    """The public page's response, carrying fetch_all_js's results the way
+    scrapy-playwright stores a PageMethod's return value."""
+    page_method = PageMethod("evaluate", "() => {}")
+    page_method.result = results
+    request = Request(
+        ColumBoeSpider.source_url,
+        meta={"playwright_page_methods": {"fetch_all": page_method}},
     )
-    with freeze_time("2026-02-24"):
-        return list(spider._parse_meetings_list(response))
+    return HtmlResponse(
+        url=ColumBoeSpider.source_url, body=b"", encoding="utf-8", request=request
+    )
+
+
+def run_results(spider, results, now="2026-02-24"):
+    with freeze_time(now):
+        return list(spider._parse_results(results_response(results)))
+
+
+LIST_RESULT = fetched(read_file("colum_boe_meetings.json"), url=LIST_URL)
+# BD-GetAgenda and BD-GetMeeting for DQ3VPX80F260, the first meeting kept
+DQ3_RESULT = {
+    "agenda": fetched(read_file("colum_boe_agenda.html"), url=AGENDA_URL),
+    "meeting": fetched(read_file("colum_boe.html")),
+}
 
 
 @pytest.fixture(scope="module")
-def detail_request(spider):
-    """The meeting request built from the meeting's agenda page
-    (tests/files/colum_boe_agenda.html, BD-GetAgenda for DQ3VPX80F260)."""
-    response = file_response(
-        join(dirname(__file__), "files", "colum_boe_agenda.html"), url=AGENDA_URL
+def item():
+    spider = ColumBoeSpider()
+    items = run_results(
+        spider, {"list": LIST_RESULT, "meetings": {"DQ3VPX80F260": DQ3_RESULT}}
     )
-    return next(spider._parse_agenda(response, meeting_id="DQ3VPX80F260"))
-
-
-@pytest.fixture(scope="module")
-def item(spider, detail_request):
-    response = file_response(
-        join(dirname(__file__), "files", "colum_boe.html"), url=DETAIL_URL
-    )
-    with freeze_time("2026-02-24"):
-        return next(spider.parse(response, **detail_request.cb_kwargs))
+    return items[0]
 
 
 @pytest.fixture(scope="module")
@@ -219,70 +237,119 @@ def variants(spider):
         return {key: next(spider.parse(detail_response(key))) for key in VARIANTS}
 
 
-def test_start_requests_load_public_page_first(spider):
-    requests = list(spider.start_requests())
+def test_start_request_runs_fetch_all_in_public_page(spider):
+    with freeze_time("2026-02-24"):
+        requests = list(spider.start_requests())
     assert len(requests) == 1
-    assert requests[0].url == "https://go.boarddocs.com/oh/columbus/Board.nsf/Public"
-    assert requests[0].callback == spider._request_meetings_list
-    assert requests[0].errback == spider._handle_public_page_error
-
-
-def test_meetings_list_request(spider):
-    request = next(spider._request_meetings_list(None))
-    assert request.method == "POST"
-    assert request.url.startswith(
-        "https://go.boarddocs.com/oh/columbus/Board.nsf/BD-GetMeetingsList?open&0."
-    )
-    assert request.body == b"current_committee_id=A9HCVU32F33A"
-    assert request.headers["X-Requested-With"] == b"XMLHttpRequest"
-    assert request.headers["Referer"] == spider.source_url.encode()
+    request = requests[0]
+    assert request.url == "https://go.boarddocs.com/oh/columbus/Board.nsf/Public"
+    assert request.callback == spider._parse_results
     assert request.errback == spider._handle_error
-
-
-def test_list_keeps_three_years(list_requests):
-    # The frozen 2026-02-24 00:00 UTC is still Feb 23 in Columbus, so the
-    # cutoff is 2023-02-23 and that day's NSDP meeting is kept
-
-    assert len(list_requests) == 185
-
-
-def test_list_requests_agendas(spider, list_requests):
-    request = list_requests[0]
-    assert request.method == "POST"
-    assert "/BD-GetAgenda?open&0." in request.url
-    assert request.body == b"current_committee_id=A9HCVU32F33A&id=DQ3VPX80F260"
-    assert request.callback == spider._parse_agenda
-    assert request.errback == spider._handle_agenda_error
-    assert request.cb_kwargs == {"meeting_id": "DQ3VPX80F260"}
-
-
-def test_agenda_leads_to_meeting_request(spider, detail_request):
-    assert "/BD-GetMeeting?open&0." in detail_request.url
-    assert detail_request.body == b"current_committee_id=A9HCVU32F33A&id=DQ3VPX80F260"
-    assert detail_request.callback == spider.parse
-    assert detail_request.errback == spider._handle_error
-    # The first agenda item, as the original spider linked it
-    assert detail_request.cb_kwargs == {
-        "meeting_id": "DQ3VPX80F260",
-        "agenda_id": "DQ3VPZ80F262",
+    assert request.meta["playwright"] is True
+    page_method = request.meta["playwright_page_methods"]["fetch_all"]
+    assert page_method.method == "evaluate"
+    script, args = page_method.args
+    assert script == spider.fetch_all_js
+    # The frozen 2026-02-24 00:00 UTC is still Feb 23 in Columbus
+    assert args == {
+        "baseUrl": spider.base_url,
+        "committeeId": "A9HCVU32F33A",
+        "cutoff": "20230223",
+        "delayMs": 1000,
+        "timeoutMs": 30000,
+        "maxFailures": 5,
     }
+
+
+def test_list_keeps_three_years(caplog):
+    """Every meeting since the cutoff (2023-02-23, whose NSDP meeting is kept)
+    is expected in the results; here none were read, so each is counted."""
+    spider = ColumBoeSpider()
+    with caplog.at_level(logging.WARNING):
+        assert run_results(spider, {"list": LIST_RESULT, "meetings": {}}) == []
+    assert spider._failed_requests == 185
+    assert "185 BoardDocs meetings were not read: DQ3VPX80F260, " in caplog.text
+
+
+def test_stopped_run_parses_what_was_read(caplog):
+    """After fetch_all_js stops, the meetings it read are still parsed and
+    the rest are counted as not read."""
+    spider = ColumBoeSpider()
+    results = {
+        "list": LIST_RESULT,
+        "meetings": {"DQ3VPX80F260": DQ3_RESULT},
+        "stopped": "5 failed calls in a row",
+    }
+    with caplog.at_level(logging.WARNING):
+        items = run_results(spider, results)
+    assert len(items) == 1
+    assert spider._failed_requests == 184
+    assert "Stopped reading BoardDocs after 5 failed calls in a row" in caplog.text
+    assert "184 BoardDocs meetings were not read" in caplog.text
+
+
+def test_cutoff_is_set_once_per_run():
+    """A run that starts on Feb 23 in Columbus and is parsed on Feb 24 still
+    expects the Feb 23, 2023 meeting that fetch_all_js was told to read."""
+    spider = ColumBoeSpider()
+    with freeze_time("2026-02-24"):
+        list(spider.start_requests())
+    run_results(spider, {"list": LIST_RESULT, "meetings": {}}, now="2026-02-25")
+    assert spider._failed_requests == 185
+
+
+def test_agenda_link_is_first_agenda_item(item):
+    # The first agenda item, as the original spider linked it
+    assert item["links"][0]["href"] == MEETING_URL.format("DQ3VPZ80F262")
 
 
 def test_meeting_without_agenda_items(spider):
     response = HtmlResponse(url=AGENDA_URL, body=b"<div></div>", encoding="utf-8")
-    request = next(spider._parse_agenda(response, meeting_id="ABC"))
-    assert request.cb_kwargs == {"meeting_id": "ABC", "agenda_id": None}
+    assert spider._parse_agenda_id(response, "ABC") is None
 
 
-def test_failed_agenda_still_requests_meeting():
+def test_failed_agenda_still_parses_meeting():
     spider = ColumBoeSpider()
-    failure = Failure(Exception("403 Forbidden"))
-    failure.request = MagicMock(cb_kwargs={"meeting_id": "ABC"})
-    requests = list(spider._handle_agenda_error(failure))
+    meeting = {**DQ3_RESULT, "agenda": fetched(" ", url=AGENDA_URL)}
+    items = run_results(
+        spider, {"list": LIST_RESULT, "meetings": {"DQ3VPX80F260": meeting}}
+    )
+    assert len(items) == 1
+    assert items[0]["links"] == []
+    # The blank agenda and the 184 meetings not in the results
+    assert spider._failed_requests == 185
+
+
+def test_failed_meeting_is_skipped():
+    spider = ColumBoeSpider()
+    meeting = {**DQ3_RESULT, "meeting": fetched("", status=0)}
+    items = run_results(
+        spider, {"list": LIST_RESULT, "meetings": {"DQ3VPX80F260": meeting}}
+    )
+    assert items == []
+    assert spider._failed_requests == 185
+
+
+def test_blocked_list_is_counted_and_logged(caplog):
+    """CloudFront's block is a 200 with a blank body."""
+    spider = ColumBoeSpider()
+    with caplog.at_level(logging.WARNING):
+        items = run_results(
+            spider, {"list": fetched(" ", url=LIST_URL), "meetings": {}}
+        )
+    assert items == []
     assert spider._failed_requests == 1
-    assert len(requests) == 1
-    assert requests[0].callback == spider.parse
-    assert requests[0].cb_kwargs == {"meeting_id": "ABC", "agenda_id": None}
+    assert "BD-GetMeetingsList returned 200 with 1 bytes" in caplog.text
+
+
+def test_list_that_is_not_json(caplog):
+    spider = ColumBoeSpider()
+    with caplog.at_level(logging.WARNING):
+        items = run_results(
+            spider, {"list": fetched("<html></html>", url=LIST_URL), "meetings": {}}
+        )
+    assert items == []
+    assert "BoardDocs meetings list is not JSON" in caplog.text
 
 
 def reported_errors(spider):
@@ -344,12 +411,6 @@ def test_parsed_meetings_are_counted():
         list(spider.parse(detail_response("jun_25")))
         list(spider.parse(detail_response("no_address")))
     assert spider._meetings_parsed == 2
-
-
-def test_public_page_failure_still_requests_list(spider):
-    requests = list(spider._handle_public_page_error(Failure(Exception("403"))))
-    assert len(requests) == 1
-    assert "BD-GetMeetingsList" in requests[0].url
 
 
 def test_title(item):

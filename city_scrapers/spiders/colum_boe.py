@@ -1,4 +1,3 @@
-import random
 import re
 from datetime import datetime, time
 from zoneinfo import ZoneInfo
@@ -9,6 +8,8 @@ from city_scrapers_core.items import Meeting
 from city_scrapers_core.spiders import CityScrapersSpider
 from dateutil.relativedelta import relativedelta
 from scrapy import signals
+from scrapy.http import HtmlResponse
+from scrapy_playwright.page import PageMethod
 from twisted.python.failure import Failure
 from w3lib.html import remove_tags, replace_entities
 
@@ -31,22 +32,113 @@ class ColumBoeSpider(CityScrapersSpider):
     )
     boarddocs_committee_id = "A9HCVU32F33A"
     lookback = relativedelta(years=3)
+    # Milliseconds between BoardDocs calls. DOWNLOAD_DELAY does not apply,
+    # because the calls are made from inside the browser page, not by Scrapy.
+    fetch_delay_ms = 1000
+    # Nothing else limits a call: page.evaluate() and the browser's fetch()
+    # have no deadline, so one stalled response would hang the whole run
+    fetch_timeout_ms = 30000
+    # Stop calling BoardDocs once this many calls in a row have failed
+    # (blocked or down), so a bad run ends instead of failing every remaining
+    # call. Checked before each meeting, so the stop comes after a whole
+    # agenda and meeting pair.
+    max_consecutive_failures = 5
 
-    # BoardDocs sits behind CloudFront, which now answers bare API calls with
-    # 403. The requests follow City-Bureau/city-scrapers-grand-rapids#47: load
-    # the public page first for a session cookie, then POST the way the page's
-    # own scripts do. The browser User-Agent is required: without it
-    # CloudFront still returns 403 (checked against the live site in Nov 2026).
-    boarddocs_headers = {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",  # noqa
-        "X-Requested-With": "XMLHttpRequest",
-    }
+    # BoardDocs sits behind CloudFront, which now blocks plain HTTP clients
+    # (Scrapy, Postman) even with a browser User-Agent: it answers 200 with a
+    # blank body and "X-Cache: Error from cloudfront" (Nov 2026). So the
+    # public page is loaded in a real browser with scrapy-playwright, and the
+    # BoardDocs API is called with fetch() from inside that page, the way the
+    # page's own scripts do. The browser must send its own headers: with
+    # Scrapy's headers CloudFront answers 403 even in Firefox, and headless
+    # Chromium gets the blank 200.
     custom_settings = {
+        "TWISTED_REACTOR": "twisted.internet.asyncioreactor.AsyncioSelectorReactor",
+        # https only: each scheme gets its own handler, and each handler
+        # launches its own browser. BoardDocs is https only.
+        "DOWNLOAD_HANDLERS": {
+            "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+        },
+        "PLAYWRIGHT_BROWSER_TYPE": "firefox",
+        "PLAYWRIGHT_PROCESS_REQUEST_HEADERS": None,
         "ROBOTSTXT_OBEY": False,
-        "COOKIES_ENABLED": True,
         "FEED_EXPORT_ENCODING": "utf-8",
     }
+
+    # Runs inside the loaded public page as a PageMethod: reads the meetings
+    # list, then the agenda and details of each meeting since the cutoff, one
+    # call at a time. Every call's status and raw text are returned for the
+    # Python side to check and parse (scrapy-playwright's own response body
+    # is the rendered page, which wraps JSON in HTML). The random number in
+    # each URL is the page's own cache-buster. Each call is aborted after
+    # timeoutMs, including reading its body, and returned as a failed result.
+    # After maxFailures failed calls in a row the loop stops and says so in
+    # "stopped".
+    fetch_all_js = """async ({
+        baseUrl, committeeId, cutoff, delayMs, timeoutMs, maxFailures,
+    }) => {
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+        let failuresInRow = 0;
+        const post = async (endpoint, body) => {
+            const cacheBuster = String(Math.floor(1e14 + Math.random() * 9e14));
+            const url = baseUrl
+                .replace("{endpoint}", endpoint)
+                .replace("{cache_buster}", cacheBuster);
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), timeoutMs);
+            let result;
+            try {
+                const r = await fetch(url, {
+                    method: "POST",
+                    body,
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "X-Requested-With": "XMLHttpRequest",
+                    },
+                    signal: controller.signal,
+                });
+                result = {url, status: r.status, text: await r.text()};
+            } catch (e) {
+                result = {url, status: 0, text: "", error: String(e)};
+            } finally {
+                clearTimeout(timer);
+            }
+            const failed = result.status !== 200 || !result.text.trim();
+            failuresInRow = failed ? failuresInRow + 1 : 0;
+            return result;
+        };
+        const list = await post(
+            "BD-GetMeetingsList", "current_committee_id=" + committeeId
+        );
+        const meetings = {};
+        let items;
+        try {
+            items = JSON.parse(list.text);
+        } catch (e) {
+            return {list, meetings};
+        }
+        if (!Array.isArray(items)) {
+            return {list, meetings};
+        }
+        for (const item of items) {
+            // Same entries as _get_clean_meetings keeps
+            if (!item || !item.unique || !/^\\d{8}$/.test(item.numberdate)
+                    || item.numberdate < cutoff) {
+                continue;
+            }
+            if (failuresInRow >= maxFailures) {
+                const stopped = `${failuresInRow} failed calls in a row`;
+                return {list, meetings, stopped};
+            }
+            const body = `current_committee_id=${committeeId}&id=${item.unique}`;
+            await sleep(delayMs);
+            const agenda = await post("BD-GetAgenda", body);
+            await sleep(delayMs);
+            const meeting = await post("BD-GetMeeting", body);
+            meetings[item.unique] = {agenda, meeting};
+        }
+        return {list, meetings};
+    }"""
 
     # The board meets in two district buildings. The source writes their
     # addresses several ways ("270 E. STATE ST.", "270 E. STATE STREET",
@@ -99,43 +191,11 @@ class ColumBoeSpider(CityScrapersSpider):
         re.I,
     )
 
-    def start_requests(self):
-        yield scrapy.Request(
-            self.source_url,
-            headers={
-                **self.boarddocs_headers,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",  # noqa
-            },
-            callback=self._request_meetings_list,
-            errback=self._handle_public_page_error,
-            dont_filter=True,
-        )
-
-    def _boarddocs_post(self, endpoint, body, callback, cb_kwargs=None, errback=None):
-        """POST to a BoardDocs endpoint the way the public page's scripts do.
-        The random number in the URL is the page's own cache-buster."""
-        return scrapy.Request(
-            self.base_url.format(
-                endpoint=endpoint,
-                cache_buster=random.randint(10**14, 10**15 - 1),
-            ),
-            method="POST",
-            body=body,
-            headers={
-                **self.boarddocs_headers,
-                "Origin": "https://go.boarddocs.com",
-                "Referer": self.source_url,
-            },
-            callback=callback,
-            cb_kwargs=cb_kwargs or {},
-            errback=errback or self._handle_error,
-            dont_filter=True,
-        )
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self._failed_requests = 0
         self._meetings_parsed = 0
+        self._cutoff = None
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
@@ -143,18 +203,38 @@ class ColumBoeSpider(CityScrapersSpider):
         crawler.signals.connect(spider._on_spider_closed, signal=signals.spider_closed)
         return spider
 
-    def _handle_public_page_error(self, failure):
-        """The public page only provides the session cookie, so a failure
-        there is logged and the meetings list is still requested. If the
-        block also stops the list, that failure is the one reported."""
-        self.logger.warning(
-            "BoardDocs public page request failed, continuing: %r", failure
+    def start_requests(self):
+        """Load the public page in the browser and run fetch_all_js in it.
+        scrapy-playwright closes the page afterwards."""
+        cutoff = self._get_cutoff()
+        yield scrapy.Request(
+            self.source_url,
+            callback=self._parse_results,
+            errback=self._handle_error,
+            dont_filter=True,
+            meta={
+                "playwright": True,
+                "playwright_page_methods": {
+                    "fetch_all": PageMethod(
+                        "evaluate",
+                        self.fetch_all_js,
+                        {
+                            "baseUrl": self.base_url,
+                            "committeeId": self.boarddocs_committee_id,
+                            "cutoff": cutoff.strftime("%Y%m%d"),
+                            "delayMs": self.fetch_delay_ms,
+                            "timeoutMs": self.fetch_timeout_ms,
+                            "maxFailures": self.max_consecutive_failures,
+                        },
+                    ),
+                },
+            },
         )
-        yield from self._request_meetings_list(None)
 
     def _handle_error(self, failure):
-        """A failed list or meeting request means missing meetings. It is
-        counted and reported once when the spider closes."""
+        """A failed request (the public page not loading, or fetch_all_js
+        failing) means missing meetings. It is counted and reported once when
+        the spider closes."""
         self._failed_requests += 1
         self.logger.warning("BoardDocs request failed: %r", failure.value)
 
@@ -191,59 +271,88 @@ class ColumBoeSpider(CityScrapersSpider):
             spider=self,
         )
 
-    def _request_meetings_list(self, response):
-        yield self._boarddocs_post(
-            "BD-GetMeetingsList",
-            body=f"current_committee_id={self.boarddocs_committee_id}",
-            callback=self._parse_meetings_list,
+    def _to_response(self, endpoint, result):
+        """Turn one call's result from fetch_all_js into an HtmlResponse, or
+        None if it failed or came back blank (CloudFront's block); a failure
+        is counted."""
+        if result["status"] != 200 or not result["text"].strip():
+            self._failed_requests += 1
+            self.logger.warning(
+                "BoardDocs %s returned %s with %d bytes (blocked by CloudFront?)%s",
+                endpoint,
+                result["status"],
+                len(result["text"]),
+                f": {result['error']}" if result.get("error") else "",
+            )
+            return None
+        return HtmlResponse(
+            url=result["url"], body=result["text"].encode("utf-8"), encoding="utf-8"
         )
 
-    def _parse_meetings_list(self, response):
+    def _parse_results(self, response):
+        """Parse what fetch_all_js read: the meetings list, then each meeting
+        with its agenda."""
+        results = response.meta["playwright_page_methods"]["fetch_all"].result
+        listing = self._to_response("BD-GetMeetingsList", results["list"])
+        if listing is None:
+            return
         try:
-            meetings = response.json()
+            meetings = listing.json()
         except ValueError as e:
             # Reported at close as "0 meetings parsed"
             self.logger.warning("BoardDocs meetings list is not JSON: %s", e)
             return
+        if results.get("stopped"):
+            self.logger.warning(
+                "Stopped reading BoardDocs after %s", results["stopped"]
+            )
+        not_read = []
         for item in self._get_clean_meetings(meetings):
             meeting_id = item["unique"]
-            yield self._boarddocs_post(
-                "BD-GetAgenda",
-                body=self._meeting_body(meeting_id),
-                callback=self._parse_agenda,
-                cb_kwargs={"meeting_id": meeting_id},
-                errback=self._handle_agenda_error,
+            fetched = results["meetings"].get(meeting_id)
+            if not fetched:
+                not_read.append(meeting_id)
+                continue
+            # A failed agenda call is counted, but the meeting is still
+            # parsed, without an agenda link, so it is not lost
+            agenda = self._to_response("BD-GetAgenda", fetched["agenda"])
+            agenda_id = self._parse_agenda_id(agenda, meeting_id)
+            meeting = self._to_response("BD-GetMeeting", fetched["meeting"])
+            if meeting is None:
+                continue
+            yield from self.parse(meeting, meeting_id=meeting_id, agenda_id=agenda_id)
+        if not_read:
+            # One line for all of them: after a stop this can be most meetings
+            self._failed_requests += len(not_read)
+            self.logger.warning(
+                "%d BoardDocs meetings were not read: %s",
+                len(not_read),
+                ", ".join(not_read),
             )
 
-    def _meeting_body(self, meeting_id):
-        return f"current_committee_id={self.boarddocs_committee_id}&id={meeting_id}"
-
-    def _parse_agenda(self, response, meeting_id):
+    def _parse_agenda_id(self, agenda, meeting_id):
         """The agenda link points to the meeting's first agenda item, as in the
         original spider. A meeting with no agenda items yet gets no link."""
-        agenda_id = response.css("li.XXXXXXui-corner-all::attr(unique)").get()
+        if agenda is None:
+            return None
+        agenda_id = agenda.css("li.XXXXXXui-corner-all::attr(unique)").get()
         if not agenda_id:
             self.logger.info("No agenda items yet for meeting %s", meeting_id)
-        yield self._request_meeting(meeting_id, agenda_id)
+        return agenda_id
 
-    def _handle_agenda_error(self, failure):
-        """A failed agenda request is counted, but the meeting is still
-        requested, without an agenda link, so it is not lost."""
-        self._handle_error(failure)
-        meeting_id = failure.request.cb_kwargs["meeting_id"]
-        yield self._request_meeting(meeting_id, None)
-
-    def _request_meeting(self, meeting_id, agenda_id):
-        return self._boarddocs_post(
-            "BD-GetMeeting",
-            body=self._meeting_body(meeting_id),
-            callback=self.parse,
-            cb_kwargs={"meeting_id": meeting_id, "agenda_id": agenda_id},
-        )
+    def _get_cutoff(self):
+        """The earliest meeting date kept, 3 years before the run started. It
+        is set once per run so fetch_all_js and _get_clean_meetings use the
+        same date even when a run crosses midnight."""
+        if self._cutoff is None:
+            self._cutoff = datetime.now(self.tzinfo).date() - self.lookback
+        return self._cutoff
 
     def _get_clean_meetings(self, data):
-        """Keep list entries from the last 3 years and all future ones."""
-        cutoff = datetime.now(self.tzinfo).date() - self.lookback
+        """Keep list entries from the last 3 years and all future ones. These
+        are the meetings fetch_all_js reads, so each is expected in its
+        results."""
+        cutoff = self._get_cutoff()
         clean = []
         for item in data:
             if not item or not item.get("unique"):
